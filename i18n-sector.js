@@ -126,7 +126,7 @@ const I18N = {
     // FAQ
     faqTitle: "Veelgestelde vragen",
     faq1Question: "Wat kost een oplossing voor mijn kantoor?",
-    faq1Answer: "Projecten starten vanaf ca. €2.000, afhankelijk van de omvang en gewenste koppelingen. Na een kort gesprek krijgt u een duidelijke offerte op maat.",
+    faq1Answer: "Elk project is op maat; we bespreken het budget na een kort gesprek.",
     faq2Question: "Werkt dit met mijn bestaande CRM?",
     faq2Answer: "Ja. Ik werk met Whise, Omnicasa en Zabun. Als u een ander CRM gebruikt, bekijken we samen wat de beste manier is om te koppelen (API of e-mailimport).",
     faq3Question: "Hoe snel kan dit live gaan?",
@@ -149,6 +149,7 @@ const I18N = {
     formLabelPhone: "Telefoon",
     formLabelMessageRE: "Wat wilt u automatiseren?",
     btnSendMessage: "Bericht versturen",
+    btnContactUs: "Neem contact op",
     
     // Footer
     footerTagline: "Software & automatisatie voor bedrijven in België",
@@ -228,7 +229,7 @@ const I18N = {
     impl3TextIns: "Het systeem past bij uw manier van werken, niet andersom.",
 
     faq1QuestionIns: "Wat kost een oplossing voor mijn verzekeringskantoor?",
-    faq1AnswerIns: "Projecten starten vanaf ca. €2.000, afhankelijk van de gewenste functies en koppelingen. Na een kort gesprek krijgt u een duidelijke offerte.",
+    faq1AnswerIns: "Elk project is op maat; we bespreken het budget na een kort gesprek.",
     faq2QuestionIns: "Kan dit koppelen met mijn bestaande systeem?",
     faq2AnswerIns: "Ja. Ik werk samen met verzekeringsmaatschappijen en kan koppelen via e-mail of API waar beschikbaar. We bekijken samen wat het beste past.",
     faq3QuestionIns: "Hoe snel kan dit live gaan?",
@@ -325,7 +326,7 @@ const I18N = {
     impl3TextAuto: "Het systeem past bij uw manier van werken, niet andersom.",
 
     faq1QuestionAuto: "Wat kost een oplossing voor mijn showroom?",
-    faq1AnswerAuto: "Projecten starten vanaf ca. €2.000, afhankelijk van de gewenste functies. Na een kort gesprek krijgt u een duidelijke offerte.",
+    faq1AnswerAuto: "Elk project is op maat; we bespreken het budget na een kort gesprek.",
     faq2QuestionAuto: "Werkt dit met AutoScout24 en 2dehands?",
     faq2AnswerAuto: "Ja. Aanvragen van deze platformen worden automatisch opgepikt via e-mailnotificaties en verwerkt.",
     faq3QuestionAuto: "Hoe snel kan dit live gaan?",
@@ -348,6 +349,105 @@ const I18N = {
     mockupCarAuto2: "BMW X3 · Inruilwagen",
     mockupClientAuto3: "Luc Vandenberghe",
     mockupCarAuto3: "Audi A4 · Onderhoudsbeurt",
+
+    // === PROJECTS SECTION === //
+    projectsSectionTitle: "Wat we voor u kunnen bouwen",
+    projectsSectionIntro: "Concrete oplossingen die u direct meer tijd en meer leads opleveren.",
+    projectsCtaText: "Iets anders nodig? Vertel ons wat u tijd kost.",
+    projectFeaturedBadge: "Meest gekozen start",
+
+    // Real estate projects
+    projectR1Title: "24/7 Lead follow-up en bezichtigingsagenda",
+    projectR1Problem: "Te weinig verkopen en langere verkooptijden maken elke lead waardevol—maar enquêtes 's avonds of in het weekend blijven te vaak onbeantwoord.",
+    projectR1Feature1: "Directe, persoonlijke reactie op Immoweb, Zimmo en uw website",
+    projectR1Feature2: "Zelfbedieningsagenda voor bezichtigingen",
+    projectR1Feature3: "Automatische herinneringen en wekelijks rapport",
+
+    projectR2Title: "Verkopersleads: waardering en renovatieplicht-tool",
+    projectR2Problem: "Bij stijgende hypotheekrente zijn kopers voorzichtiger, maar verkopers met een E- of F-label hebben uw advies nodig over de 6-jaars renovatieplicht.",
+    projectR2Feature1: "Adresformulier voor waarderingsaanvraag",
+    projectR2Feature2: "E/F-checker met uitleg renovatieplicht en subsidies",
+    projectR2Feature3: "Automatische opvolgingsreeks",
+
+    projectR3Title: "Dossier-compliance checklist en uploadportaal",
+    projectR3Problem: "Elke verkoop vraagt het maatregelenregister (sinds 1 april 2026), EPC-vermeldingen en een AML-dossier—inspecties lopen dit jaar.",
+    projectR3Feature1: "Per-pand checklist (EPC, bodemattest, maatregelenregister, renovatietekst)",
+    projectR3Feature2: "Uploadportaal voor verkopers",
+    projectR3Feature3: "Herinneringen en dossier-PDF, optioneel gekoppeld aan RealSmart",
+
+    projectR4Title: "Verhuurworkflow-automatisering",
+    projectR4Problem: "Huurvraag groeit en indexatie moet op tijd, maar elk dossier vraagt documenten, planning en contractdata.",
+    projectR4Feature1: "Kandidaat-intakeformulier met vereiste documenten",
+    projectR4Feature2: "Automatische bezichtigingsagenda en shortlist",
+    projectR4Feature3: "Jaarlijkse indexatiebrieven op tijd",
+
+    projectR5Title: "Syndicus-eigenaarportaal en ticketing",
+    projectR5Problem: "Vraag naar syndicusbeheer groeit, maar de vergoeding dekt de werkdruk niet meer, en prijs beslist steeds vaker.",
+    projectR5Feature1: "Portaal per gebouw: eigenaars melden problemen met foto",
+    projectR5Feature2: "Automatische statusupdates en aannemer-dispatch",
+    projectR5Feature3: "Documentbibliotheek en AV-herinneringen",
+
+    // Insurance projects
+    projectI1Title: "Storm-bestendige schadeclaims-intake",
+    projectI1Problem: "55.000 claims in één weekend (mei 2026)—zonder extra mensen gaat de telefoon onbeantwoord en loopt de klantbeleving schade op.",
+    projectI1Feature1: "Mobiel webformulier met foto-upload en polisopzoek",
+    projectI1Feature2: "Directe ontvangstbevestiging en triage op type en urgentie",
+    projectI1Feature3: "SMS/e-mail statusupdates en export naar uw software",
+
+    projectI2Title: "Hernieuwings- en premiewijziging-communicator",
+    projectI2Problem: "De premietaks steeg naar 9,6% sinds 1 juli 2026, en elke vervaldag vraagt uitleg over de wijziging.",
+    projectI2Feature1: "Geautomatiseerde, persoonlijke e-mails voor elke vervaldag",
+    projectI2Feature2: "Uitleg van de wijziging en 'bekijk mijn dekking'-link",
+    projectI2Feature3: "Follow-up bij geen reactie",
+
+    projectI3Title: "Compliance-bewijstracker",
+    projectI3Problem: "De FSMA controleert sub-agenten zonder voorafgaande inschrijving en AML-officers op deskundigheid—sancties lopen op tot schorsing van de levensverzekeringsactiviteit.",
+    projectI3Feature1: "Lijst van sub-agenten en medewerkers met registerstatus",
+    projectI3Feature2: "AML-officer trainingslog en permanente-vormingsuren",
+    projectI3Feature3: "Vervaldatumherinneringen en one-click bewijs-PDF voor FSMA",
+
+    projectI4Title: "Inbox- en documentintake-automatisering",
+    projectI4Problem: "Een vergrijzend, uitgestrekt team krijgt steeds meer administratieve verplichtingen, terwijl digitaliseringsdruk toeneemt.",
+    projectI4Feature1: "Classificeer inkomende e-mail en bijlagen",
+    projectI4Feature2: "Extractie van polis- of schade nummers",
+    projectI4Feature3: "Maak taken en archiveer documenten via uw software-API",
+
+    projectI5Title: "Web-offerteaanvraag follow-up",
+    projectI5Problem: "Leads van uw website of vergelijkingsformulieren blijven te vaak liggen, terwijl snelle reactie het verschil maakt.",
+    projectI5Feature1: "Directe reactie met kwalificatievragen",
+    projectI5Feature2: "Boekingslink en herinneringsreeks",
+    projectI5Feature3: "Alert naar de makelaar (AI-vermelding vereist bij chatbot)",
+
+    // Automotive projects
+    projectC1Title: "After-hours lead responder",
+    projectC1Problem: "Buiten openingsuren duurt de eerste reactie gemiddeld 13–14 uur (UK-cijfer, Impel 2026), en een derde van de dealers stopt na één poging.",
+    projectC1Feature1: "Directe SMS/WhatsApp/e-mail met antwoord op de vraag en proefritvoorstel",
+    projectC1Feature2: "21-daagse follow-up-reeks",
+    projectC1Feature3: "Overdracht aan verkoper 's ochtends (AI-vermelding vereist bij chatbot)",
+
+    projectC2Title: "Tweedehands-voorraad-versneller",
+    projectC2Problem: "Ex-lease EV's overspoelen de markt, prijzen zakken, en elke dag langer op voorraad kost geld.",
+    projectC2Feature1: "Voorraad-feed naar website en portalen",
+    projectC2Feature2: "'Prijs verlaagd'- en 'nieuwe match'-alerts naar opgeslagen zoekopdrachten",
+    projectC2Feature3: "Dashboard voor voorraadleeftijd en leadaantallen",
+
+    projectC3Title: "Werkplaatsboekings- en herinneringssysteem",
+    projectC3Problem: "Voertuigmechanieken staan op de knelpuntberoepen-lijst (VDAB 2026), en elke no-show verspilt schaarse uren.",
+    projectC3Feature1: "Online slotboekingen gekoppeld aan echte capaciteit",
+    projectC3Feature2: "Automatische herinneringen voor onderhoud, banden en keuring",
+    projectC3Feature3: "Ophaal- en statusteksten, no-show follow-up",
+
+    projectC4Title: "Merk-transitie-kit",
+    projectC4Problem: "MG en BYD verlieten hun Belgische importeur in 2026, dealers weten niet of ze het merk houden, en fleetklanten krijgen nieuwe contacten.",
+    projectC4Feature1: "Nieuwe of geüpdatete merklandingspagina's",
+    projectC4Feature2: "Klant-notificatiecampagne en CRM-data-opschoning",
+    projectC4Feature3: "Lead-routing naar de nieuwe setup",
+
+    projectC5Title: "Aftrekbaarheids-calculator voor zelfstandigen",
+    projectC5Problem: "Plug-in hybrids besteld door bedrijven vanaf 2026 zijn niet aftrekbaar, maar zelfstandigen in de personenbelasting houden 75–100% afhankelijk van CO2.",
+    projectC5Feature1: "CO2-waarde van het conformiteitscertificaat naar aftrekbaarheidspercentage",
+    projectC5Feature2: "Schatting netto maandkost en 'boek advies'-call-to-action",
+    projectC5Feature3: "Automatische follow-up",
   },
 
   fr: {
@@ -475,7 +575,7 @@ const I18N = {
     // FAQ
     faqTitle: "Questions fréquentes",
     faq1Question: "Combien coûte une solution pour mon agence ?",
-    faq1Answer: "Les projets démarrent à partir d'environ €2.000, selon l'ampleur et les connexions souhaitées. Après un court entretien, vous recevez un devis clair sur mesure.",
+    faq1Answer: "Chaque projet est sur mesure ; nous discutons du budget après un court échange.",
     faq2Question: "Est-ce compatible avec mon CRM existant ?",
     faq2Answer: "Oui. Je travaille avec Whise, Omnicasa et Zabun. Si vous utilisez un autre CRM, nous examinons ensemble la meilleure façon de connecter (API ou import e-mail).",
     faq3Question: "Dans combien de temps cela peut-il être en ligne ?",
@@ -498,6 +598,7 @@ const I18N = {
     formLabelPhone: "Téléphone",
     formLabelMessageRE: "Que souhaitez-vous automatiser ?",
     btnSendMessage: "Envoyer le message",
+    btnContactUs: "Prenez contact",
     
     // Footer
     footerTagline: "Logiciels & automatisation pour entreprises en Belgique",
@@ -577,7 +678,7 @@ const I18N = {
     impl3TextIns: "Le système s'adapte à votre façon de travailler, pas l'inverse.",
 
     faq1QuestionIns: "Combien coûte une solution pour mon bureau d'assurance ?",
-    faq1AnswerIns: "Les projets démarrent à partir d'environ €2.000, selon les fonctions et connexions souhaitées. Après un court entretien, vous recevez un devis clair.",
+    faq1AnswerIns: "Chaque projet est sur mesure ; nous discutons du budget après un court échange.",
     faq2QuestionIns: "Peut-il se connecter à mon système existant ?",
     faq2AnswerIns: "Oui. Je travaille avec les compagnies d'assurance et peux me connecter via e-mail ou API si disponible. Nous examinons ensemble ce qui convient le mieux.",
     faq3QuestionIns: "Dans combien de temps cela peut-il être en ligne ?",
@@ -674,7 +775,7 @@ const I18N = {
     impl3TextAuto: "Le système s'adapte à votre façon de travailler, pas l'inverse.",
 
     faq1QuestionAuto: "Combien coûte une solution pour mon showroom ?",
-    faq1AnswerAuto: "Les projets démarrent à partir d'environ €2.000, selon les fonctions souhaitées. Après un court entretien, vous recevez un devis clair.",
+    faq1AnswerAuto: "Chaque projet est sur mesure ; nous discutons du budget après un court échange.",
     faq2QuestionAuto: "Cela fonctionne-t-il avec AutoScout24 et 2dehands ?",
     faq2AnswerAuto: "Oui. Les demandes de ces plateformes sont automatiquement récupérées via notifications e-mail et traitées.",
     faq3QuestionAuto: "Dans combien de temps cela peut-il être en ligne ?",
@@ -697,6 +798,105 @@ const I18N = {
     mockupCarAuto2: "BMW X3 · Reprise",
     mockupClientAuto3: "Luc Vandenberghe",
     mockupCarAuto3: "Audi A4 · Entretien",
+
+    // === PROJECTS SECTION === //
+    projectsSectionTitle: "Ce que nous pouvons construire pour vous",
+    projectsSectionIntro: "Des solutions concrètes qui vous font gagner du temps et génèrent plus de leads immédiatement.",
+    projectsCtaText: "Besoin d'autre chose ? Dites-nous ce qui vous prend du temps.",
+    projectFeaturedBadge: "Point de départ conseillé",
+
+    // Real estate projects
+    projectR1Title: "Suivi de leads 24/7 et agenda de visites",
+    projectR1Problem: "Moins de ventes et des délais plus longs rendent chaque lead précieux, mais les demandes le soir ou le week-end restent trop souvent sans réponse.",
+    projectR1Feature1: "Réponse directe et personnalisée sur Immoweb, Zimmo et votre site",
+    projectR1Feature2: "Agenda en libre-service pour les visites",
+    projectR1Feature3: "Rappels automatiques et rapport hebdomadaire",
+
+    projectR2Title: "Leads vendeurs : outil d'estimation et obligation de rénovation",
+    projectR2Problem: "Avec la hausse des taux hypothécaires, les acheteurs sont plus prudents, mais les vendeurs avec un label E ou F ont besoin de vos conseils sur l'obligation de rénovation de 6 ans.",
+    projectR2Feature1: "Formulaire d'adresse pour demande d'estimation",
+    projectR2Feature2: "Vérificateur E/F avec explication de l'obligation et des subsides",
+    projectR2Feature3: "Séquence de suivi automatique",
+
+    projectR3Title: "Checklist de conformité dossier et portail de téléchargement",
+    projectR3Problem: "Chaque vente nécessite le registre des mesures (depuis le 1er avril 2026), les mentions PEB et un dossier LBC—les inspections sont en cours cette année.",
+    projectR3Feature1: "Checklist par bien (PEB, attestation du sol, registre des mesures, texte rénovation)",
+    projectR3Feature2: "Portail de téléchargement pour les vendeurs",
+    projectR3Feature3: "Rappels et PDF du dossier, en option lié à RealSmart",
+
+    projectR4Title: "Automatisation du workflow de location",
+    projectR4Problem: "La demande locative augmente et l'indexation doit être ponctuelle, mais chaque dossier nécessite des documents, de la planification et des données contractuelles.",
+    projectR4Feature1: "Formulaire d'admission candidat avec documents requis",
+    projectR4Feature2: "Agenda de visite automatique et shortlist",
+    projectR4Feature3: "Lettres d'indexation annuelles à temps",
+
+    projectR5Title: "Portail propriétaires syndic et ticketing",
+    projectR5Problem: "La demande de gestion de syndic augmente, mais l'indemnité ne couvre plus la charge de travail, et le prix décide de plus en plus souvent.",
+    projectR5Feature1: "Portail par immeuble : les propriétaires signalent les problèmes avec photo",
+    projectR5Feature2: "Mises à jour de statut automatiques et dispatch entrepreneur",
+    projectR5Feature3: "Bibliothèque de documents et rappels d'AG",
+
+    // Insurance projects
+    projectI1Title: "Intake de sinistres résistant aux tempêtes",
+    projectI1Problem: "55.000 sinistres en un week-end (mai 2026)—sans personnel supplémentaire, le téléphone reste sans réponse et l'expérience client en souffre.",
+    projectI1Feature1: "Formulaire web mobile avec upload photo et recherche de police",
+    projectI1Feature2: "Confirmation de réception immédiate et triage par type et urgence",
+    projectI1Feature3: "Mises à jour de statut par SMS/e-mail et export vers votre logiciel",
+
+    projectI2Title: "Communicateur de renouvellements et changements de primes",
+    projectI2Problem: "La taxe sur les primes est passée à 9,6% depuis le 1er juillet 2026, et chaque échéance nécessite une explication du changement.",
+    projectI2Feature1: "E-mails automatisés et personnalisés pour chaque échéance",
+    projectI2Feature2: "Explication du changement et lien 'revoir ma couverture'",
+    projectI2Feature3: "Suivi en cas de non-réaction",
+
+    projectI3Title: "Tracker de preuves de conformité",
+    projectI3Problem: "La FSMA contrôle les sous-agents sans inscription préalable et les responsables LBC sur leur expertise—les sanctions vont jusqu'à la suspension de l'activité d'assurance-vie.",
+    projectI3Feature1: "Liste des sous-agents et collaborateurs avec statut du registre",
+    projectI3Feature2: "Journal de formation du responsable LBC et heures de formation continue",
+    projectI3Feature3: "Rappels de dates d'expiration et PDF de preuve en un clic pour FSMA",
+
+    projectI4Title: "Automatisation de l'intake e-mail et documents",
+    projectI4Problem: "Une équipe vieillissante et étendue reçoit de plus en plus d'obligations administratives, tandis que la pression de numérisation augmente.",
+    projectI4Feature1: "Classification des e-mails entrants et pièces jointes",
+    projectI4Feature2: "Extraction des numéros de police ou de sinistre",
+    projectI4Feature3: "Création de tâches et archivage de documents via l'API de votre logiciel",
+
+    projectI5Title: "Suivi de demandes de devis web",
+    projectI5Problem: "Les leads de votre site web ou des formulaires de comparaison restent trop souvent en attente, alors qu'une réaction rapide fait la différence.",
+    projectI5Feature1: "Réponse directe avec questions de qualification",
+    projectI5Feature2: "Lien de réservation et séquence de rappels",
+    projectI5Feature3: "Alerte au courtier (mention IA requise pour chatbot)",
+
+    // Automotive projects
+    projectC1Title: "Répondeur de leads en dehors des heures",
+    projectC1Problem: "En dehors des heures d'ouverture, la première réponse prend en moyenne 13 à 14 heures (chiffre UK, Impel 2026), et un tiers des concessionnaires s'arrête après une tentative.",
+    projectC1Feature1: "SMS/WhatsApp/e-mail direct avec réponse à la question et proposition d'essai",
+    projectC1Feature2: "Séquence de suivi de 21 jours",
+    projectC1Feature3: "Transfert au vendeur le matin (mention IA requise pour chatbot)",
+
+    projectC2Title: "Accélérateur de stock d'occasion",
+    projectC2Problem: "Les VE ex-leasing inondent le marché, les prix chutent, et chaque jour de stock supplémentaire coûte de l'argent.",
+    projectC2Feature1: "Flux de stock vers site web et portails",
+    projectC2Feature2: "Alertes 'prix réduit' et 'nouvelle correspondance' vers recherches sauvegardées",
+    projectC2Feature3: "Tableau de bord pour l'âge du stock et le nombre de leads",
+
+    projectC3Title: "Système de réservation et rappels d'atelier",
+    projectC3Problem: "Les mécaniciens de véhicules figurent sur la liste des métiers en pénurie (VDAB 2026), et chaque absence gaspille des heures précieuses.",
+    projectC3Feature1: "Réservations de créneaux en ligne liées à la capacité réelle",
+    projectC3Feature2: "Rappels automatiques pour l'entretien, les pneus et le contrôle",
+    projectC3Feature3: "Textes d'enlèvement et de statut, suivi des absences",
+
+    projectC4Title: "Kit de transition de marque",
+    projectC4Problem: "MG et BYD ont quitté leur importateur belge en 2026, les concessionnaires ne savent pas s'ils gardent la marque, et les clients flotte ont de nouveaux contacts.",
+    projectC4Feature1: "Pages de destination de marque nouvelles ou mises à jour",
+    projectC4Feature2: "Campagne de notification client et nettoyage des données CRM",
+    projectC4Feature3: "Routage des leads vers la nouvelle configuration",
+
+    projectC5Title: "Calculateur de déductibilité pour indépendants",
+    projectC5Problem: "Les hybrides rechargeables commandés par les entreprises à partir de 2026 ne sont pas déductibles, mais les indépendants en impôt des personnes physiques conservent 75 à 100% selon le CO2.",
+    projectC5Feature1: "Valeur CO2 du certificat de conformité vers pourcentage de déductibilité",
+    projectC5Feature2: "Estimation du coût mensuel net et call-to-action 'réserver conseil'",
+    projectC5Feature3: "Suivi automatique",
   }
 };
 
