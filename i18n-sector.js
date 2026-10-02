@@ -235,6 +235,95 @@ const I18N_SECTOR = {
     
     formLabelCompanyIns: "Kantoor *",
     formLabelMessageIns: "Wat wilt u automatiseren?",
+
+    // === AUTOMOTIVE SPECIFIC === //
+    breadcrumbAutomotive: "Autodealers",
+    heroTitleAuto: "Software gebouwd voor autodealers",
+    heroSubAuto: "Directe reactie op testritaanvragen van AutoScout24 en 2dehands, automatische planning en opvolging van inruilwagens.",
+    
+    mockupAutoToday: "Vandaag",
+    mockupAutoTotal: "Afspraken",
+    mockupAutoTestDrives: "Testritten",
+    mockupAutoTradeIns: "Inruil",
+    mockupAutoService: "Onderhoud",
+    chipTestDrive: "Testrit",
+    chipTradeIn: "Inruil",
+    chipService: "Onderhoud",
+
+    subsectorsTitleAuto: "Verken autosectoren",
+    subsector1TitleAuto: "Nieuwe wagens",
+    subsector1TextAuto: "Beheer testritaanvragen, leveringen, financiering en naverkoop voor nieuwe voertuigen.",
+    subsector2TitleAuto: "Tweedehands",
+    subsector2TextAuto: "Beheer leads van AutoScout24 en 2dehands, testritten, inruilwagens en verkoop.",
+    subsector3TitleAuto: "Garages & onderhoud",
+    subsector3TextAuto: "Beheer onderhoudsafspraken, herstellingen, keuringen en klantcommunicatie.",
+
+    benefitsTitleAuto: "Autosoftware ontworpen voor uw showroom",
+    benefit1TitleAuto: "Ontworpen voor autodealers",
+    benefit1TextAuto: "Gebouwd rond de dagelijkse realiteit van autoverkoop. Van eerste aanvraag tot testrit tot levering.",
+    benefit2TitleAuto: "Van aanvraag tot levering",
+    benefit2TextAuto: "Verbindt leads, testritten, inruilwagens, financiering en levering. Alles in één werkstroom.",
+    benefit3TitleAuto: "Voor dealers van elke grootte",
+    benefit3TextAuto: "Van onafhankelijk dealer tot grote groep. Kies wat u vandaag nodig hebt en breid uit wanneer nodig.",
+
+    featuresTitleAuto: "Alles wat u nodig hebt om testritten te beheren",
+    feature1TitleAuto: "Directe reactie op aanvragen",
+    feature1TextAuto: "Aanvragen van AutoScout24, 2dehands en uw website krijgen meteen een reactie met beschikbaarheid.",
+    feature2TitleAuto: "Automatische planning",
+    feature2TextAuto: "Testritten worden automatisch ingepland met bevestigingen en herinneringen.",
+    feature3TitleAuto: "Inruilwagen opvolging",
+    feature3TextAuto: "Klanten met een inruilwagen krijgen automatisch een herinnering en waarderingsvoorstel.",
+    feature4TitleAuto: "Klantendossiers",
+    feature4TextAuto: "Alle testritten, aankopen, inruilwagens en onderhoud per klant overzichtelijk bij elkaar.",
+    feature5TitleAuto: "Follow-up na testrit",
+    feature5TextAuto: "Automatische follow-up na testritten om interesse vast te houden en verkoop te sluiten.",
+    feature6TitleAuto: "Meldingen & rapportage",
+    feature6TextAuto: "Realtime overzicht van nieuwe aanvragen, geplande testritten en openstaande inruilwagens.",
+
+    deep1TitleAuto: "Van aanvraag naar testrit in minuten",
+    deep1Text1Auto: "Wanneer een klant een testrit aanvraagt via AutoScout24, 2dehands of uw website, krijgt hij meteen een bevestiging met beschikbare momenten.",
+    deep1Text2Auto: "Het systeem plant de testrit automatisch in uw agenda, verstuurt bevestigingen en herinneringen naar de klant en bereidt het voertuig voor.",
+    deep1Text3Auto: "Na de testrit volgt automatisch een bedankbericht met extra informatie en een vraag naar interesse. Geen vergeten leads meer.",
+    
+    flowVisual1Auto: "Testrit­aanvraag",
+    flowVisual2Auto: "Bevestiging",
+    flowVisual3Auto: "Testrit",
+    flowVisual4Auto: "Follow-up",
+
+    deep2TitleAuto: "Automatische opvolging van inruilwagens",
+    deep2Text1Auto: "Klanten die een inruilwagen hebben, krijgen automatisch een waarderingsvoorstel en uitnodiging voor een afspraak.",
+    deep2Text2Auto: "U krijgt een overzicht van alle inruilwagens en kunt prioriteren welke klanten extra aandacht nodig hebben.",
+    deep2Text3Auto: "Het resultaat: meer inruilwagens, snellere transacties en tevreden klanten.",
+    
+    timeline1TitleAuto: "Dag 0",
+    timeline1TextAuto: "Klant meldt inruilwagen",
+    timeline2TitleAuto: "Dag 1",
+    timeline2TextAuto: "Waarderingsvoorstel",
+    timeline3TitleAuto: "Dag 3",
+    timeline3TextAuto: "Follow-up en afspraak",
+    timeline4TitleAuto: "Dag 7",
+    timeline4TextAuto: "Finale aanbieding",
+
+    impl1TextAuto: "We bekijken samen uw huidige werkwijze en passen de oplossing aan uw showroom aan.",
+    impl2TextAuto: "U blijft werken zoals u gewend bent. De automatisatie draait op de achtergrond.",
+    impl3TextAuto: "Het systeem past bij uw manier van werken, niet andersom.",
+
+    faq1QuestionAuto: "Wat kost een oplossing voor mijn showroom?",
+    faq1AnswerAuto: "Projecten starten vanaf ca. €2.000, afhankelijk van de gewenste functies. Na een kort gesprek krijgt u een duidelijke offerte.",
+    faq2QuestionAuto: "Werkt dit met AutoScout24 en 2dehands?",
+    faq2AnswerAuto: "Ja. Aanvragen van deze platformen worden automatisch opgepikt via e-mailnotificaties en verwerkt.",
+    faq3QuestionAuto: "Hoe snel kan dit live gaan?",
+    faq3AnswerAuto: "Eenvoudige testritplanning binnen 2-3 weken, grotere projecten binnen 4-6 weken. U krijgt eerst een demo op maat.",
+    faq4QuestionAuto: "Is dit AVG/GDPR-conform?",
+    faq4AnswerAuto: "Ja. Alle klantgegevens worden veilig verwerkt volgens de Belgische en Europese privacywetgeving.",
+    faq5QuestionAuto: "Werkt dit in het Nederlands én Frans?",
+    faq5AnswerAuto: "Ja. Alle communicatie naar klanten kan in het Nederlands, Frans of beide talen.",
+
+    ctaTitleAuto: "Klaar om uw testritplanning te automatiseren?",
+    ctaIntroAuto: "Vertel ons over uw showroom en we sturen u een voorstel.",
+    
+    formLabelCompanyAuto: "Showroom *",
+    formLabelMessageAuto: "Wat wilt u automatiseren?",
   },
 
   fr: {
@@ -471,6 +560,96 @@ const I18N_SECTOR = {
     
     formLabelCompanyIns: "Bureau *",
     formLabelMessageIns: "Que souhaitez-vous automatiser ?",
+
+    // === AUTOMOTIVE SPECIFIC === //
+    breadcrumbAutomotive: "Automobiles",
+    heroTitleAuto: "Logiciels conçus pour concessionnaires automobiles",
+    heroSubAuto: "Réponse immédiate aux demandes d'essai d'AutoScout24 et 2dehands, planification automatique et suivi des reprises.",
+    
+    mockupAutoToday: "Aujourd'hui",
+    mockupAutoTotal: "Rendez-vous",
+    mockupAutoTestDrives: "Essais",
+    mockupAutoTradeIns: "Reprises",
+    mockupAutoService: "Entretien",
+    chipTestDrive: "Essai",
+    chipTradeIn: "Reprise",
+    chipService: "Entretien",
+
+    subsectorsTitleAuto: "Explorez les secteurs automobiles",
+    subsector1TitleAuto: "Véhicules neufs",
+    subsector1TextAuto: "Gérez les demandes d'essai, livraisons, financement et après-vente pour véhicules neufs.",
+    subsector2TitleAuto: "Occasion",
+    subsector2TextAuto: "Gérez les leads d'AutoScout24 et 2dehands, essais, reprises et vente.",
+    subsector3TitleAuto: "Garages & entretien",
+    subsector3TextAuto: "Gérez les rendez-vous d'entretien, réparations, contrôles et communication client.",
+
+    benefitsTitleAuto: "Logiciels automobiles conçus pour votre showroom",
+    benefit1TitleAuto: "Conçu pour concessionnaires",
+    benefit1TextAuto: "Construit autour de la réalité quotidienne de la vente automobile. De la première demande à l'essai jusqu'à la livraison.",
+    benefit2TitleAuto: "De la demande à la livraison",
+    benefit2TextAuto: "Connecte les leads, essais, reprises, financement et livraison. Tout dans un seul workflow.",
+    benefit3TitleAuto: "Pour concessionnaires de toutes tailles",
+    benefit3TextAuto: "Du concessionnaire indépendant au grand groupe. Choisissez ce dont vous avez besoin aujourd'hui et développez quand nécessaire.",
+
+    featuresTitleAuto: "Tout ce dont vous avez besoin pour gérer les essais",
+    feature1TitleAuto: "Réponse immédiate aux demandes",
+    feature1TextAuto: "Les demandes d'AutoScout24, 2dehands et de votre site reçoivent immédiatement une réponse avec disponibilités.",
+    feature2TitleAuto: "Planification automatique",
+    feature2TextAuto: "Les essais sont automatiquement planifiés avec confirmations et rappels.",
+    feature3TitleAuto: "Suivi des reprises",
+    feature3TextAuto: "Les clients avec une reprise reçoivent automatiquement un rappel et proposition d'évaluation.",
+    feature4TitleAuto: "Dossiers clients",
+    feature4TextAuto: "Tous les essais, achats, reprises et entretiens par client regroupés clairement.",
+    feature5TitleAuto: "Suivi après essai",
+    feature5TextAuto: "Suivi automatique après les essais pour maintenir l'intérêt et conclure la vente.",
+    feature6TitleAuto: "Notifications & rapports",
+    feature6TextAuto: "Vue en temps réel des nouvelles demandes, essais planifiés et reprises en attente.",
+
+    deep1TitleAuto: "De la demande à l'essai en minutes",
+    deep1Text1Auto: "Lorsqu'un client demande un essai via AutoScout24, 2dehands ou votre site, il reçoit immédiatement une confirmation avec les créneaux disponibles.",
+    deep1Text2Auto: "Le système planifie automatiquement l'essai dans votre agenda, envoie confirmations et rappels au client et prépare le véhicule.",
+    deep1Text3Auto: "Après l'essai, un message de remerciement suit automatiquement avec informations supplémentaires et question sur l'intérêt. Plus de leads oubliés.",
+    
+    flowVisual1Auto: "Demande d'essai",
+    flowVisual2Auto: "Confirmation",
+    flowVisual3Auto: "Essai",
+    flowVisual4Auto: "Suivi",
+
+    deep2TitleAuto: "Suivi automatique des reprises",
+    deep2Text1Auto: "Les clients qui ont une reprise reçoivent automatiquement une proposition d'évaluation et invitation pour un rendez-vous.",
+    deep2Text2Auto: "Vous obtenez un aperçu de toutes les reprises et pouvez prioriser quels clients ont besoin d'attention supplémentaire.",
+    deep2Text3Auto: "Le résultat : plus de reprises, transactions plus rapides et clients satisfaits.",
+    
+    timeline1TitleAuto: "Jour 0",
+    timeline1TextAuto: "Client signale une reprise",
+    timeline2TitleAuto: "Jour 1",
+    timeline2TextAuto: "Proposition d'évaluation",
+    timeline3TitleAuto: "Jour 3",
+    timeline3TextAuto: "Suivi et rendez-vous",
+    timeline4TitleAuto: "Jour 7",
+    timeline4TextAuto: "Offre finale",
+
+    impl1TextAuto: "Nous examinons ensemble votre façon de travailler actuelle et adaptons la solution à votre showroom.",
+    impl2TextAuto: "Vous continuez à travailler comme d'habitude. L'automatisation fonctionne en arrière-plan.",
+    impl3TextAuto: "Le système s'adapte à votre façon de travailler, pas l'inverse.",
+
+    faq1QuestionAuto: "Combien coûte une solution pour mon showroom ?",
+    faq1AnswerAuto: "Les projets démarrent à partir d'environ €2.000, selon les fonctions souhaitées. Après un court entretien, vous recevez un devis clair.",
+    faq2QuestionAuto: "Cela fonctionne-t-il avec AutoScout24 et 2dehands ?",
+    faq2AnswerAuto: "Oui. Les demandes de ces plateformes sont automatiquement récupérées via notifications e-mail et traitées.",
+    faq3QuestionAuto: "Dans combien de temps cela peut-il être en ligne ?",
+    faq3AnswerAuto: "Planification d'essais simple en 2-3 semaines, projets plus importants en 4-6 semaines. Vous recevez d'abord une démo sur mesure.",
+    faq4QuestionAuto: "Est-ce conforme RGPD ?",
+    faq4AnswerAuto: "Oui. Toutes les données client sont traitées en toute sécurité conformément à la législation belge et européenne sur la vie privée.",
+    faq5QuestionAuto: "Cela fonctionne-t-il en néerlandais et en français ?",
+    faq5AnswerAuto: "Oui. Toute communication avec les clients peut être en néerlandais, en français ou dans les deux langues.",
+
+    ctaTitleAuto: "Prêt à automatiser votre planification d'essais ?",
+    ctaIntroAuto: "Parlez-nous de votre showroom et nous vous envoyons une proposition.",
+    
+    formLabelCompanyAuto: "Showroom *",
+    formLabelMessageAuto: "Que souhaitez-vous automatiser ?",
   }
 };
+
 

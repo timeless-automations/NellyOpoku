@@ -268,6 +268,18 @@ a:hover {
 }
 
 /* ---- Sector Grid ---- */
+.sector-grid-home {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
+.sector-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .sector-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -283,12 +295,29 @@ a:hover {
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .sector-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
   border-color: var(--accent);
+}
+
+.sector-arrow {
+  position: absolute;
+  bottom: 2rem;
+  right: 1.75rem;
+  font-size: 1.5rem;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.sector-card:hover .sector-arrow {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .sector-icon {
@@ -771,12 +800,18 @@ a:hover {
 }
 
 /* ---- Responsive ---- */
+@media (max-width: 1200px) {
+  .sector-grid-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .nav {
     display: none;
   }
   
-  .sector-grid {
+  .sector-grid, .sector-grid-home {
     grid-template-columns: 1fr;
   }
   

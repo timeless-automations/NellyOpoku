@@ -14,6 +14,13 @@ const I18N = {
     btnChooseSector: "Kies uw sector",
     btnContact: "Contact opnemen",
 
+    // Homepage mockup
+    mockupHomeDashboard: "Uw dag in één oogopslag",
+    mockupHomeNew: "Nieuwe aanvragen",
+    mockupHomeAnswered: "Beantwoord",
+    mockupHomeScheduled: "Gepland",
+    mockupHomeFollowUp: "Follow-up",
+
     // Sectors overview
     sectorsTitle: "Gebouwd voor de manier waarop uw sector werkt",
     sectorsIntro: "Kies uw sector om te zien hoe we u kunnen helpen.",
@@ -174,6 +181,13 @@ const I18N = {
     heroSub: "Réponse immédiate à chaque nouveau lead, suivi automatique et connexion fluide avec les outils que vous utilisez déjà.",
     btnChooseSector: "Choisissez votre secteur",
     btnContact: "Me contacter",
+
+    // Homepage mockup
+    mockupHomeDashboard: "Votre journée en un coup d'œil",
+    mockupHomeNew: "Nouvelles demandes",
+    mockupHomeAnswered: "Répondu",
+    mockupHomeScheduled: "Planifié",
+    mockupHomeFollowUp: "Suivi",
 
     // Sectors overview
     sectorsTitle: "Conçu pour la manière dont votre secteur fonctionne",

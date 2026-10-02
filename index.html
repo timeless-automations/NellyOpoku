@@ -55,13 +55,64 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1 data-i18n="heroTitle">Software &amp; automatisatie voor bedrijven</h1>
-        <p class="hero-sub" data-i18n="heroSub">Directe reactie op elke nieuwe lead, automatische opvolging en naadloze verbinding met de tools die u al gebruikt.</p>
-        <div class="hero-actions">
-          <a href="#sectoren" class="btn btn-primary" data-i18n="btnChooseSector">Kies uw sector</a>
-          <a href="#contact" class="btn btn-secondary" data-i18n="btnContact">Contact opnemen</a>
+    <section class="hero sector-hero">
+      <div class="container">
+        <div class="sector-hero-grid">
+          <div class="sector-hero-content">
+            <h1 data-i18n="heroTitle">Software &amp; automatisatie voor bedrijven</h1>
+            <p class="sector-hero-sub" data-i18n="heroSub">Directe reactie op elke nieuwe lead, automatische opvolging en naadloze verbinding met de tools die u al gebruikt.</p>
+            <div class="hero-actions">
+              <a href="#sectoren" class="btn btn-primary" data-i18n="btnChooseSector">Kies uw sector</a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="btnContact">Contact opnemen</a>
+            </div>
+          </div>
+          <div class="sector-hero-visual">
+            <div class="hero-photo-wrapper">
+              <img src="images/hero-homepage.webp" alt="Business professional" class="hero-photo">
+            </div>
+            <div class="mockup-cards">
+              <div class="mockup-card mockup-card-summary">
+                <div class="mockup-label" data-i18n="mockupExample">Voorbeeld</div>
+                <div class="mockup-title" data-i18n="mockupHomeDashboard">Uw dag in één oogopslag</div>
+                <div class="mockup-stats-grid">
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">12</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeNew">Nieuwe aanvragen</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">10</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeAnswered">Beantwoord</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">8</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeScheduled">Gepland</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">3</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeFollowUp">Follow-up</span>
+                  </div>
+                </div>
+                <div class="mockup-list">
+                  <div class="mockup-list-item">
+                    <div class="mockup-item-badge mockup-badge-website">Web</div>
+                    <div class="mockup-item-content">
+                      <div class="mockup-item-name">Nieuwe aanvraag</div>
+                      <div class="mockup-item-details">5 min geleden</div>
+                    </div>
+                    <div class="mockup-item-status status-answered" data-i18n="statusAnswered">Beantwoord</div>
+                  </div>
+                  <div class="mockup-list-item">
+                    <div class="mockup-item-badge type-auto">Lead</div>
+                    <div class="mockup-item-content">
+                      <div class="mockup-item-name">Afspraak gepland</div>
+                      <div class="mockup-item-details">Vandaag 14:00</div>
+                    </div>
+                    <div class="mockup-item-status status-scheduled" data-i18n="statusScheduled">Gepland</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -72,53 +123,61 @@
         <h2 class="section-title" data-i18n="sectorsTitle">Gebouwd voor de manier waarop uw sector werkt</h2>
         <p class="section-intro" data-i18n="sectorsIntro">Kies uw sector om te zien hoe we u kunnen helpen.</p>
         
-        <div class="sector-grid">
-          <article class="sector-card" data-sector="realestate">
-            <div class="sector-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-                <path d="M9 22V12h6v10"/>
-              </svg>
-            </div>
-            <h3 data-i18n="sectorRealEstateTitle">Vastgoedkantoren</h3>
-            <p data-i18n="sectorRealEstateDesc">Directe reactie op leads van Immoweb en Zimmo, automatische opvolging van bezichtigingen en verbinding met uw CRM.</p>
-            <button class="sector-btn" data-i18n="btnLearnMore" onclick="showSectorDetail('realestate')">Meer info</button>
-          </article>
+        <div class="sector-grid-home">
+          <a href="vastgoed.html" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                  <path d="M9 22V12h6v10"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorRealEstateTitle">Vastgoedkantoren</h3>
+              <p data-i18n="sectorRealEstateDesc">Directe reactie op leads van Immoweb en Zimmo, automatische opvolging van bezichtigingen en verbinding met uw CRM.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
 
-          <article class="sector-card" data-sector="insurance">
-            <div class="sector-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <h3 data-i18n="sectorInsuranceTitle">Verzekeringskantoren</h3>
-            <p data-i18n="sectorInsuranceDesc">Directe reactie op offerteaanvragen, automatische opvolging van offertes en herinneringen voor verlengingen.</p>
-            <button class="sector-btn" data-i18n="btnLearnMore" onclick="showSectorDetail('insurance')">Meer info</button>
-          </article>
+          <a href="verzekeringen.html" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorInsuranceTitle">Verzekeringskantoren</h3>
+              <p data-i18n="sectorInsuranceDesc">Directe reactie op offerteaanvragen, automatische opvolging van offertes en herinneringen voor verlengingen.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
 
-          <article class="sector-card" data-sector="automotive">
-            <div class="sector-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M5 17h14v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2z"/>
-                <path d="M5 17l2-8h10l2 8M7 17a2 2 0 100-4 2 2 0 000 4zM17 17a2 2 0 100-4 2 2 0 000 4z"/>
-              </svg>
-            </div>
-            <h3 data-i18n="sectorAutomotiveTitle">Autodealers</h3>
-            <p data-i18n="sectorAutomotiveDesc">Directe reactie op testritaanvragen van AutoScout24 en 2dehands, opvolging van inruilwagens en boekingen.</p>
-            <button class="sector-btn" data-i18n="btnLearnMore" onclick="showSectorDetail('automotive')">Meer info</button>
-          </article>
+          <a href="autodealers.html" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 17h14v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2z"/>
+                  <path d="M5 17l2-8h10l2 8M7 17a2 2 0 100-4 2 2 0 000 4zM17 17a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorAutomotiveTitle">Autodealers</h3>
+              <p data-i18n="sectorAutomotiveDesc">Directe reactie op testritaanvragen van AutoScout24 en 2dehands, opvolging van inruilwagens en boekingen.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
 
-          <article class="sector-card" data-sector="other">
-            <div class="sector-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 8v8M8 12h8"/>
-              </svg>
-            </div>
-            <h3 data-i18n="sectorOtherTitle">Andere sector</h3>
-            <p data-i18n="sectorOtherDesc">Werkt u in een andere sector? Laat ons weten waar u tijd verliest en wij bouwen een oplossing op maat.</p>
-            <button class="sector-btn" data-i18n="btnContactUs" onclick="showSectorDetail('other')">Neem contact op</button>
-          </article>
+          <a href="#contact" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 8v8M8 12h8"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorOtherTitle">Andere sector</h3>
+              <p data-i18n="sectorOtherDesc">Werkt u in een andere sector? Laat ons weten waar u tijd verliest en wij bouwen een oplossing op maat.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
         </div>
       </div>
     </section>
