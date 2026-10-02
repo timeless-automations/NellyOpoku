@@ -799,16 +799,30 @@
 
   .sector-hero-visual {
     order: 2;
-    min-height: 400px;
+    min-height: auto;
+  }
+
+  .hero-photo-wrapper {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
   }
 
   .mockup-cards {
-    left: -40px;
+    position: absolute;
+    left: 5%;
+    bottom: -40px;
+    right: auto;
+    transform: none;
+    max-width: 80%;
   }
 
   .mockup-card {
-    min-width: 280px;
-    max-width: 320px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .mockup-card::before {
+    display: none;
   }
 
   .deep-section,
@@ -828,25 +842,36 @@
     padding: 4rem 0 3rem;
   }
 
-  .mockup-cards {
-    position: static;
-    transform: none;
-    margin-top: -40px;
-    padding: 0 1rem;
-  }
-
-  .mockup-card {
-    min-width: 100%;
-    max-width: 100%;
-  }
-
-  .mockup-card::before {
-    display: none;
+  .sector-hero-visual {
+    position: relative;
+    padding-bottom: 60px;
   }
 
   .hero-photo-wrapper {
-    max-width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3;
+  }
+
+  .mockup-cards {
+    left: 5%;
+    bottom: 10px;
+    max-width: 85%;
+  }
+
+  .mockup-card {
+    padding: 1rem 1.25rem;
+  }
+
+  .mockup-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .mockup-stat-value {
+    font-size: 1.25rem;
+  }
+
+  .mockup-stat-label {
+    font-size: 0.6875rem;
   }
 
   .subsector-grid {
@@ -889,10 +914,6 @@
     width: 100%;
   }
 
-  .mockup-stats-grid {
-    grid-template-columns: 1fr;
-  }
-
   .integrations-grid {
     grid-template-columns: 1fr;
   }
@@ -904,5 +925,13 @@
   .mockup-agenda-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+  }
+
+  .mockup-list-item {
+    flex-wrap: wrap;
+  }
+
+  .mockup-item-status {
+    margin-left: auto;
   }
 }

@@ -35,6 +35,14 @@ const I18N = {
     statusWaiting: "Wacht op klant",
     statusCompleted: "Afgerond",
 
+    // Real estate mockup content
+    mockupClient1: "Emma Janssens",
+    mockupProperty1: "Appartement Antwerpen",
+    mockupClient2: "Marc Dubois",
+    mockupProperty2: "Huis Gent",
+    mockupClient3: "Sophie Claes",
+    mockupProperty3: "Villa Knokke",
+
     // Subsectors
     subsectorsTitle: "Verken vastgoedsectoren",
     subsector1Title: "Verkoop",
@@ -236,6 +244,14 @@ const I18N = {
     formLabelCompanyIns: "Kantoor *",
     formLabelMessageIns: "Wat wilt u automatiseren?",
 
+    // Insurance mockup content
+    mockupClientIns1: "Jan Peeters",
+    mockupPolicyIns1: "Omnium + BA",
+    mockupClientIns2: "Lisa Vermeulen",
+    mockupPolicyIns2: "Brandverzekering",
+    mockupClientIns3: "Tom De Smet",
+    mockupPolicyIns3: "Familie verzekering",
+
     // === AUTOMOTIVE SPECIFIC === //
     breadcrumbAutomotive: "Autodealers",
     heroTitleAuto: "Software gebouwd voor autodealers",
@@ -324,6 +340,14 @@ const I18N = {
     
     formLabelCompanyAuto: "Showroom *",
     formLabelMessageAuto: "Wat wilt u automatiseren?",
+
+    // Automotive mockup content
+    mockupClientAuto1: "Peter Jacobs",
+    mockupCarAuto1: "VW Golf GTI · Testrit",
+    mockupClientAuto2: "Sarah Willems",
+    mockupCarAuto2: "BMW X3 · Inruilwagen",
+    mockupClientAuto3: "Luc Vandenberghe",
+    mockupCarAuto3: "Audi A4 · Onderhoudsbeurt",
   },
 
   fr: {
@@ -359,6 +383,14 @@ const I18N = {
     statusPending: "Suivi",
     statusWaiting: "Attend le client",
     statusCompleted: "Terminé",
+
+    // Real estate mockup content
+    mockupClient1: "Emma Janssens",
+    mockupProperty1: "Appartement Anvers",
+    mockupClient2: "Marc Dubois",
+    mockupProperty2: "Maison Gand",
+    mockupClient3: "Sophie Claes",
+    mockupProperty3: "Villa Knokke",
 
     // Subsectors
     subsectorsTitle: "Explorez les secteurs immobiliers",
@@ -561,6 +593,14 @@ const I18N = {
     formLabelCompanyIns: "Bureau *",
     formLabelMessageIns: "Que souhaitez-vous automatiser ?",
 
+    // Insurance mockup content
+    mockupClientIns1: "Jan Peeters",
+    mockupPolicyIns1: "Omnium + RC",
+    mockupClientIns2: "Lisa Vermeulen",
+    mockupPolicyIns2: "Assurance incendie",
+    mockupClientIns3: "Tom De Smet",
+    mockupPolicyIns3: "RC familiale",
+
     // === AUTOMOTIVE SPECIFIC === //
     breadcrumbAutomotive: "Automobiles",
     heroTitleAuto: "Logiciels conçus pour concessionnaires automobiles",
@@ -649,6 +689,14 @@ const I18N = {
     
     formLabelCompanyAuto: "Showroom *",
     formLabelMessageAuto: "Que souhaitez-vous automatiser ?",
+
+    // Automotive mockup content
+    mockupClientAuto1: "Peter Jacobs",
+    mockupCarAuto1: "VW Golf GTI · Essai",
+    mockupClientAuto2: "Sarah Willems",
+    mockupCarAuto2: "BMW X3 · Reprise",
+    mockupClientAuto3: "Luc Vandenberghe",
+    mockupCarAuto3: "Audi A4 · Entretien",
   }
 };
 

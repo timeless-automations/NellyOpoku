@@ -20,6 +20,10 @@ const I18N = {
     mockupHomeAnswered: "Beantwoord",
     mockupHomeScheduled: "Gepland",
     mockupHomeFollowUp: "Follow-up",
+    mockupHomeItem1: "Nieuwe aanvraag",
+    mockupHomeItem1Time: "5 min geleden",
+    mockupHomeItem2: "Afspraak gepland",
+    mockupHomeItem2Time: "Vandaag 14:00",
 
     // Sectors overview
     sectorsTitle: "Gebouwd voor de manier waarop uw sector werkt",
@@ -188,6 +192,10 @@ const I18N = {
     mockupHomeAnswered: "Répondu",
     mockupHomeScheduled: "Planifié",
     mockupHomeFollowUp: "Suivi",
+    mockupHomeItem1: "Nouvelle demande",
+    mockupHomeItem1Time: "Il y a 5 min",
+    mockupHomeItem2: "Rendez-vous planifié",
+    mockupHomeItem2Time: "Aujourd'hui 14:00",
 
     // Sectors overview
     sectorsTitle: "Conçu pour la manière dont votre secteur fonctionne",
