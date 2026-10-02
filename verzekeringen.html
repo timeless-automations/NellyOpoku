@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software voor verzekeringskantoren – Directe reactie op offerteaanvragen, automatische opvolging en herinneringen voor verlengingen.">
+  <meta property="og:title" content="Software voor verzekeringskantoren | Timeless Automations">
+  <meta property="og:description" content="Directe reactie op offerteaanvragen, automatische opvolging en herinneringen voor verlengingen. Voor verzekeringskantoren in België.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:locale:alternate" content="fr_BE">
+  <title>Software voor verzekeringskantoren | Timeless Automations</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4B6B'/%3E%3Cpath d='M8 22V10l8-4 8 4v12l-8 4-8-4z' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3Cpath d='M16 6v20M8 10l8 4 8-4' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sector-page.css">
+</head>
+<body>
+  <script>
+    const FORM_CONFIG = {
+      endpoint: "",
+      email: "nellyopoku.dev@gmail.com"
+    };
+
+    const CONTACT_INFO = {
+      businessName: "Timeless Automations",
+      email: "nellyopoku.dev@gmail.com",
+      linkedinUrl: "https://linkedin.com/in/nellyopoku"
+    };
+
+    const CURRENT_SECTOR = "insurance";
+  </script>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Timeless Automations</a>
+      <nav class="nav" aria-label="Hoofdnavigatie">
+        <a href="/#sectoren" data-i18n="navSectors">Sectoren</a>
+        <a href="/#voordelen" data-i18n="navBenefits">Voordelen</a>
+        <a href="/#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Taal / Langue">
+        <button type="button" id="btn-nl" class="lang-btn active" aria-pressed="true">NL</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" id="btn-fr" class="lang-btn" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="sector-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/" data-i18n="breadcrumbHome">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          <a href="/#sectoren" data-i18n="breadcrumbSectors">Sectoren</a>
+          <span class="breadcrumb-sep">›</span>
+          <span data-i18n="breadcrumbInsurance">Verzekeringen</span>
+        </div>
+        <div class="sector-hero-grid">
+          <div class="sector-hero-content">
+            <h1 data-i18n="heroTitleIns">Software gebouwd voor verzekeringskantoren</h1>
+            <p class="sector-hero-sub" data-i18n="heroSubIns">Directe reactie op offerteaanvragen, automatische opvolging van offertes en tijdige herinneringen voor verlengingen.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" data-i18n="btnGetStarted">Aan de slag</a>
+              <a href="mailto:nellyopoku.dev@gmail.com" class="btn btn-secondary" data-i18n="btnContact">Contact opnemen</a>
+            </div>
+          </div>
+          <div class="sector-hero-visual">
+            <div class="hero-photo-wrapper">
+              <img src="images/hero-insurance.webp" alt="Insurance advisor" class="hero-photo">
+            </div>
+            <div class="mockup-cards">
+              <div class="mockup-card mockup-card-summary">
+                <div class="mockup-label" data-i18n="mockupExample">Voorbeeld</div>
+                <div class="mockup-title" data-i18n="mockupInsToday">Vandaag</div>
+                <div class="mockup-stats-grid">
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">6</span>
+                    <span class="mockup-stat-label" data-i18n="mockupInsNewQuotes">Nieuwe offertes</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">4</span>
+                    <span class="mockup-stat-label" data-i18n="mockupInsFollowUp">Opgevolgd</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">2</span>
+                    <span class="mockup-stat-label" data-i18n="mockupInsWaiting">Wacht op klant</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">12</span>
+                    <span class="mockup-stat-label" data-i18n="mockupInsRenewals">Verlengingen</span>
+                  </div>
+                </div>
+                <div class="mockup-list">
+                  <div class="mockup-list-item">
+                    <div class="mockup-item-badge type-auto">Auto</div>
+                    <div class="mockup-item-content">
+                      <div class="mockup-item-name">Jan Peeters</div>
+                      <div class="mockup-item-details">Omnium + BA</div>
+                    </div>
+                    <div class="mockup-item-status status-answered" data-i18n="statusAnswered">Beantwoord</div>
+                  </div>
+                  <div class="mockup-list-item">
+                    <div class="mockup-item-badge type-woning">Woning</div>
+                    <div class="mockup-item-content">
+                      <div class="mockup-item-name">Lisa Vermeulen</div>
+                      <div class="mockup-item-details">Brandverzekering</div>
+                    </div>
+                    <div class="mockup-item-status status-waiting" data-i18n="statusWaiting">Wacht op klant</div>
+                  </div>
+                  <div class="mockup-list-item">
+                    <div class="mockup-item-badge type-familiale">Fam</div>
+                    <div class="mockup-item-content">
+                      <div class="mockup-item-name">Tom De Smet</div>
+                      <div class="mockup-item-details">Familie verzekering</div>
+                    </div>
+                    <div class="mockup-item-status status-scheduled" data-i18n="statusScheduled">Gepland</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUB-SECTORS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="subsectorsTitleIns">Verken verzekeringssectoren</h2>
+        <div class="subsector-grid">
+          <div class="subsector-card">
+            <h3 data-i18n="subsector1TitleIns">Particulieren</h3>
+            <p data-i18n="subsector1TextIns">Beheer auto-, woning-, familie- en reis­verzekeringen voor particuliere klanten.</p>
+          </div>
+          <div class="subsector-card">
+            <h3 data-i18n="subsector2TitleIns">Bedrijven</h3>
+            <p data-i18n="subsector2TextIns">Beheer bedrijfs­verzekeringen, aansprakelijkheid, brand en groeps­verzekeringen.</p>
+          </div>
+          <div class="subsector-card">
+            <h3 data-i18n="subsector3TitleIns">Makelaars</h3>
+            <p data-i18n="subsector3TextIns">Beheer portefeuilles, vergelijkingen tussen maatschappijen en offertes voor meerdere klanten.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="benefitsTitleIns">Verzekeringssoftware ontworpen voor uw kantoor</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="benefit1TitleIns">Ontworpen voor verzekeringen</h3>
+            <p data-i18n="benefit1TextIns">Gebouwd rond de dagelijkse realiteit van verzekeringskantoren. Van offerteaanvraag tot polis tot verlenging.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 data-i18n="benefit2TitleIns">Van aanvraag tot polis</h3>
+            <p data-i18n="benefit2TextIns">Verbindt offertes, opvolging, verlengingen en klantcommunicatie. Alles in één werkstroom.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 data-i18n="benefit3TitleIns">Voor kantoren van elke grootte</h3>
+            <p data-i18n="benefit3TextIns">Van onafhankelijk makelaar tot groep met meerdere vestigingen. Kies wat u vandaag nodig hebt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="featuresTitleIns">Alles wat u nodig hebt om offertes te beheren</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="feature1TitleIns">Directe reactie op aanvragen</h3>
+            <p data-i18n="feature1TextIns">Nieuwe offerteaanvragen krijgen meteen een bevestiging en eerste informatie.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <path d="M22 4L12 14.01l-3-3"/>
+              </svg>
+            </div>
+            <h3 data-i18n="feature2TitleIns">Automatische opvolging</h3>
+            <p data-i18n="feature2TextIns">Herinneringen voor openstaande offertes en follow-up van potentiële klanten.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <path d="M22 4L12 14.01l-3-3"/>
+              </svg>
+            </div>
+            <h3 data-i18n="feature3TitleIns">Verlengingsherinneringen</h3>
+            <p data-i18n="feature3TextIns">Automatische meldingen voor polissen die verlopen. Klanten krijgen tijdig een herinnering.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="feature4TitleIns">Klantendossiers</h3>
+            <p data-i18n="feature4TextIns">Alle polissen, offertes en communicatie per klant overzichtelijk bij elkaar.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <path d="M16 2v4M8 2v4M3 10h18"/>
+              </svg>
+            </div>
+            <h3 data-i18n="feature5TitleIns">Afspraakbeheer</h3>
+            <p data-i18n="feature5TextIns">Plan kennismakings­gesprekken en polis­besprekingen met automatische bevestigingen.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="feature6TitleIns">Meldingen & rapportage</h3>
+            <p data-i18n="feature6TextIns">Realtime overzicht van nieuwe offertes, openstaande dossiers en verlengingen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEEP DIVE 1: QUOTE FLOW -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="deep-section">
+          <div class="deep-content">
+            <h2 class="section-title" data-i18n="deep1TitleIns">Van offerteaanvraag tot afgesloten polis</h2>
+            <p data-i18n="deep1Text1Ins">Wanneer een klant een offerte aanvraagt, krijgt hij meteen een bevestiging met een eerste indicatie — ook buiten kantooruren.</p>
+            <p data-i18n="deep1Text2Ins">Het systeem houdt bij welke offertes nog wachten op informatie van de klant, welke opgevolgd moeten worden en welke klaar zijn voor afsluiting.</p>
+            <p data-i18n="deep1Text3Ins">U krijgt een melding wanneer een offerte aandacht nodig heeft. Geen vergeten dossiers meer.</p>
+          </div>
+          <div class="deep-visual">
+            <div class="flow-visual">
+              <div class="flow-visual-step">
+                <div class="flow-visual-icon">📋</div>
+                <div class="flow-visual-label" data-i18n="flowVisual1Ins">Offerte­aanvraag</div>
+              </div>
+              <div class="flow-visual-arrow">→</div>
+              <div class="flow-visual-step">
+                <div class="flow-visual-icon">⚡</div>
+                <div class="flow-visual-label" data-i18n="flowVisual2Ins">Bevestiging</div>
+              </div>
+              <div class="flow-visual-arrow">→</div>
+              <div class="flow-visual-step">
+                <div class="flow-visual-icon">📊</div>
+                <div class="flow-visual-label" data-i18n="flowVisual3Ins">Offerte klaar</div>
+              </div>
+              <div class="flow-visual-arrow">→</div>
+              <div class="flow-visual-step">
+                <div class="flow-visual-icon">✓</div>
+                <div class="flow-visual-label" data-i18n="flowVisual4Ins">Polis</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEEP DIVE 2: RENEWAL TIMELINE -->
+    <section class="section">
+      <div class="container">
+        <div class="deep-section deep-section-reverse">
+          <div class="deep-visual">
+            <div class="timeline-visual">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <strong data-i18n="timeline1TitleIns">60 dagen</strong>
+                  <span data-i18n="timeline1TextIns">Eerste herinnering verlenging</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <strong data-i18n="timeline2TitleIns">30 dagen</strong>
+                  <span data-i18n="timeline2TextIns">Follow-up en nieuwe premie</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <strong data-i18n="timeline3TitleIns">14 dagen</strong>
+                  <span data-i18n="timeline3TextIns">Laatste herinnering</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <strong data-i18n="timeline4TitleIns">Verlenging</strong>
+                  <span data-i18n="timeline4TextIns">Polis automatisch verlengd</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deep-content">
+            <h2 class="section-title" data-i18n="deep2TitleIns">Automatische verlengingen die geen klant laat liggen</h2>
+            <p data-i18n="deep2Text1Ins">Twee maanden voor de vervaldatum krijgen klanten automatisch een herinnering met de nieuwe premie.</p>
+            <p data-i18n="deep2Text2Ins">U krijgt een overzicht van alle polissen die verlopen en kunt prioriteren welke klanten extra aandacht nodig hebben.</p>
+            <p data-i18n="deep2Text3Ins">Het resultaat: minder verloren klanten door vergeten verlengingen en meer tijd voor persoonlijk advies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPLEMENTATION -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="implementationTitle">Implementatie & ondersteuning</h2>
+        <div class="implementation-grid">
+          <div class="implementation-card">
+            <h3 data-i18n="impl1Title">Persoonlijke opstart</h3>
+            <p data-i18n="impl1TextIns">We bekijken samen uw huidige werkwijze en passen de oplossing aan uw manier van werken aan.</p>
+          </div>
+          <div class="implementation-card">
+            <h3 data-i18n="impl2Title">Minimale verstoring</h3>
+            <p data-i18n="impl2TextIns">U blijft werken zoals u gewend bent. De automatisatie draait op de achtergrond.</p>
+          </div>
+          <div class="implementation-card">
+            <h3 data-i18n="impl3Title">Gebouwd rond uw werkwijze</h3>
+            <p data-i18n="impl3TextIns">Het systeem past bij uw manier van werken, niet andersom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="faqTitle">Veelgestelde vragen</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span data-i18n="faq1QuestionIns">Wat kost een oplossing voor mijn verzekeringskantoor?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq1AnswerIns">Projecten starten vanaf ca. €2.000, afhankelijk van de gewenste functies en koppelingen. Na een kort gesprek krijgt u een duidelijke offerte.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span data-i18n="faq2QuestionIns">Kan dit koppelen met mijn bestaande systeem?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq2AnswerIns">Ja. Ik werk samen met verzekeringsmaatschappijen en kan koppelen via e-mail of API waar beschikbaar. We bekijken samen wat het beste past.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span data-i18n="faq3QuestionIns">Hoe snel kan dit live gaan?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq3AnswerIns">Eenvoudige opvolging binnen 2-3 weken, grotere projecten binnen 4-6 weken. U krijgt eerst een demo op maat.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span data-i18n="faq4QuestionIns">Is dit AVG/GDPR-conform?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq4AnswerIns">Ja. Alle klantgegevens worden veilig verwerkt volgens de Belgische en Europese privacywetgeving.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span data-i18n="faq5QuestionIns">Werkt dit in het Nederlands én Frans?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq5AnswerIns">Ja. Alle communicatie naar klanten kan in het Nederlands, Frans of beide talen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="section section-cta">
+      <div class="container">
+        <h2 class="section-title" data-i18n="ctaTitleIns">Klaar om uw offerteproces te automatiseren?</h2>
+        <p class="section-intro" data-i18n="ctaIntroIns">Vertel ons over uw kantoor en we sturen u een voorstel.</p>
+
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event, 'sector')">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" data-i18n="formLabelName">Naam *</label>
+                <input type="text" id="contact-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-company" data-i18n="formLabelCompanyIns">Kantoor *</label>
+                <input type="text" id="contact-company" name="company" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email" data-i18n="formLabelEmail">E-mail *</label>
+                <input type="email" id="contact-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" data-i18n="formLabelPhone">Telefoon</label>
+                <input type="tel" id="contact-phone" name="phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" data-i18n="formLabelMessageIns">Wat wilt u automatiseren?</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Bijvoorbeeld: opvolging offertes, herinneringen verlengingen..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" data-i18n="btnSendMessage">Bericht versturen</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4 class="footer-title">Timeless Automations</h4>
+        <p class="footer-tagline" data-i18n="footerTagline">Software &amp; automatisatie voor bedrijven in België</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footerSectorsTitle">Sectoren</h4>
+        <ul class="footer-links">
+          <li><a href="/vastgoed.html" data-i18n="sectorRealEstateTitle">Vastgoedkantoren</a></li>
+          <li><a href="/verzekeringen.html" data-i18n="sectorInsuranceTitle">Verzekeringskantoren</a></li>
+          <li><a href="/autodealers.html" data-i18n="sectorAutomotiveTitle">Autodealers</a></li>
+          <li><a href="/#contact" data-i18n="sectorOtherTitle">Andere sector</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footerContactTitle">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:nellyopoku.dev@gmail.com">nellyopoku.dev@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Timeless Automations · Nelly Opoku</p>
+    </div>
+  </footer>
+
+  <script src="i18n-sector.js"></script>
+  <script src="app.js"></script>
+  <script>
+    function toggleFAQ(button) {
+      const item = button.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('faq-open');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.classList.remove('faq-open');
+      });
+      
+      // Toggle current FAQ
+      if (!isOpen) {
+        item.classList.add('faq-open');
+      }
+    }
+  </script>
+</body>
+</html>
