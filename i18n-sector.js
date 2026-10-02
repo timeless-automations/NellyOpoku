@@ -1,6 +1,6 @@
 /* === SECTOR PAGE INTERNATIONALIZATION === */
 
-const I18N_SECTOR = {
+const I18N = {
   nl: {
     // Navigation
     navSectors: "Sectoren",
