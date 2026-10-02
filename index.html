@@ -3,43 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Timeless Automations – Nelly Opoku. Software en automatisatie voor vastgoedkantoren in België. Minder administratie, meer tijd voor uw klanten.">
-  <meta property="og:title" content="Timeless Automations – Nelly Opoku | Software en automatisatie voor vastgoedkantoren">
-  <meta property="og:description" content="Minder administratie en opvolging, meer tijd voor uw klanten. Voor vastgoedkantoren in Vlaanderen, Wallonië en Brussel.">
+  <meta name="description" content="Timeless Automations – Software en automatisatie voor bedrijven in België. Directe reactie op leads, automatische opvolging en verbinding met uw bestaande tools.">
+  <meta property="og:title" content="Timeless Automations | Software en automatisatie voor bedrijven">
+  <meta property="og:description" content="Directe reactie op leads, automatische opvolging en verbinding met uw bestaande tools. Voor vastgoed, verzekeringen, autodealers en meer.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="nl_BE">
   <meta property="og:locale:alternate" content="fr_BE">
-  <title>Timeless Automations – Nelly Opoku | Software en automatisatie voor vastgoedkantoren</title>
+  <title>Timeless Automations | Software en automatisatie voor bedrijven</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4B6B'/%3E%3Cpath d='M8 22V10l8-4 8 4v12l-8 4-8-4z' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3Cpath d='M16 6v20M8 10l8 4 8-4' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sector-page.css">
 </head>
 <body>
-  <!--
-    ============================================================
-    CONFIG — wijzig alles hieronder
-    ============================================================
-    fullName, businessName, email
-    phone          — leeg = rij verborgen; invullen = zichtbaar + tel-link
-    whatsapp       — nummer zonder spaties, bv. 32470123456; leeg = verborgen
-    linkedinUrl    — volledige URL; leeg = verborgen
-    photoSrc       — pad naar foto; leeg = initialen-avatar (bv. "NO")
-    Hero-secundaire knop: bij telefoon of WhatsApp → bellen/WA;
-    anders → scroll naar "Hoe het werkt".
-    ============================================================
-  -->
   <script>
-    /* === CONFIG — pas hier aan === */
-    const CONFIG = {
-      fullName: "Nelly Opoku",
+    /* === FORM CONFIG === */
+    const FORM_CONFIG = {
+      // Set to empty string to use mailto: fallback
+      // Set to your form endpoint (e.g. Formspree) to use a form service
+      // Example: "https://formspree.io/f/YOUR_FORM_ID"
+      endpoint: "",
+      
+      // Email for mailto: fallback
+      email: "nellyopoku.dev@gmail.com"
+    };
+
+    const CONTACT_INFO = {
       businessName: "Timeless Automations",
       email: "nellyopoku.dev@gmail.com",
-      phone: "",
-      whatsapp: "",
-      linkedinUrl: "",
-      photoSrc: "foto.jpg" /* leeg = initialen-avatar */
+      linkedinUrl: "https://linkedin.com/in/nellyopoku"
     };
   </script>
 
@@ -47,9 +41,9 @@
     <div class="container header-inner">
       <a href="#top" class="logo">Timeless Automations</a>
       <nav class="nav" aria-label="Hoofdnavigatie">
-        <a href="#problemen" data-i18n="navProblems">Problemen</a>
+        <a href="#sectoren" data-i18n="navSectors">Sectoren</a>
+        <a href="#voordelen" data-i18n="navBenefits">Voordelen</a>
         <a href="#werkwijze" data-i18n="navHow">Werkwijze</a>
-        <a href="#over" data-i18n="navAbout">Over mij</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
       <div class="lang-toggle" role="group" aria-label="Taal / Langue">
@@ -62,395 +56,579 @@
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <p class="hero-name">
-          <span data-bind="fullName">Nelly Opoku</span>
-          <span class="hero-sep">·</span>
-          <span data-bind="businessName">Timeless Automations</span>
-        </p>
-        <h1 data-i18n="heroTitle">Software en automatisatie voor vastgoedkantoren</h1>
-        <p class="hero-sub" data-i18n="heroSub">Minder tijd aan administratie en opvolging, meer tijd voor uw klanten.</p>
-        <div class="hero-actions">
-          <a href="mailto:nellyopoku.dev@gmail.com" class="btn btn-primary" data-bind-href="mailto" data-i18n="btnContact">Contact opnemen</a>
-          <a href="#werkwijze" class="btn btn-secondary" id="hero-secondary" data-i18n="btnHow">Hoe het werkt</a>
+    <section class="hero sector-hero">
+      <div class="container">
+        <div class="sector-hero-grid">
+          <div class="sector-hero-content">
+            <h1 data-i18n="heroTitle">Software &amp; automatisatie voor bedrijven</h1>
+            <p class="sector-hero-sub" data-i18n="heroSub">Directe reactie op elke nieuwe lead, automatische opvolging en naadloze verbinding met de tools die u al gebruikt.</p>
+            <div class="hero-actions">
+              <a href="#sectoren" class="btn btn-primary" data-i18n="btnChooseSector">Kies uw sector</a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="btnContact">Contact opnemen</a>
+            </div>
+          </div>
+          <div class="sector-hero-visual">
+            <div class="hero-photo-wrapper">
+              <img src="images/hero-homepage.webp" alt="Business professional" class="hero-photo">
+            </div>
+            <div class="mockup-cards">
+              <div class="mockup-card mockup-card-summary">
+                <div class="mockup-label" data-i18n="mockupExample">Voorbeeld</div>
+                <div class="mockup-title" data-i18n="mockupHomeDashboard">Uw dag in één oogopslag</div>
+                <div class="mockup-stats-grid">
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">12</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeNew">Nieuwe aanvragen</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">10</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeAnswered">Beantwoord</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">8</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeScheduled">Gepland</span>
+                  </div>
+                  <div class="mockup-stat-item">
+                    <span class="mockup-stat-value">3</span>
+                    <span class="mockup-stat-label" data-i18n="mockupHomeFollowUp">Follow-up</span>
+                  </div>
+                </div>
+                <div class="mockup-list">
+                  <div class="mockup-list-item">
+                    <div class="mockup-item-badge mockup-badge-website">Web</div>
+                    <div class="mockup-item-content">
+                      <div class="mockup-item-name" data-i18n="mockupHomeItem1">Nieuwe aanvraag</div>
+                      <div class="mockup-item-details" data-i18n="mockupHomeItem1Time">5 min geleden</div>
+                    </div>
+                    <div class="mockup-item-status status-answered" data-i18n="statusAnswered">Beantwoord</div>
+                  </div>
+                  <div class="mockup-list-item">
+                    <div class="mockup-item-badge type-auto">Lead</div>
+                    <div class="mockup-item-content">
+                      <div class="mockup-item-name" data-i18n="mockupHomeItem2">Afspraak gepland</div>
+                      <div class="mockup-item-details" data-i18n="mockupHomeItem2Time">Vandaag 14:00</div>
+                    </div>
+                    <div class="mockup-item-status status-scheduled" data-i18n="statusScheduled">Gepland</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="hero-demo-link">
-          <a href="demo/" data-i18n="demoLink">Bekijk de demo</a>
-        </p>
       </div>
     </section>
 
-    <!-- PROBLEMS -->
-    <section id="problemen" class="section">
+    <!-- SECTOR PICKER -->
+    <section id="sectoren" class="section">
       <div class="container">
-        <h2 class="section-title" data-i18n="problemsTitle">Waar ik u mee help</h2>
-        <p class="section-intro" data-i18n="problemsIntro">Drie concrete knelpunten die ik voor vastgoedkantoren aanpak.</p>
+        <h2 class="section-title" data-i18n="sectorsTitle">Gebouwd voor de manier waarop uw sector werkt</h2>
+        <p class="section-intro" data-i18n="sectorsIntro">Kies uw sector om te zien hoe we u kunnen helpen.</p>
+        
+        <div class="sector-grid-home">
+          <a href="vastgoed.html" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                  <path d="M9 22V12h6v10"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorRealEstateTitle">Vastgoedkantoren</h3>
+              <p data-i18n="sectorRealEstateDesc">Directe reactie op leads van Immoweb en Zimmo, automatische opvolging van bezichtigingen en verbinding met uw CRM.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
+
+          <a href="verzekeringen.html" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorInsuranceTitle">Verzekeringskantoren</h3>
+              <p data-i18n="sectorInsuranceDesc">Directe reactie op offerteaanvragen, automatische opvolging van offertes en herinneringen voor verlengingen.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
+
+          <a href="autodealers.html" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 17h14v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2z"/>
+                  <path d="M5 17l2-8h10l2 8M7 17a2 2 0 100-4 2 2 0 000 4zM17 17a2 2 0 100-4 2 2 0 000 4z"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorAutomotiveTitle">Autodealers</h3>
+              <p data-i18n="sectorAutomotiveDesc">Directe reactie op testritaanvragen van AutoScout24 en 2dehands, opvolging van inruilwagens en boekingen.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
+
+          <a href="#contact" class="sector-card-link">
+            <article class="sector-card">
+              <div class="sector-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 8v8M8 12h8"/>
+                </svg>
+              </div>
+              <h3 data-i18n="sectorOtherTitle">Andere sector</h3>
+              <p data-i18n="sectorOtherDesc">Werkt u in een andere sector? Laat ons weten waar u tijd verliest en wij bouwen een oplossing op maat.</p>
+              <span class="sector-arrow" aria-hidden="true">→</span>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTOR DETAILS -->
+    <section id="sector-realestate" class="section section-detail" style="display: none;">
+      <div class="container">
+        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
+        
+        <h2 class="section-title" data-i18n="realEstateDetailTitle">Voor vastgoedkantoren</h2>
+        <p class="section-intro" data-i18n="realEstateDetailIntro">Minder administratie, meer tijd voor uw klanten.</p>
+
         <div class="cards">
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16v12H5.17L4 17.17V4z"/><path d="M8 8h8M8 12h5"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
+                <path d="M8 10h8M8 14h4"/>
+              </svg>
             </div>
-            <h3 data-i18n="p1Title">Direct antwoord op nieuwe leads</h3>
-            <p data-i18n="p1Text">Nieuwe aanvragen van Immoweb, Zimmo en uw website krijgen meteen een reactie — ook buiten de kantooruren.</p>
+            <h3 data-i18n="realEstatePain1Title">Directe reactie op nieuwe leads</h3>
+            <p data-i18n="realEstatePain1Text">Nieuwe aanvragen van Immoweb, Zimmo en uw website krijgen meteen een reactie — ook buiten de kantooruren.</p>
           </article>
+
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
             </div>
-            <h3 data-i18n="p2Title">Automatische opvolging</h3>
-            <p data-i18n="p2Text">Herinneringen zodat geen enkele lead vergeten wordt. U weet precies wie nog een antwoord of een bezoek nodig heeft.</p>
+            <h3 data-i18n="realEstatePain2Title">Automatische opvolging van bezichtigingen</h3>
+            <p data-i18n="realEstatePain2Text">Herinneringen en bevestigingen zodat geen enkele bezichtiging vergeten wordt. U weet precies wie nog een antwoord nodig heeft.</p>
           </article>
+
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <path d="M16 2v4M8 2v4M3 10h18"/>
+              </svg>
             </div>
-            <h3 data-i18n="p3Title">Minder repetitieve administratie</h3>
-            <p data-i18n="p3Text">Leads sorteren (koper / verkoper / huurder), bevestigingen van bezoeken, standaardberichten — minder manueel werk.</p>
+            <h3 data-i18n="realEstatePain3Title">Verbinding met uw CRM</h3>
+            <p data-i18n="realEstatePain3Text">Werkt naadloos samen met Whise, Omnicasa en Zabun. Alle informatie op één plek, minder dubbel werk.</p>
+          </article>
+        </div>
+
+        <div class="flow-section">
+          <h3 class="flow-title" data-i18n="realEstateFlowTitle">Hoe leads vloeien door uw kantoor</h3>
+          <div class="flow-diagram">
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowRealEstate1">Lead van Immoweb/Zimmo/website</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowRealEstate2">Direct automatisch antwoord</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowRealEstate3">Opvolging &amp; herinnering</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowRealEstate4">Bezichtiging gepland</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowRealEstate5">Automatisch in uw CRM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-cta">
+          <h3 data-i18n="realEstateDemoTitle">Bekijk de demo</h3>
+          <p data-i18n="realEstateDemoText">Een voorbeeld van 1 minuut met fictieve gegevens.</p>
+          <a href="demo/" class="btn btn-primary" data-i18n="btnViewDemo">Bekijk de demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sector-insurance" class="section section-detail" style="display: none;">
+      <div class="container">
+        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
+        
+        <h2 class="section-title" data-i18n="insuranceDetailTitle">Voor verzekeringskantoren</h2>
+        <p class="section-intro" data-i18n="insuranceDetailIntro">Minder administratie, meer tijd voor persoonlijk advies.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
+                <path d="M8 10h8M8 14h4"/>
+              </svg>
+            </div>
+            <h3 data-i18n="insurancePain1Title">Directe reactie op offerteaanvragen</h3>
+            <p data-i18n="insurancePain1Text">Nieuwe aanvragen krijgen meteen een bevestiging en eerste informatie — ook buiten kantooruren.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 data-i18n="insurancePain2Title">Automatische opvolging van offertes</h3>
+            <p data-i18n="insurancePain2Text">Herinneringen voor openstaande offertes en follow-up van potentiële klanten. Geen enkele kans laten liggen.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <path d="M22 4L12 14.01l-3-3"/>
+              </svg>
+            </div>
+            <h3 data-i18n="insurancePain3Title">Herinneringen voor verlengingen</h3>
+            <p data-i18n="insurancePain3Text">Automatische meldingen voor polissen die verlopen. Uw klanten krijgen tijdig een herinnering en verlengvoorstel.</p>
+          </article>
+        </div>
+
+        <div class="flow-section">
+          <h3 class="flow-title" data-i18n="insuranceFlowTitle">Hoe offerteaanvragen worden behandeld</h3>
+          <div class="flow-diagram">
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowInsurance1">Offerteaanvraag</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowInsurance2">Direct bevestiging</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowInsurance3">Offerte opgesteld</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowInsurance4">Follow-up herinnering</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowInsurance5">Polis afgesloten</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sector-automotive" class="section section-detail" style="display: none;">
+      <div class="container">
+        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
+        
+        <h2 class="section-title" data-i18n="automotiveDetailTitle">Voor autodealers</h2>
+        <p class="section-intro" data-i18n="automotiveDetailIntro">Minder administratie, meer tijd voor uw klanten.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
+                <path d="M8 10h8M8 14h4"/>
+              </svg>
+            </div>
+            <h3 data-i18n="automotivePain1Title">Directe reactie op testritaanvragen</h3>
+            <p data-i18n="automotivePain1Text">Aanvragen van AutoScout24, 2dehands en uw website krijgen meteen een reactie met beschikbaarheid.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 data-i18n="automotivePain2Title">Automatische planning van testritten</h3>
+            <p data-i18n="automotivePain2Text">Bevestigingen, herinneringen en opvolging van testritten. Alles wordt automatisch ingepland en gevolgd.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="8.5" cy="7" r="4"/>
+                <path d="M20 8v6M23 11h-6"/>
+              </svg>
+            </div>
+            <h3 data-i18n="automotivePain3Title">Opvolging van inruilwagens</h3>
+            <p data-i18n="automotivePain3Text">Klanten met een inruilwagen krijgen automatisch een herinnering. Alle informatie bij elkaar voor snellere afhandeling.</p>
+          </article>
+        </div>
+
+        <div class="flow-section">
+          <h3 class="flow-title" data-i18n="automotiveFlowTitle">Hoe testritaanvragen worden behandeld</h3>
+          <div class="flow-diagram">
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowAutomotive1">Aanvraag AutoScout24/2dehands</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowAutomotive2">Direct bevestiging</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowAutomotive3">Testrit ingepland</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowAutomotive4">Herinnering &amp; follow-up</span>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <span class="flow-label" data-i18n="flowAutomotive5">Inruilwagen geregistreerd</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sector-other" class="section section-detail" style="display: none;">
+      <div class="container">
+        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
+        
+        <h2 class="section-title" data-i18n="otherSectorTitle">Andere sector</h2>
+        <p class="section-intro" data-i18n="otherSectorIntro">Vertel ons waar u tijd verliest en wij bouwen een oplossing op maat.</p>
+
+        <div class="contact-form-wrapper">
+          <form id="other-sector-form" class="contact-form" onsubmit="handleFormSubmit(event, 'other')">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="other-name" data-i18n="formLabelName">Naam *</label>
+                <input type="text" id="other-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="other-company" data-i18n="formLabelCompany">Bedrijf *</label>
+                <input type="text" id="other-company" name="company" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="other-sector" data-i18n="formLabelSector">In welke sector werkt u? *</label>
+              <input type="text" id="other-sector" name="sector" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="other-email" data-i18n="formLabelEmail">E-mail *</label>
+                <input type="email" id="other-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="other-phone" data-i18n="formLabelPhone">Telefoon</label>
+                <input type="tel" id="other-phone" name="phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="other-message" data-i18n="formLabelMessage">Wat kost u het meeste tijd? *</label>
+              <textarea id="other-message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" data-i18n="btnSendMessage">Bericht versturen</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section id="voordelen" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-i18n="benefitsTitle">Alles wat u nodig hebt — verbonden</h2>
+        <p class="section-intro" data-i18n="benefitsIntro">Praktische oplossingen die aansluiten bij hoe u vandaag al werkt.</p>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 data-i18n="benefit1Title">Werkt met uw bestaande tools</h3>
+            <p data-i18n="benefit1Text">Verbindt met de software die u al gebruikt. Geen grote veranderingen, wel meer efficiëntie.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="benefit2Title">Direct resultaat</h3>
+            <p data-i18n="benefit2Text">Geen lange trajecten. U ziet binnen enkele weken hoe het werkt, met een gratis demo vooraf.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
+              </svg>
+            </div>
+            <h3 data-i18n="benefit3Title">Op maat gebouwd</h3>
+            <p data-i18n="benefit3Text">Elke oplossing wordt aangepast aan uw manier van werken. Niet andersom.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 data-i18n="benefit4Title">Nederlands én Frans</h3>
+            <p data-i18n="benefit4Text">Voor bedrijven in Vlaanderen, Wallonië en Brussel. In de taal waarin u werkt.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="werkwijze" class="section section-alt">
+    <section id="werkwijze" class="section">
       <div class="container">
-        <h2 class="section-title" data-i18n="howTitle">Hoe het werkt</h2>
-        <p class="section-intro" data-i18n="howIntro">Eenvoudig, zonder lange trajecten.</p>
-        <ol class="steps">
-          <li class="step">
+        <h2 class="section-title" data-i18n="howTitle">Hoe het werkt in de praktijk</h2>
+        <p class="section-intro" data-i18n="howIntro">Van eerste gesprek tot werkende oplossing.</p>
+        
+        <div class="steps-grid">
+          <article class="step-card">
             <span class="step-num">1</span>
-            <div>
-              <h3 data-i18n="s1Title">Kort gesprek</h3>
-              <p data-i18n="s1Text">We bekijken samen waar in uw kantoor tijd verloren gaat — leads, opvolging of dagelijkse communicatie.</p>
-            </div>
-          </li>
-          <li class="step">
+            <h3 data-i18n="step1Title">Kort gesprek</h3>
+            <p data-i18n="step1Text">We bekijken samen waar in uw bedrijf tijd verloren gaat — leads, opvolging of dagelijkse communicatie.</p>
+          </article>
+
+          <article class="step-card">
             <span class="step-num">2</span>
-            <div>
-              <h3 data-i18n="s2Title">Gratis demo of mock-up</h3>
-              <p data-i18n="s2Text">U krijgt een voorstel op maat van uw kantoor, zodat u ziet hoe het eruitziet vóór er iets gebouwd wordt.</p>
-            </div>
-          </li>
-          <li class="step">
+            <h3 data-i18n="step2Title">Gratis demo of mock-up</h3>
+            <p data-i18n="step2Text">U krijgt een voorstel op maat, zodat u ziet hoe het eruitziet vóór er iets gebouwd wordt.</p>
+          </article>
+
+          <article class="step-card">
             <span class="step-num">3</span>
-            <div>
-              <h3 data-i18n="s3Title">Bouwen en opzetten</h3>
-              <p data-i18n="s3Text">Ik werk met de tools die u al gebruikt en zorg dat alles rustig in uw dagelijkse werking past.</p>
-            </div>
-          </li>
-        </ol>
+            <h3 data-i18n="step3Title">Bouwen en opzetten</h3>
+            <p data-i18n="step3Text">Ik werk met de tools die u al gebruikt en zorg dat alles rustig in uw dagelijkse werking past.</p>
+          </article>
+        </div>
+
+        <div class="practice-note">
+          <p data-i18n="practiceNote">Zodra het loopt, worden leads automatisch gevolgd. Iedereen werkt vanuit dezelfde, actuele informatie. Het is duidelijk wat er gebeurt en wat aandacht nodig heeft.</p>
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="over" class="section">
-      <div class="container about-inner">
-        <div class="about-photo-wrap">
-          <div class="about-photo" id="about-photo" role="img" aria-label="Nelly Opoku">
-            <span class="avatar-initials" aria-hidden="true">NO</span>
-          </div>
-        </div>
-        <div class="about-text">
-          <h2 class="section-title" data-i18n="aboutTitle">Over mij</h2>
-          <p data-i18n="about1">Hallo, ik ben Nelly Opoku. Ik bouw software en automatisaties voor vastgoedkantoren in België.</p>
-          <p data-i18n="about2">Ik werk met kantoren in Vlaanderen, Wallonië en Brussel — in het Nederlands én in het Frans. Mijn doel is eenvoudig: u helpen om minder tijd te steken in administratie, zodat u meer aandacht hebt voor uw klanten.</p>
-          <p data-i18n="about3">Geen grote beloftes, wel praktische oplossingen die aansluiten bij hoe u vandaag al werkt.</p>
+    <!-- FOUNDER NOTE -->
+    <section class="section section-alt">
+      <div class="container founder-note">
+        <div class="founder-content">
+          <p class="founder-quote" data-i18n="founderQuote">"Ik bouw praktische oplossingen voor bedrijven in België — in het Nederlands én in het Frans. Geen grote beloftes, wel software die u tijd bespaart."</p>
+          <p class="founder-name">
+            <strong>Nelly Opoku</strong>
+            <span class="founder-sep">·</span>
+            <span>Timeless Automations</span>
+          </p>
+          <p class="founder-links">
+            <a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener noreferrer" class="founder-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span data-i18n="founderLinkedIn">LinkedIn</span>
+            </a>
+          </p>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <div class="container contact-inner">
-        <h2 class="section-title" data-i18n="contactTitle">Contact</h2>
-        <p class="section-intro" data-i18n="contactIntro">Een korte vraag of een vrijblijvend gesprek? Stuur gerust een bericht.</p>
-        <ul class="contact-list">
-          <li data-show-if="email">
-            <span class="contact-label" data-i18n="labelEmail">E-mail</span>
-            <a href="mailto:nellyopoku.dev@gmail.com" data-bind="email" data-bind-href="mailto">nellyopoku.dev@gmail.com</a>
-          </li>
-          <li data-show-if="phone" hidden>
-            <span class="contact-label" data-i18n="labelPhone">Telefoon</span>
-            <a href="#" data-bind="phone" data-bind-href="tel"></a>
-          </li>
-          <li data-show-if="whatsapp" hidden>
-            <span class="contact-label" data-i18n="labelWhatsApp">WhatsApp</span>
-            <a href="#" data-bind="whatsapp" data-bind-href="whatsapp"></a>
-          </li>
-          <li data-show-if="linkedinUrl" hidden>
-            <span class="contact-label" data-i18n="labelLinkedIn">LinkedIn</span>
-            <a href="#" data-bind="linkedinUrl" data-bind-href="linkedin" rel="noopener noreferrer" target="_blank"></a>
-          </li>
-        </ul>
+    <section id="contact" class="section section-cta">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contactTitle">Klaar om tijd te besparen?</h2>
+        <p class="section-intro" data-i18n="contactIntro">Vertel ons waar u tijd verliest en wij sturen u een voorstel.</p>
+
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event, 'contact')">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" data-i18n="formLabelName">Naam *</label>
+                <input type="text" id="contact-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-company" data-i18n="formLabelCompany">Bedrijf *</label>
+                <input type="text" id="contact-company" name="company" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-sector" data-i18n="formLabelSector">In welke sector werkt u? *</label>
+              <input type="text" id="contact-sector" name="sector" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email" data-i18n="formLabelEmail">E-mail *</label>
+                <input type="email" id="contact-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" data-i18n="formLabelPhone">Telefoon</label>
+                <input type="tel" id="contact-phone" name="phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" data-i18n="formLabelMessage">Wat kost u het meeste tijd? *</label>
+              <textarea id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" data-i18n="btnSendMessage">Bericht versturen</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>
-        <span data-bind="fullName">Nelly Opoku</span>
-        <span class="footer-sep">·</span>
-        <span data-bind="businessName">Timeless Automations</span>
-        <span class="footer-sep">·</span>
-        <span>2026</span>
-      </p>
-      <p>
-        <a href="mailto:nellyopoku.dev@gmail.com" data-bind="email" data-bind-href="mailto">nellyopoku.dev@gmail.com</a>
-      </p>
+      <div class="footer-col">
+        <h4 class="footer-title">Timeless Automations</h4>
+        <p class="footer-tagline" data-i18n="footerTagline">Software &amp; automatisatie voor bedrijven in België</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footerSectorsTitle">Sectoren</h4>
+        <ul class="footer-links">
+          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('realestate')" data-i18n="sectorRealEstateTitle">Vastgoedkantoren</a></li>
+          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('insurance')" data-i18n="sectorInsuranceTitle">Verzekeringskantoren</a></li>
+          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('automotive')" data-i18n="sectorAutomotiveTitle">Autodealers</a></li>
+          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('other')" data-i18n="sectorOtherTitle">Andere sector</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="footerContactTitle">Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:nellyopoku.dev@gmail.com">nellyopoku.dev@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Timeless Automations · Nelly Opoku</p>
     </div>
   </footer>
 
-  <script>
-    const I18N = {
-      nl: {
-        navProblems: "Problemen",
-        navHow: "Werkwijze",
-        navAbout: "Over mij",
-        navContact: "Contact",
-        heroTitle: "Software en automatisatie voor vastgoedkantoren",
-        heroSub: "Minder tijd aan administratie en opvolging, meer tijd voor uw klanten.",
-        btnContact: "Contact opnemen",
-        btnPhone: "Bellen / WhatsApp",
-        btnHow: "Hoe het werkt",
-        demoLink: "Bekijk de demo",
-        problemsTitle: "Waar ik u mee help",
-        problemsIntro: "Drie concrete knelpunten die ik voor vastgoedkantoren aanpak.",
-        p1Title: "Direct antwoord op nieuwe leads",
-        p1Text: "Nieuwe aanvragen van Immoweb, Zimmo en uw website krijgen meteen een reactie — ook buiten de kantooruren.",
-        p2Title: "Automatische opvolging",
-        p2Text: "Herinneringen zodat geen enkele lead vergeten wordt. U weet precies wie nog een antwoord of een bezoek nodig heeft.",
-        p3Title: "Minder repetitieve administratie",
-        p3Text: "Leads sorteren (koper / verkoper / huurder), bevestigingen van bezoeken, standaardberichten — minder manueel werk.",
-        howTitle: "Hoe het werkt",
-        howIntro: "Eenvoudig, zonder lange trajecten.",
-        s1Title: "Kort gesprek",
-        s1Text: "We bekijken samen waar in uw kantoor tijd verloren gaat — leads, opvolging of dagelijkse communicatie.",
-        s2Title: "Gratis demo of mock-up",
-        s2Text: "U krijgt een voorstel op maat van uw kantoor, zodat u ziet hoe het eruitziet vóór er iets gebouwd wordt.",
-        s3Title: "Bouwen en opzetten",
-        s3Text: "Ik werk met de tools die u al gebruikt en zorg dat alles rustig in uw dagelijkse werking past.",
-        aboutTitle: "Over mij",
-        about1: "Hallo, ik ben {fullName}. Ik bouw software en automatisaties voor vastgoedkantoren in België.",
-        about2: "Ik werk met kantoren in Vlaanderen, Wallonië en Brussel — in het Nederlands én in het Frans. Mijn doel is eenvoudig: u helpen om minder tijd te steken in administratie, zodat u meer aandacht hebt voor uw klanten.",
-        about3: "Geen grote beloftes, wel praktische oplossingen die aansluiten bij hoe u vandaag al werkt.",
-        contactTitle: "Contact",
-        contactIntro: "Een korte vraag of een vrijblijvend gesprek? Stuur gerust een bericht.",
-        labelEmail: "E-mail",
-        labelPhone: "Telefoon",
-        labelWhatsApp: "WhatsApp",
-        labelLinkedIn: "LinkedIn",
-        metaTitleSuffix: "Software en automatisatie voor vastgoedkantoren",
-        metaDesc: "Software en automatisatie voor vastgoedkantoren in België. Minder administratie, meer tijd voor uw klanten.",
-        navAria: "Hoofdnavigatie",
-        photoAria: "Profielfoto van {fullName}"
-      },
-      fr: {
-        navProblems: "Problèmes",
-        navHow: "Démarche",
-        navAbout: "À propos",
-        navContact: "Contact",
-        heroTitle: "Logiciels et automatisation pour agences immobilières",
-        heroSub: "Moins de temps à l’administration et au suivi, plus de temps pour vos clients.",
-        btnContact: "Me contacter",
-        btnPhone: "Appeler / WhatsApp",
-        btnHow: "Comment ça marche",
-        demoLink: "Voir la démo",
-        problemsTitle: "Comment je vous aide",
-        problemsIntro: "Trois points concrets que j’aborde pour les agences immobilières.",
-        p1Title: "Réponse immédiate aux nouvelles demandes",
-        p1Text: "Les nouvelles demandes d’Immoweb, Zimmo et de votre site reçoivent une réponse tout de suite — aussi en dehors des heures de bureau.",
-        p2Title: "Suivi automatique",
-        p2Text: "Des rappels pour qu’aucune demande ne soit oubliée. Vous savez exactement qui attend encore une réponse ou une visite.",
-        p3Title: "Moins d’administration répétitive",
-        p3Text: "Trier les leads (acheteur / vendeur / locataire), confirmer les visites, messages types — moins de travail manuel.",
-        howTitle: "Comment ça se passe",
-        howIntro: "Simple, sans long parcours.",
-        s1Title: "Court entretien",
-        s1Text: "Nous regardons ensemble où votre agence perd du temps — leads, suivi ou communication quotidienne.",
-        s2Title: "Démo ou maquette gratuite",
-        s2Text: "Vous recevez une proposition adaptée à votre agence, pour voir le résultat avant que quoi que ce soit soit construit.",
-        s3Title: "Construction et mise en place",
-        s3Text: "Je travaille avec les outils que vous utilisez déjà et j’intègre tout calmement dans votre fonctionnement quotidien.",
-        aboutTitle: "À propos",
-        about1: "Bonjour, je suis {fullName}. Je construis des logiciels et des automatisations pour les agences immobilières en Belgique.",
-        about2: "Je travaille avec des agences en Flandre, en Wallonie et à Bruxelles — en néerlandais et en français. Mon objectif est simple : vous aider à passer moins de temps sur l’administration, pour davantage d’attention à vos clients.",
-        about3: "Pas de grandes promesses, mais des solutions pratiques qui s’alignent sur votre façon de travailler aujourd’hui.",
-        contactTitle: "Contact",
-        contactIntro: "Une courte question ou un entretien sans engagement ? N’hésitez pas à m’écrire.",
-        labelEmail: "E-mail",
-        labelPhone: "Téléphone",
-        labelWhatsApp: "WhatsApp",
-        labelLinkedIn: "LinkedIn",
-        metaTitleSuffix: "Logiciels et automatisation pour agences immobilières",
-        metaDesc: "Logiciels et automatisation pour agences immobilières en Belgique. Moins d’administration, plus de temps pour vos clients.",
-        navAria: "Navigation principale",
-        photoAria: "Photo de profil de {fullName}"
-      }
-    };
-
-    function isFilled(val) {
-      if (val == null) return false;
-      const s = String(val).trim();
-      if (!s) return false;
-      if (/^\[.+\]$/.test(s)) return false;
-      return true;
-    }
-
-    function initialsFromName(name) {
-      const parts = String(name || "").trim().split(/\s+/).filter(Boolean);
-      if (!parts.length) return "?";
-      if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-      return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-    }
-
-    function metaTitle(lang) {
-      const suffix = I18N[lang].metaTitleSuffix;
-      const biz = CONFIG.businessName;
-      const name = CONFIG.fullName;
-      return `${biz} – ${name} | ${suffix}`;
-    }
-
-    function applyConfig() {
-      const c = CONFIG;
-
-      document.querySelectorAll("[data-bind]").forEach(el => {
-        const key = el.getAttribute("data-bind");
-        if (!(key in c)) return;
-        el.textContent = c[key] || "";
-        el.classList.remove("placeholder-text");
-      });
-
-      document.querySelectorAll("[data-show-if]").forEach(el => {
-        const key = el.getAttribute("data-show-if");
-        const show = isFilled(c[key]);
-        el.hidden = !show;
-      });
-
-      document.querySelectorAll("[data-bind-href]").forEach(el => {
-        const kind = el.getAttribute("data-bind-href");
-        if (kind === "mailto") {
-          el.href = "mailto:" + c.email;
-        } else if (kind === "tel") {
-          const clean = (c.phone || "").replace(/\s+/g, "");
-          el.href = isFilled(c.phone) ? "tel:" + clean : "#";
-        } else if (kind === "whatsapp") {
-          const clean = (c.whatsapp || "").replace(/\D/g, "");
-          el.href = isFilled(c.whatsapp) ? "https://wa.me/" + clean : "#";
-        } else if (kind === "linkedin") {
-          el.href = isFilled(c.linkedinUrl) ? c.linkedinUrl : "#";
-        }
-      });
-
-      /* Hero secondary: phone/WhatsApp if available, else scroll to how-it-works */
-      const secondary = document.getElementById("hero-secondary");
-      if (secondary) {
-        const hasPhone = isFilled(c.phone);
-        const hasWa = isFilled(c.whatsapp);
-        if (hasPhone || hasWa) {
-          secondary.dataset.mode = "call";
-          if (hasPhone) {
-            secondary.href = "tel:" + c.phone.replace(/\s+/g, "");
-          } else {
-            secondary.href = "https://wa.me/" + c.whatsapp.replace(/\D/g, "");
-          }
-        } else {
-          secondary.dataset.mode = "how";
-          secondary.href = "#werkwijze";
-        }
-      }
-
-      const photo = document.getElementById("about-photo");
-      if (photo) {
-        if (isFilled(c.photoSrc)) {
-          photo.style.backgroundImage = `url("${c.photoSrc}")`;
-          photo.classList.add("has-photo");
-          photo.classList.remove("is-avatar");
-          photo.innerHTML = "";
-        } else {
-          photo.style.backgroundImage = "";
-          photo.classList.remove("has-photo");
-          photo.classList.add("is-avatar");
-          const ini = initialsFromName(c.fullName);
-          photo.innerHTML = `<span class="avatar-initials" aria-hidden="true">${ini}</span>`;
-        }
-      }
-
-      const logo = document.querySelector(".logo");
-      if (logo) {
-        logo.textContent = c.businessName;
-        logo.classList.remove("placeholder-text");
-      }
-    }
-
-    function setLang(lang) {
-      const t = I18N[lang];
-      if (!t) return;
-
-      document.documentElement.lang = lang === "fr" ? "fr" : "nl";
-
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        /* Hero secondary label depends on mode */
-        if (el.id === "hero-secondary") {
-          const mode = el.dataset.mode || "how";
-          el.textContent = mode === "call" ? t.btnPhone : t.btnHow;
-          return;
-        }
-        let text = t[key];
-        if (text == null) return;
-        if (typeof text === "string" && text.includes("{fullName}")) {
-          el.textContent = text.replace("{fullName}", CONFIG.fullName);
-        } else {
-          el.textContent = text;
-        }
-      });
-
-      const title = metaTitle(lang);
-      document.title = title;
-      const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          `${CONFIG.businessName} – ${CONFIG.fullName}. ${t.metaDesc}`
-        );
-      }
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) ogTitle.setAttribute("content", title);
-      const ogDesc = document.querySelector('meta[property="og:description"]');
-      if (ogDesc) ogDesc.setAttribute("content", t.metaDesc);
-      const ogLocale = document.querySelector('meta[property="og:locale"]');
-      if (ogLocale) ogLocale.setAttribute("content", lang === "fr" ? "fr_BE" : "nl_BE");
-
-      const nav = document.querySelector(".nav");
-      if (nav) nav.setAttribute("aria-label", t.navAria);
-      const photo = document.getElementById("about-photo");
-      if (photo) {
-        photo.setAttribute(
-          "aria-label",
-          t.photoAria.replace("{fullName}", CONFIG.fullName)
-        );
-      }
-
-      document.getElementById("btn-nl").classList.toggle("active", lang === "nl");
-      document.getElementById("btn-fr").classList.toggle("active", lang === "fr");
-      document.getElementById("btn-nl").setAttribute("aria-pressed", lang === "nl" ? "true" : "false");
-      document.getElementById("btn-fr").setAttribute("aria-pressed", lang === "fr" ? "true" : "false");
-
-      try { localStorage.setItem("site-lang", lang); } catch (_) {}
-    }
-
-    document.getElementById("btn-nl").addEventListener("click", () => setLang("nl"));
-    document.getElementById("btn-fr").addEventListener("click", () => setLang("fr"));
-
-    applyConfig();
-    let initial = "nl";
-    try {
-      const saved = localStorage.getItem("site-lang");
-      if (saved === "fr" || saved === "nl") initial = saved;
-    } catch (_) {}
-    setLang(initial);
-  </script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
