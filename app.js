@@ -19,6 +19,18 @@ function setLang(lang) {
     }
   });
   
+  // Update data attributes (e.g., data-badge)
+  document.querySelectorAll("[data-i18n-attr]").forEach(el => {
+    const attrMap = el.getAttribute("data-i18n-attr");
+    const pairs = attrMap.split(";").map(p => p.trim());
+    pairs.forEach(pair => {
+      const [attr, key] = pair.split(":").map(s => s.trim());
+      if (t[key]) {
+        el.setAttribute(attr, t[key]);
+      }
+    });
+  });
+  
   // Update meta tags
   document.title = t.metaTitle;
   
