@@ -141,7 +141,9 @@ const TRANSLATIONS = {
     "cta.button": "Plan een gratis gesprek",
 
     // === SHARED CONTACT SECTION ===
-    "contact.title": "Laten we praten over uw kantoor",
+    "realestate.contact.title": "Laten we praten over uw kantoor",
+    "insurance.contact.title": "Laten we praten over uw kantoor",
+    "automotive.contact.title": "Laten we praten over uw garage",
     "contact.intro": "Vertel ons wat te veel tijd kost, en wij tonen hoe automatisering kan helpen.",
     "contact.email.title": "E-mail",
     "contact.linkedin.title": "LinkedIn",
@@ -300,7 +302,9 @@ const TRANSLATIONS = {
     "cta.button": "Schedule a free call",
 
     // === SHARED CONTACT SECTION ===
-    "contact.title": "Let's talk about your agency",
+    "realestate.contact.title": "Let's talk about your agency",
+    "insurance.contact.title": "Let's talk about your agency",
+    "automotive.contact.title": "Let's talk about your dealership",
     "contact.intro": "Tell us what takes too much time, and we'll show you how automation can help.",
     "contact.email.title": "Email",
     "contact.linkedin.title": "LinkedIn",
@@ -459,7 +463,9 @@ const TRANSLATIONS = {
     "cta.button": "Planifier un appel gratuit",
 
     // === SHARED CONTACT SECTION ===
-    "contact.title": "Parlons de votre bureau",
+    "realestate.contact.title": "Parlons de votre agence",
+    "insurance.contact.title": "Parlons de votre bureau",
+    "automotive.contact.title": "Parlons de votre concession",
     "contact.intro": "Dites-nous ce qui prend trop de temps, et nous vous montrerons comment l'automatisation peut aider.",
     "contact.email.title": "E-mail",
     "contact.linkedin.title": "LinkedIn",
