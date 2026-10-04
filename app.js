@@ -79,9 +79,11 @@ function initHeaderScroll() {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 100) {
-      header.style.background = 'rgba(0, 0, 0, 0.95)';
+      header.style.background = 'rgba(255, 255, 255, 0.98)';
+      header.style.boxShadow = '0 2px 8px rgba(11, 15, 25, 0.12)';
     } else {
-      header.style.background = 'rgba(0, 0, 0, 0.8)';
+      header.style.background = 'rgba(255, 255, 255, 0.95)';
+      header.style.boxShadow = '0 1px 3px rgba(11, 15, 25, 0.08)';
     }
     
     lastScroll = currentScroll;
