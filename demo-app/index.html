@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo: Automatische Lead Follow-up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Caption Overlay -->
+  <div id="caption" class="caption"></div>
+
+  <!-- Split Screen Layout -->
+  <div class="demo-container">
+    
+    <!-- Left Side: Customer View -->
+    <div class="customer-panel">
+      <div class="panel-header">
+        <div class="clock" id="customer-clock">21:40</div>
+      </div>
+
+      <!-- Property Listing -->
+      <div id="listing-view" class="view active">
+        <div class="property-card">
+          <div class="property-image">
+            <div class="image-placeholder">
+              <span>🏡</span>
+            </div>
+          </div>
+          <div class="property-details">
+            <h2>Ruime gezinswoning met tuin</h2>
+            <p class="property-location">📍 Gent • Sint-Amandsberg</p>
+            <p class="property-price">€ 425.000</p>
+            <ul class="property-features">
+              <li>🛏️ 4 slaapkamers</li>
+              <li>🚗 Garage</li>
+              <li>🌳 Tuin 200m²</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="agency-info">
+          <h3>Vastgoed Voorbeeld</h3>
+          <p>Specialist in gezinswoningen in Gent</p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <h3>Interesse? Laat uw gegevens achter</h3>
+          <div class="form-group">
+            <label>Naam *</label>
+            <input type="text" id="input-name" required>
+          </div>
+          <div class="form-group">
+            <label>E-mail *</label>
+            <input type="email" id="input-email" required>
+          </div>
+          <div class="form-group">
+            <label>Telefoon</label>
+            <input type="tel" id="input-phone">
+          </div>
+          <div class="form-group">
+            <label>Bericht</label>
+            <textarea id="input-message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Verstuur aanvraag</button>
+        </form>
+      </div>
+
+      <!-- Inbox View -->
+      <div id="inbox-view" class="view">
+        <div class="inbox-header">
+          <button onclick="backToListing()" class="btn-back">← Terug</button>
+          <h3>Uw berichten</h3>
+        </div>
+        <div id="messages" class="messages"></div>
+      </div>
+
+      <!-- Booking View -->
+      <div id="booking-view" class="view">
+        <div class="booking-header">
+          <h3>Kies een moment voor bezichtiging</h3>
+          <p>Ruime gezinswoning met tuin, Gent</p>
+        </div>
+        <div class="time-slots">
+          <div class="time-slot" onclick="selectSlot(this, 'Zaterdag 6 okt, 10:00')">
+            <div class="slot-day">Zaterdag</div>
+            <div class="slot-time">10:00</div>
+          </div>
+          <div class="time-slot" onclick="selectSlot(this, 'Zaterdag 6 okt, 14:00')">
+            <div class="slot-day">Zaterdag</div>
+            <div class="slot-time">14:00</div>
+          </div>
+          <div class="time-slot" onclick="selectSlot(this, 'Zondag 7 okt, 11:00')">
+            <div class="slot-day">Zondag</div>
+            <div class="slot-time">11:00</div>
+          </div>
+          <div class="time-slot" onclick="selectSlot(this, 'Maandag 8 okt, 18:00')">
+            <div class="slot-day">Maandag</div>
+            <div class="slot-time">18:00</div>
+          </div>
+        </div>
+        <button id="confirm-booking" class="btn-primary" onclick="confirmBooking()" disabled>Bevestig bezichtiging</button>
+      </div>
+    </div>
+
+    <!-- Right Side: Broker Dashboard -->
+    <div class="broker-panel">
+      <div class="panel-header">
+        <h2>📊 Makelaar Dashboard</h2>
+        <div class="clock" id="broker-clock">21:40</div>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-value" id="kpi-leads">0</div>
+          <div class="kpi-label">Nieuwe leads</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value" id="kpi-response">—</div>
+          <div class="kpi-label">Gem. reactietijd</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value" id="kpi-bookings">0</div>
+          <div class="kpi-label">Bezichtigingen</div>
+        </div>
+      </div>
+
+      <div class="dashboard-section">
+        <h3>Leads vandaag</h3>
+        <div id="leads-list" class="leads-list">
+          <p class="empty-state">Nog geen leads vandaag</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
