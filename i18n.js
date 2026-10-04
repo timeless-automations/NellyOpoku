@@ -7,7 +7,8 @@ const translations = {
     "nav.process": "Aanpak",
     "nav.contact": "Contact",
     
-    "hero.title": "Software op maat die uw bedrijf draait.",
+    "hero.title": "Software op maat",
+    "hero.title.accent": "die uw bedrijf draait.",
     "hero.subtitle": "Wij bouwen CRM-systemen, ERP-platformen, dashboards en automatisering op maat van uw bedrijf.",
     "hero.cta.primary": "Plan een gratis gesprek",
     "hero.cta.secondary": "Wat wij bouwen",
@@ -71,7 +72,8 @@ const translations = {
     "industries.other.title": "Andere sectoren",
     "industries.other.description": "Elk bedrijf is uniek. Vertel ons uw uitdagingen en wij bouwen de juiste oplossing.",
     
-    "cta.title": "Uw bedrijf heeft al een workflow. Laten we er software van maken.",
+    "cta.title": "Uw bedrijf heeft al een workflow.",
+    "cta.title.accent": "Laten we er software van maken.",
     "cta.text": "Vertel ons wat u vertraagt. Wij tonen waar software tijd kan besparen en handmatig werk kan verminderen.",
     "cta.button": "Plan een gratis gesprek",
     
@@ -98,7 +100,8 @@ const translations = {
     "nav.process": "Our Process",
     "nav.contact": "Contact",
     
-    "hero.title": "Custom Software That Runs Your Business.",
+    "hero.title": "Custom Software",
+    "hero.title.accent": "That Runs Your Business.",
     "hero.subtitle": "We build CRM systems, ERP platforms, dashboards and automations designed around how your company works.",
     "hero.cta.primary": "Book a Free Consultation",
     "hero.cta.secondary": "See What We Build",
@@ -162,7 +165,8 @@ const translations = {
     "industries.other.title": "Other Service Businesses",
     "industries.other.description": "Every business is unique. Tell us your challenges, and we'll build the right solution.",
     
-    "cta.title": "Your business already has a workflow. Let's turn it into software.",
+    "cta.title": "Your business already has a workflow.",
+    "cta.title.accent": "Let's turn it into software.",
     "cta.text": "Tell us what's slowing you down. We'll show you where software can save time and reduce manual work.",
     "cta.button": "Book a Free Consultation",
     
@@ -189,7 +193,8 @@ const translations = {
     "nav.process": "Notre approche",
     "nav.contact": "Contact",
     
-    "hero.title": "Des logiciels sur mesure qui font tourner votre entreprise.",
+    "hero.title": "Des logiciels sur mesure",
+    "hero.title.accent": "qui font tourner votre entreprise.",
     "hero.subtitle": "Nous créons des systèmes CRM, plateformes ERP, dashboards et automatisations adaptés à votre entreprise.",
     "hero.cta.primary": "Réservez un appel gratuit",
     "hero.cta.secondary": "Ce que nous créons",
@@ -253,7 +258,8 @@ const translations = {
     "industries.other.title": "Autres secteurs",
     "industries.other.description": "Chaque entreprise est unique. Parlez-nous de vos défis, et nous construirons la bonne solution.",
     
-    "cta.title": "Votre entreprise a déjà un workflow. Transformons-le en logiciel.",
+    "cta.title": "Votre entreprise a déjà un workflow.",
+    "cta.title.accent": "Transformons-le en logiciel.",
     "cta.text": "Dites-nous ce qui vous ralentit. Nous vous montrerons où le logiciel peut gagner du temps et réduire le travail manuel.",
     "cta.button": "Réservez un appel gratuit",
     

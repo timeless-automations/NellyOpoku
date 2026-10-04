@@ -1,13 +1,26 @@
 /* ============================================================
    SECTOR PAGE STYLES
    Hero with photo, floating UI cards, grid background
+   Dark navy / periwinkle — matches the ad end-card theme
    ============================================================ */
+
+:root {
+  --accent: #3A63E0;
+  --accent-soft: rgba(79, 123, 255, 0.1);
+  --bg: #FFFFFF;
+  --text: #0B0F19;
+  --text-muted: #1A1F2E;
+  --border: #E3E8F4;
+  --shadow: 0 12px 40px rgba(58, 99, 224, 0.1);
+}
 
 /* ---- Sector Hero with Grid Background ---- */
 .sector-hero {
   position: relative;
   padding: 6rem 0 4rem;
-  background: linear-gradient(135deg, var(--accent-soft) 0%, #F8FBFC 50%, var(--bg) 100%);
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 0%, rgba(79, 123, 255, 0.18) 0%, transparent 58%),
+    linear-gradient(180deg, #FFFFFF 0%, #EEF3FF 100%);
   overflow: hidden;
 }
 
@@ -18,9 +31,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-    linear-gradient(0deg, rgba(27, 75, 107, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(27, 75, 107, 0.03) 1px, transparent 1px);
+  background-image:
+    linear-gradient(0deg, rgba(127, 168, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 168, 255, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
 }
@@ -96,7 +109,8 @@
   aspect-ratio: 4 / 5;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(27, 75, 107, 0.15);
+  box-shadow: 0 20px 60px rgba(58, 99, 224, 0.12);
+  border: 1px solid #E3E8F4;
 }
 
 .hero-photo {
@@ -118,11 +132,13 @@
 }
 
 .mockup-card {
-  background: #fff;
+  background: #FFFFFF;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
-  box-shadow: 0 8px 32px rgba(27, 75, 107, 0.12);
-  border: 1px solid rgba(27, 75, 107, 0.08);
+  box-shadow: 0 8px 32px rgba(58, 99, 224, 0.12);
+  border: 1px solid #E3E8F4;
   position: relative;
   min-width: 320px;
   max-width: 360px;
@@ -160,7 +176,7 @@
 
 /* ---- Dashboard Summary Card ---- */
 .mockup-card-summary {
-  background: linear-gradient(135deg, #fff 0%, #FAFBFC 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #F3F6FF 100%);
 }
 
 .mockup-title {
@@ -210,7 +226,7 @@
   align-items: flex-start;
   gap: 0.75rem;
   padding: 0.65rem 0;
-  border-bottom: 1px solid rgba(27, 75, 107, 0.06);
+  border-bottom: 1px solid rgba(174, 184, 208, 0.12);
 }
 
 .mockup-list-item:last-child {
@@ -307,7 +323,7 @@
   gap: 0.75rem;
   align-items: start;
   padding: 0.65rem 0;
-  border-bottom: 1px solid rgba(27, 75, 107, 0.06);
+  border-bottom: 1px solid rgba(174, 184, 208, 0.12);
 }
 
 .mockup-agenda-item:last-child {
@@ -726,11 +742,13 @@
 .dashboard-mockup-large {
   max-width: 900px;
   margin: 0 auto;
-  background: #fff;
+  background: #FFFFFF;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 16px;
   padding: 2.5rem;
-  box-shadow: 0 20px 60px rgba(27, 75, 107, 0.12);
-  border: 1px solid rgba(27, 75, 107, 0.08);
+  box-shadow: 0 20px 60px rgba(58, 99, 224, 0.12);
+  border: 1px solid #E3E8F4;
 }
 
 .dashboard-header {
@@ -757,7 +775,7 @@
 }
 
 .dashboard-stat-card {
-  background: linear-gradient(135deg, var(--accent-soft) 0%, #fff 100%);
+  background: linear-gradient(135deg, var(--accent-soft) 0%, #FFFFFF 100%);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem;
@@ -953,7 +971,7 @@
 }
 
 .project-card {
-  background: white;
+  background: #FFFFFF;
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 2rem;
@@ -963,13 +981,13 @@
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 24px rgba(58, 99, 224, 0.12);
   border-color: var(--accent-soft);
 }
 
 .project-card.featured {
   border: 2px solid var(--accent);
-  background: linear-gradient(135deg, #ffffff 0%, var(--accent-soft) 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--accent-soft) 100%);
 }
 
 .project-card.featured::before {
@@ -984,7 +1002,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  box-shadow: 0 4px 12px rgba(27, 75, 107, 0.3);
+  box-shadow: 0 4px 12px rgba(79, 123, 255, 0.4);
 }
 
 .project-icon {
@@ -1074,7 +1092,7 @@
   margin-top: 3rem;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, var(--accent-soft) 0%, white 100%);
+  background: linear-gradient(135deg, var(--accent-soft) 0%, #F3F6FF 100%);
   border-radius: 12px;
   border: 1px solid var(--border);
 }

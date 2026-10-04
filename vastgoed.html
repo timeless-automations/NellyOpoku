@@ -3,122 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Software voor vastgoedkantoren – Directe reactie op leads van Immoweb en Zimmo, automatische opvolging en verbinding met uw CRM.">
+  <meta name="description" content="Software voor vastgoedkantoren – Automatisering bovenop uw bestaande CRM. Directe reactie op leads van Immoweb en Zimmo, automatische opvolging.">
   <meta property="og:title" content="Software voor vastgoedkantoren | Timeless Automations">
-  <meta property="og:description" content="Directe reactie op leads, automatische opvolging en verbinding met uw CRM. Voor vastgoedkantoren in België.">
+  <meta property="og:description" content="Automatisering bovenop Whise, Omnicasa en Zabun. Directe reactie op leads, automatische opvolging en verbinding met uw CRM.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timelessautomations.be/vastgoed.html">
   <meta property="og:locale" content="nl_BE">
   <meta property="og:locale:alternate" content="fr_BE">
+  <meta property="og:locale:alternate" content="en_GB">
   <title>Software voor vastgoedkantoren | Timeless Automations</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4B6B'/%3E%3Cpath d='M8 22V10l8-4 8 4v12l-8 4-8-4z' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3Cpath d='M16 6v20M8 10l8 4 8-4' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1530'/%3E%3Cpath d='M16 8l8 4v8l-8 4-8-4v-8l8-4z' fill='none' stroke='%237FA8FF' stroke-width='1.5'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="sector-page.css">
 </head>
 <body>
   <script>
-    const FORM_CONFIG = {
-      endpoint: "",
-      email: "nelly@timelessautomations.be"
-    };
-
     const CONTACT_INFO = {
-      businessName: "Timeless Automations",
       email: "nelly@timelessautomations.be",
       linkedinUrl: "https://linkedin.com/in/nellyopoku"
     };
-
     const CURRENT_SECTOR = "realestate";
   </script>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="logo">Timeless Automations</a>
-      <nav class="nav" aria-label="Hoofdnavigatie">
-        <a href="/#sectoren" data-i18n="navSectors">Sectoren</a>
-        <a href="/#voordelen" data-i18n="navBenefits">Voordelen</a>
-        <a href="/#contact" data-i18n="navContact">Contact</a>
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">Timeless Automations</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html#services" data-i18n-sector="nav.services">Services</a>
+        <a href="index.html#industries" data-i18n-sector="nav.industries">Industries</a>
+        <a href="#contact" data-i18n-sector="nav.contact">Contact</a>
       </nav>
-      <div class="lang-toggle" role="group" aria-label="Taal / Langue">
-        <button type="button" id="btn-nl" class="lang-btn active" aria-pressed="true">NL</button>
-        <span class="lang-sep" aria-hidden="true">|</span>
-        <button type="button" id="btn-fr" class="lang-btn" aria-pressed="false">FR</button>
+      <div class="lang-switcher">
+        <button type="button" class="lang-btn active" data-lang="nl" aria-pressed="true">NL</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
-    <section class="sector-hero">
+    <!-- SECTOR SWITCHER -->
+    <section class="sector-switcher-section">
       <div class="container">
-        <div class="breadcrumb">
-          <a href="/" data-i18n="breadcrumbHome">Home</a>
-          <span class="breadcrumb-sep">›</span>
-          <a href="/#sectoren" data-i18n="breadcrumbSectors">Sectoren</a>
-          <span class="breadcrumb-sep">›</span>
-          <span data-i18n="breadcrumbRealEstate">Vastgoed</span>
+        <div class="sector-switcher">
+          <a href="vastgoed.html" class="sector-switch-btn active" data-i18n-sector="switcher.realestate">Vastgoed</a>
+          <a href="verzekeringen.html" class="sector-switch-btn" data-i18n-sector="switcher.insurance">Verzekeringen</a>
+          <a href="autodealers.html" class="sector-switch-btn" data-i18n-sector="switcher.automotive">Autohandelaars</a>
         </div>
-        <div class="sector-hero-grid">
-          <div class="sector-hero-content">
-            <h1 data-i18n="heroTitle">Software gebouwd voor vastgoedkantoren</h1>
-            <p class="sector-hero-sub" data-i18n="heroSub">Directe reactie op elke lead van Immoweb en Zimmo, automatische opvolging van bezichtigingen en naadloze verbinding met uw CRM.</p>
+      </div>
+    </section>
+
+    <!-- HERO -->
+    <section class="hero sector-hero-custom">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <span data-i18n-sector="realestate.hero.title">Gebouwd voor</span>
+              <span class="text-accent" data-i18n-sector="realestate.hero.title.accent">vastgoedkantoren.</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n-sector="realestate.hero.subtitle">Automatisering bovenop uw bestaande CRM. Directe reactie op leads van Immoweb en Zimmo, automatische opvolging van bezichtigingen. Geen nieuwe tools. Geen handmatig werk.</p>
             <div class="hero-actions">
-              <a href="#contact" class="btn btn-primary" data-i18n="btnGetStarted">Aan de slag</a>
-              <a href="demo/" class="btn btn-secondary" data-i18n="btnViewDemo">Bekijk de demo</a>
+              <a href="#contact" class="btn btn-primary" data-i18n-sector="realestate.hero.cta">Plan een gratis gesprek</a>
             </div>
           </div>
-          <div class="sector-hero-visual">
-            <div class="hero-photo-wrapper">
-              <img src="images/hero-realestate.webp" alt="Real estate professional" class="hero-photo">
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img src="images/hero-realestate.webp" alt="Real estate professional" class="hero-image" width="560" height="650" loading="eager">
             </div>
-            <div class="mockup-cards">
-              <div class="mockup-card mockup-card-summary">
-                <div class="mockup-label" data-i18n="mockupExample">Voorbeeld</div>
-                <div class="mockup-title" data-i18n="mockupLeadsToday">Leads vandaag</div>
-                <div class="mockup-stats-grid">
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">8</span>
-                    <span class="mockup-stat-label" data-i18n="mockupStatsNew">Nieuwe leads</span>
-                  </div>
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">8</span>
-                    <span class="mockup-stat-label" data-i18n="mockupStatsAnswered">Beantwoord</span>
-                  </div>
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">5</span>
-                    <span class="mockup-stat-label" data-i18n="mockupStatsScheduled">Bezichtigingen</span>
-                  </div>
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">2</span>
-                    <span class="mockup-stat-label" data-i18n="mockupStatsToCheck">Te bekijken</span>
-                  </div>
+            <div class="dashboard-mockup">
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span></span><span></span><span></span>
                 </div>
-                <div class="mockup-list">
-                  <div class="mockup-list-item">
-                    <div class="mockup-item-badge mockup-badge-immoweb">IMW</div>
-                    <div class="mockup-item-content">
-                      <div class="mockup-item-name" data-i18n="mockupClient1">Emma Janssens</div>
-                      <div class="mockup-item-details" data-i18n="mockupProperty1">Appartement Antwerpen</div>
-                    </div>
-                    <div class="mockup-item-status status-answered" data-i18n="statusAnswered">Beantwoord</div>
+                <div class="mockup-title" data-i18n-sector="realestate.mockup.title">Leads vandaag</div>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-stats">
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n-sector="realestate.mockup.new">Nieuw</div>
+                    <div class="stat-value">12</div>
                   </div>
-                  <div class="mockup-list-item">
-                    <div class="mockup-item-badge mockup-badge-zimmo">ZMO</div>
-                    <div class="mockup-item-content">
-                      <div class="mockup-item-name" data-i18n="mockupClient2">Marc Dubois</div>
-                      <div class="mockup-item-details" data-i18n="mockupProperty2">Huis Gent</div>
-                    </div>
-                    <div class="mockup-item-status status-scheduled" data-i18n="statusScheduled">Gepland</div>
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n-sector="realestate.mockup.answered">Beantwoord</div>
+                    <div class="stat-value">10</div>
                   </div>
-                  <div class="mockup-list-item">
-                    <div class="mockup-item-badge mockup-badge-facebook">FB</div>
-                    <div class="mockup-item-content">
-                      <div class="mockup-item-name" data-i18n="mockupClient3">Sophie Claes</div>
-                      <div class="mockup-item-details" data-i18n="mockupProperty3">Villa Knokke</div>
-                    </div>
-                    <div class="mockup-item-status status-pending" data-i18n="statusPending">Follow-up</div>
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n-sector="realestate.mockup.viewings">Bezichtigingen</div>
+                    <div class="stat-value">8</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n-sector="realestate.mockup.followup">Opvolging</div>
+                    <div class="stat-value">3</div>
                   </div>
                 </div>
               </div>
@@ -128,513 +107,319 @@
       </div>
     </section>
 
-    <!-- SUB-SECTORS -->
-    <section class="section">
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
       <div class="container">
-        <h2 class="section-title" data-i18n="subsectorsTitle">Verken vastgoedsectoren</h2>
-        <div class="subsector-grid">
-          <div class="subsector-card">
-            <h3 data-i18n="subsector1Title">Verkoop</h3>
-            <p data-i18n="subsector1Text">Beheer leads van kopers, bezichtigingen, biedingen en verkooptrajecten van eerste contact tot afgetekend compromis.</p>
+        <p class="trust-text" data-i18n-sector="realestate.trust">Werkt naast Whise, Omnicasa, Zabun. U hoeft niet te switchen.</p>
+      </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section class="section section-problem">
+      <div class="container">
+        <h2 class="section-title" data-i18n-sector="realestate.problems.title">Herkenbare problemen voor vastgoedkantoren</h2>
+        <div class="problem-grid">
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 9v4l2 2"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span data-i18n-sector="realestate.problems.item1">Leads pilen zich op tijdens bezichtigingen</span>
           </div>
-          <div class="subsector-card">
-            <h3 data-i18n="subsector2Title">Verhuur</h3>
-            <p data-i18n="subsector2Text">Beheer huurders, bezichtigingen, contracten en opvolging van verhuurportefeuilles.</p>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+            <span data-i18n-sector="realestate.problems.item2">Te trage reactie = gemiste kansen</span>
           </div>
-          <div class="subsector-card">
-            <h3 data-i18n="subsector3Title">Nieuwbouwprojecten</h3>
-            <p data-i18n="subsector3Text">Beheer projectwebsites, leads van kopers, reservaties en opvolging van nieuwbouwontwikkelingen.</p>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="8.5" cy="7" r="4"/>
+            </svg>
+            <span data-i18n-sector="realestate.problems.item3">Follow-ups worden vergeten</span>
           </div>
-          <div class="subsector-card">
-            <h3 data-i18n="subsector4Title">Syndicus & Beheer</h3>
-            <p data-i18n="subsector4Text">Beheer communicatie met eigenaars, aanvragen van huurders en onderhoudstaken voor gebouwen.</p>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <span data-i18n-sector="realestate.problems.item4">Data handmatig overnemen uit mails</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BENEFITS -->
-    <section class="section section-alt">
-      <div class="container">
-        <h2 class="section-title" data-i18n="benefitsTitle">Vastgoedsoftware ontworpen voor uw kantoor</h2>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-                <path d="M9 22V12h6v10"/>
-              </svg>
-            </div>
-            <h3 data-i18n="benefit1Title">Ontworpen voor vastgoed</h3>
-            <p data-i18n="benefit1Text">Gebouwd rond de dagelijkse realiteit van vastgoedkantoren. Van lead tot bezichtiging tot ondertekening.</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
-              </svg>
-            </div>
-            <h3 data-i18n="benefit2Title">Van eerste contact tot verkoop</h3>
-            <p data-i18n="benefit2Text">Verbindt leads, bezichtigingen, opvolging, CRM en communicatie. Alles in één werkstroom.</p>
-          </div>
-          <div class="benefit-card">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-              </svg>
-            </div>
-            <h3 data-i18n="benefit3Title">Voor kantoren van elke grootte</h3>
-            <p data-i18n="benefit3Text">Van eenmanszaak tot groep met meerdere vestigingen. Kies wat u vandaag nodig hebt en breid uit wanneer nodig.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
+    <!-- WHAT WE BUILD -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title" data-i18n="featuresTitle">Alles wat u nodig hebt om leads te beheren</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+        <h2 class="section-title" data-i18n-sector="realestate.solution.title">Wat wij bouwen voor u</h2>
+        <p class="section-intro" data-i18n-sector="realestate.solution.intro">Automatisering die werkt bovenop uw CRM. Geen nieuwe tool om te leren.</p>
+        <div class="services-grid services-grid-3">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                <path d="M12 8v4M12 16h.01"/>
+              </svg>
+            </div>
+            <h3 data-i18n-sector="realestate.solution.card1.title">Directe reactie op leads</h3>
+            <p data-i18n-sector="realestate.solution.card1.desc">Immoweb, Zimmo, website: elke lead krijgt binnen 2 minuten een automatisch antwoord.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
                 <path d="M12 6v6l4 2"/>
               </svg>
             </div>
-            <h3 data-i18n="feature1Title">Directe reactie op leads</h3>
-            <p data-i18n="feature1Text">Nieuwe aanvragen van Immoweb, Zimmo en uw website krijgen meteen een reactie.</p>
+            <h3 data-i18n-sector="realestate.solution.card2.title">Automatische opvolging</h3>
+            <p data-i18n-sector="realestate.solution.card2.desc">Herinneringen, bevestigingen, follow-ups: alles automatisch op de juiste momenten.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                <path d="M22 4L12 14.01l-3-3"/>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
               </svg>
             </div>
-            <h3 data-i18n="feature2Title">Automatische opvolging</h3>
-            <p data-i18n="feature2Text">Herinneringen en follow-up zodat geen enkele lead of bezichtiging vergeten wordt.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <rect x="3" y="4" width="18" height="18" rx="2"/>
-                <path d="M16 2v4M8 2v4M3 10h18"/>
-              </svg>
-            </div>
-            <h3 data-i18n="feature3Title">Bezichtigingenbeheer</h3>
-            <p data-i18n="feature3Text">Plan bezichtigingen, stuur bevestigingen en herinneringen automatisch.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <h3 data-i18n="feature4Title">CRM-integratie</h3>
-            <p data-i18n="feature4Text">Werkt met Whise, Omnicasa en Zabun. Alle leads automatisch in uw CRM.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <h3 data-i18n="feature5Title">Multi-locatie ondersteuning</h3>
-            <p data-i18n="feature5Text">Beheer meerdere vestigingen of makelaars vanuit één systeem.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-              </svg>
-            </div>
-            <h3 data-i18n="feature6Title">Meldingen & rapportage</h3>
-            <p data-i18n="feature6Text">Realtime overzicht van nieuwe leads, openstaande bezichtigingen en opvolgingen.</p>
+            <h3 data-i18n-sector="realestate.solution.card3.title">Verbonden met uw CRM</h3>
+            <p data-i18n-sector="realestate.solution.card3.desc">Leads en afspraken automatisch in Whise, Omnicasa of Zabun. Niets handmatig overnemen.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DEEP DIVE 1: LEAD FLOW -->
+    <!-- HOW IT CONNECTS -->
     <section class="section section-alt">
       <div class="container">
-        <div class="deep-section">
-          <div class="deep-content">
-            <h2 class="section-title" data-i18n="deep1Title">Van lead naar bezichtiging in minuten</h2>
-            <p data-i18n="deep1Text1">Wanneer een nieuwe lead binnenkomt van Immoweb, Zimmo of uw website, krijgt de klant meteen een persoonlijk antwoord — ook buiten kantooruren.</p>
-            <p data-i18n="deep1Text2">Het systeem sorteert automatisch kopers, verkopers en huurders, plant bezichtigingen in uw agenda en zet alle informatie direct in uw CRM.</p>
-            <p data-i18n="deep1Text3">Geen manuele overdracht, geen vergeten leads. Alles loopt automatisch en u behoudt volledige controle.</p>
+        <h2 class="section-title" data-i18n-sector="realestate.workflow.title">Hoe het werkt</h2>
+        <div class="workflow-diagram">
+          <div class="workflow-step">
+            <div class="workflow-icon">1</div>
+            <div class="workflow-label" data-i18n-sector="realestate.workflow.step1">Lead van Immoweb/Zimmo</div>
           </div>
-          <div class="deep-visual">
-            <div class="flow-visual">
-              <div class="flow-visual-step">
-                <div class="flow-visual-icon">📧</div>
-                <div class="flow-visual-label" data-i18n="flowVisual1">Lead binnenkomst</div>
-              </div>
-              <div class="flow-visual-arrow">→</div>
-              <div class="flow-visual-step">
-                <div class="flow-visual-icon">⚡</div>
-                <div class="flow-visual-label" data-i18n="flowVisual2">Direct antwoord</div>
-              </div>
-              <div class="flow-visual-arrow">→</div>
-              <div class="flow-visual-step">
-                <div class="flow-visual-icon">📅</div>
-                <div class="flow-visual-label" data-i18n="flowVisual3">Bezichtiging gepland</div>
-              </div>
-              <div class="flow-visual-arrow">→</div>
-              <div class="flow-visual-step">
-                <div class="flow-visual-icon">💼</div>
-                <div class="flow-visual-label" data-i18n="flowVisual4">In uw CRM</div>
-              </div>
-            </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">2</div>
+            <div class="workflow-label" data-i18n-sector="realestate.workflow.step2">Direct automatisch antwoord</div>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">3</div>
+            <div class="workflow-label" data-i18n-sector="realestate.workflow.step3">Opvolging & herinnering</div>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">4</div>
+            <div class="workflow-label" data-i18n-sector="realestate.workflow.step4">Bezichtiging gepland</div>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">5</div>
+            <div class="workflow-label" data-i18n-sector="realestate.workflow.step5">Automatisch in uw CRM</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DEEP DIVE 2: FOLLOW-UP -->
+    <!-- VIDEO SECTION -->
+    <section class="section section-alt section-video">
+      <div class="container">
+        <h2 class="section-title" data-i18n-sector="realestate.video.title">Bekijk hoe het werkt</h2>
+        <p class="section-intro" data-i18n-sector="realestate.video.intro">Een kort overzicht van automatisering voor vastgoedkantoren.</p>
+        <div class="video-wrapper">
+          <video id="realestateVideo" 
+                 class="sector-video" 
+                 controls 
+                 playsinline 
+                 preload="metadata"
+                 poster="assets/video/realestate_crm_ad_30s_nl_16x9_poster.jpg"
+                 src="assets/video/realestate_crm_ad_30s_nl_16x9.mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
     <section class="section">
       <div class="container">
-        <div class="deep-section deep-section-reverse">
-          <div class="deep-visual">
-            <div class="timeline-visual">
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <strong data-i18n="timeline1Title">Dag 0</strong>
-                  <span data-i18n="timeline1Text">Lead ontvangt bevestiging</span>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <strong data-i18n="timeline2Title">Dag 1</strong>
-                  <span data-i18n="timeline2Text">Herinnering bezichtiging</span>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <strong data-i18n="timeline3Title">Dag 3</strong>
-                  <span data-i18n="timeline3Text">Follow-up na bezichtiging</span>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <strong data-i18n="timeline4Title">Dag 7</strong>
-                  <span data-i18n="timeline4Text">Extra informatie aangeboden</span>
-                </div>
-              </div>
-            </div>
+        <h2 class="section-title" data-i18n-sector="process.title">Van gesprek tot werkende oplossing</h2>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <h3 data-i18n-sector="process.step1.title">Begrijpen</h3>
+            <p data-i18n-sector="process.step1.description">We leren hoe uw kantoor momenteel werkt en waar tijd verloren gaat.</p>
           </div>
-          <div class="deep-content">
-            <h2 class="section-title" data-i18n="deep2Title">Automatische opvolging die geen lead laat liggen</h2>
-            <p data-i18n="deep2Text1">Na elke bezichtiging of contactmoment blijft het systeem actief volgen. U krijgt meldingen wanneer een lead aandacht nodig heeft.</p>
-            <p data-i18n="deep2Text2">Klanten ontvangen herinneringen, bevestigingen en relevante informatie op het juiste moment — zonder dat u alles manueel moet bijhouden.</p>
-            <p data-i18n="deep2Text3">Het resultaat: meer bezichtigingen, snellere afsluitingen en tevreden klanten.</p>
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <h3 data-i18n-sector="process.step2.title">Ontwerpen</h3>
+            <p data-i18n-sector="process.step2.description">We brengen de workflow in kaart en ontwerpen de automatisering.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <h3 data-i18n-sector="process.step3.title">Bouwen</h3>
+            <p data-i18n-sector="process.step3.description">We ontwikkelen de software en verbinden met uw bestaande tools.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <h3 data-i18n-sector="process.step4.title">Lanceren</h3>
+            <p data-i18n-sector="process.step4.description">We implementeren alles en helpen u op weg.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INTEGRATIONS -->
-    <section class="section section-alt">
+    <!-- CTA SECTION -->
+    <section class="section section-cta-dark">
       <div class="container">
-        <h2 class="section-title" data-i18n="integrationsTitle">Kan koppelen met uw bestaande tools</h2>
-        <p class="section-intro" data-i18n="integrationsIntro">Werkt samen met de software die u al gebruikt.</p>
-        <div class="integrations-grid">
-          <div class="integration-card">
-            <h3>Whise</h3>
-            <p data-i18n="integrationWhise">Via API of e-mailimport</p>
-          </div>
-          <div class="integration-card">
-            <h3>Omnicasa</h3>
-            <p data-i18n="integrationOmnicasa">Via API of e-mailimport</p>
-          </div>
-          <div class="integration-card">
-            <h3>Zabun</h3>
-            <p data-i18n="integrationZabun">Via e-mailimport</p>
-          </div>
-          <div class="integration-card">
-            <h3>Immoweb</h3>
-            <p data-i18n="integrationImmoweb">Via e-mailnotificaties</p>
-          </div>
-          <div class="integration-card">
-            <h3>Zimmo</h3>
-            <p data-i18n="integrationZimmo">Via e-mailnotificaties</p>
-          </div>
-          <div class="integration-card">
-            <h3 data-i18n="integrationOther">Uw website</h3>
-            <p data-i18n="integrationOtherText">Via contactformulier</p>
-          </div>
+        <div class="cta-content">
+          <h2 class="cta-title" data-i18n-sector="cta.title">Klaar om leads sneller te beantwoorden?</h2>
+          <p class="cta-text" data-i18n-sector="cta.text">Vertel ons hoe uw kantoor werkt. We tonen waar automatisering tijd bespaart.</p>
+          <a href="#contact" class="btn btn-primary btn-large" data-i18n-sector="cta.button">Plan een gratis gesprek</a>
         </div>
       </div>
     </section>
 
-    <!-- IMPLEMENTATION -->
-    <section class="section">
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
       <div class="container">
-        <h2 class="section-title" data-i18n="implementationTitle">Implementatie & ondersteuning</h2>
-        <div class="implementation-grid">
-          <div class="implementation-card">
-            <h3 data-i18n="impl1Title">Persoonlijke opstart</h3>
-            <p data-i18n="impl1Text">We bekijken samen uw huidige werkwijze en bouwen de oplossing precies zoals u het nodig hebt.</p>
+        <h2 class="section-title" data-i18n-sector="realestate.contact.title">Laten we praten over uw kantoor</h2>
+        <p class="contact-intro" data-i18n-sector="contact.intro">Vertel ons wat te veel tijd kost, en wij tonen hoe automatisering kan helpen.</p>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3 data-i18n-sector="contact.email.title">E-mail</h3>
+            <a href="mailto:nelly@timelessautomations.be" class="contact-link">nelly@timelessautomations.be</a>
           </div>
-          <div class="implementation-card">
-            <h3 data-i18n="impl2Title">Minimale verstoring</h3>
-            <p data-i18n="impl2Text">U blijft werken met de tools die u kent. De automatisatie draait op de achtergrond.</p>
-          </div>
-          <div class="implementation-card">
-            <h3 data-i18n="impl3Title">Gebouwd rond uw werkwijze</h3>
-            <p data-i18n="impl3Text">Niet u past aan het systeem, maar het systeem past bij uw manier van werken.</p>
+          <div class="contact-method">
+            <h3 data-i18n-sector="contact.linkedin.title">LinkedIn</h3>
+            <a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/nellyopoku</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section class="projects-section">
-      <div class="container">
-        <h2 class="section-title" data-i18n="projectsSectionTitle">Wat we voor u kunnen bouwen</h2>
-        <p class="section-intro" data-i18n="projectsSectionIntro">Concrete oplossingen die u direct meer tijd en meer leads opleveren.</p>
-
-        <div class="projects-grid">
-          <!-- R-1: Lead follow-up (Featured) -->
-          <div class="project-card featured" data-i18n-attr="data-badge:projectFeaturedBadge" data-badge="Meest gekozen start">
-            <div class="project-icon">📧</div>
-            <h3 class="project-title" data-i18n="projectR1Title">24/7 Lead follow-up en bezichtigingsagenda</h3>
-            <p class="project-problem" data-i18n="projectR1Problem">Te weinig verkopen en langere verkooptijden maken elke lead waardevol—maar enquêtes 's avonds of in het weekend blijven te vaak onbeantwoord.</p>
-            <ul class="project-features">
-              <li data-i18n="projectR1Feature1">Directe, persoonlijke reactie op Immoweb, Zimmo en uw website</li>
-              <li data-i18n="projectR1Feature2">Zelfbedieningsagenda voor bezichtigingen</li>
-              <li data-i18n="projectR1Feature3">Automatische herinneringen en wekelijks rapport</li>
-            </ul>
-          </div>
-
-          <!-- R-2: Seller lead engine -->
-          <div class="project-card">
-            <div class="project-icon">🏠</div>
-            <h3 class="project-title" data-i18n="projectR2Title">Verkopersleads: waardering en renovatieplicht-tool</h3>
-            <p class="project-problem" data-i18n="projectR2Problem">Bij stijgende hypotheekrente zijn kopers voorzichtiger, maar verkopers met een E- of F-label hebben uw advies nodig over de 6-jaars renovatieplicht.</p>
-            <ul class="project-features">
-              <li data-i18n="projectR2Feature1">Adresformulier voor waarderingsaanvraag</li>
-              <li data-i18n="projectR2Feature2">E/F-checker met uitleg renovatieplicht en subsidies</li>
-              <li data-i18n="projectR2Feature3">Automatische opvolgingsreeks</li>
-            </ul>
-          </div>
-
-          <!-- R-3: Compliance checklist -->
-          <div class="project-card">
-            <div class="project-icon">✓</div>
-            <h3 class="project-title" data-i18n="projectR3Title">Dossier-compliance checklist en uploadportaal</h3>
-            <p class="project-problem" data-i18n="projectR3Problem">Elke verkoop vraagt het maatregelenregister (sinds 1 april 2026), EPC-vermeldingen en een AML-dossier—inspecties lopen dit jaar.</p>
-            <ul class="project-features">
-              <li data-i18n="projectR3Feature1">Per-pand checklist (EPC, bodemattest, maatregelenregister, renovatietekst)</li>
-              <li data-i18n="projectR3Feature2">Uploadportaal voor verkopers</li>
-              <li data-i18n="projectR3Feature3">Herinneringen en dossier-PDF, optioneel gekoppeld aan RealSmart</li>
-            </ul>
-          </div>
-
-          <!-- R-4: Rental workflow -->
-          <div class="project-card">
-            <div class="project-icon">📋</div>
-            <h3 class="project-title" data-i18n="projectR4Title">Verhuurworkflow-automatisering</h3>
-            <p class="project-problem" data-i18n="projectR4Problem">Huurvraag groeit en indexatie moet op tijd, maar elk dossier vraagt documenten, planning en contractdata.</p>
-            <ul class="project-features">
-              <li data-i18n="projectR4Feature1">Kandidaat-intakeformulier met vereiste documenten</li>
-              <li data-i18n="projectR4Feature2">Automatische bezichtigingsagenda en shortlist</li>
-              <li data-i18n="projectR4Feature3">Jaarlijkse indexatiebrieven op tijd</li>
-            </ul>
-          </div>
-
-          <!-- R-5: Syndic portal -->
-          <div class="project-card">
-            <div class="project-icon">🏢</div>
-            <h3 class="project-title" data-i18n="projectR5Title">Syndicus-eigenaarportaal en ticketing</h3>
-            <p class="project-problem" data-i18n="projectR5Problem">Vraag naar syndicusbeheer groeit, maar de vergoeding dekt de werkdruk niet meer, en prijs beslist steeds vaker.</p>
-            <ul class="project-features">
-              <li data-i18n="projectR5Feature1">Portaal per gebouw: eigenaars melden problemen met foto</li>
-              <li data-i18n="projectR5Feature2">Automatische statusupdates en aannemer-dispatch</li>
-              <li data-i18n="projectR5Feature3">Documentbibliotheek en AV-herinneringen</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="projects-cta">
-          <p><span data-i18n="projectsCtaText">Iets anders nodig? Vertel ons wat u tijd kost.</span> <a href="#contact" data-i18n="btnContactUs">Neem contact op</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-alt">
-      <div class="container">
-        <h2 class="section-title" data-i18n="faqTitle">Veelgestelde vragen</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ(this)">
-              <span data-i18n="faq1Question">Wat kost een oplossing voor mijn kantoor?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq1Answer">Elk project is op maat; we bespreken het budget na een kort gesprek.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ(this)">
-              <span data-i18n="faq2Question">Werkt dit met mijn bestaande CRM?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq2Answer">Ja. Ik werk met Whise, Omnicasa en Zabun. Als u een ander CRM gebruikt, bekijken we samen wat de beste manier is om te koppelen (API of e-mailimport).</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ(this)">
-              <span data-i18n="faq3Question">Hoe snel kan dit live gaan?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq3Answer">Afhankelijk van de complexiteit: eenvoudige leadopvolging binnen 2-3 weken, grotere projecten met CRM-koppeling binnen 4-6 weken. U krijgt eerst een gratis demo om te zien hoe het eruitziet.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ(this)">
-              <span data-i18n="faq4Question">Is dit AVG/GDPR-conform?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq4Answer">Ja. Alle gegevens worden veilig verwerkt volgens de Belgische en Europese privacywetgeving. U blijft eigenaar van uw eigen klantdata.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ(this)">
-              <span data-i18n="faq5Question">Werkt dit in het Nederlands én Frans?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq5Answer">Ja. Alle berichten naar klanten kunnen in het Nederlands, Frans of beide talen — afhankelijk van uw kantoor en klantenbestand.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFAQ(this)">
-              <span data-i18n="faq6Question">Wat gebeurt er na de oplevering?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p data-i18n="faq6Answer">Na de eerste weken blijf ik beschikbaar voor aanpassingen en ondersteuning. Als iets niet werkt zoals verwacht, lossen we dat samen op.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT CTA -->
-    <section class="section section-cta">
-      <div class="container">
-        <h2 class="section-title" data-i18n="ctaTitle">Klaar om uw leadopvolging te automatiseren?</h2>
-        <p class="section-intro" data-i18n="ctaIntro">Vertel ons over uw kantoor en we sturen u een voorstel.</p>
 
         <div class="contact-form-wrapper">
-          <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event, 'sector')">
+          <form class="contact-form" id="contactForm">
             <div class="form-row">
               <div class="form-group">
-                <label for="contact-name" data-i18n="formLabelName">Naam *</label>
-                <input type="text" id="contact-name" name="name" required>
+                <label for="name" data-i18n-sector="contact.form.name">Naam *</label>
+                <input type="text" id="name" name="name" required>
               </div>
               <div class="form-group">
-                <label for="contact-company" data-i18n="formLabelCompany">Kantoor *</label>
-                <input type="text" id="contact-company" name="company" required>
+                <label for="company" data-i18n-sector="contact.form.company">Bedrijf *</label>
+                <input type="text" id="company" name="company" required>
               </div>
             </div>
-
+            
             <div class="form-row">
               <div class="form-group">
-                <label for="contact-email" data-i18n="formLabelEmail">E-mail *</label>
-                <input type="email" id="contact-email" name="email" required>
+                <label for="email" data-i18n-sector="contact.form.email">E-mail *</label>
+                <input type="email" id="email" name="email" required>
               </div>
               <div class="form-group">
-                <label for="contact-phone" data-i18n="formLabelPhone">Telefoon</label>
-                <input type="tel" id="contact-phone" name="phone">
+                <label for="phone" data-i18n-sector="contact.form.phone">Telefoon</label>
+                <input type="tel" id="phone" name="phone">
               </div>
             </div>
 
             <div class="form-group">
-              <label for="contact-message" data-i18n="formLabelMessageRE">Wat wilt u automatiseren?</label>
-              <textarea id="contact-message" name="message" rows="4" placeholder="Bijvoorbeeld: directe reactie op Immoweb-leads, opvolging bezichtigingen, koppeling met Whise..."></textarea>
+              <label for="message" data-i18n-sector="contact.form.message">Wat kost u het meeste tijd? *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" data-i18n="btnSendMessage">Bericht versturen</button>
+            <button type="submit" class="btn btn-primary" data-i18n-sector="contact.form.submit">Bericht versturen</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h4 class="footer-title">Timeless Automations</h4>
-        <p class="footer-tagline" data-i18n="footerTagline">Software &amp; automatisatie voor bedrijven in België</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Timeless Automations</div>
+          <p class="footer-tagline" data-i18n-sector="footer.tagline">Software op maat. Slimmere workflows.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n-sector="footer.sectors">Sectoren</h4>
+          <ul class="footer-links">
+            <li><a href="vastgoed.html" data-i18n-sector="switcher.realestate">Vastgoed</a></li>
+            <li><a href="verzekeringen.html" data-i18n-sector="switcher.insurance">Verzekeringen</a></li>
+            <li><a href="autodealers.html" data-i18n-sector="switcher.automotive">Autohandelaars</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n-sector="footer.company">Bedrijf</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n-sector="footer.home">Home</a></li>
+            <li><a href="index.html#services" data-i18n-sector="footer.services">Diensten</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n-sector="footer.contact">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a></li>
+            <li><a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-title" data-i18n="footerSectorsTitle">Sectoren</h4>
-        <ul class="footer-links">
-          <li><a href="/vastgoed.html" data-i18n="sectorRealEstateTitle">Vastgoedkantoren</a></li>
-          <li><a href="/verzekeringen.html" data-i18n="sectorInsuranceTitle">Verzekeringskantoren</a></li>
-          <li><a href="/autodealers.html" data-i18n="sectorAutomotiveTitle">Autodealers</a></li>
-          <li><a href="/#contact" data-i18n="sectorOtherTitle">Andere sector</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2026 Timeless Automations · Nelly Opoku</p>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-title" data-i18n="footerContactTitle">Contact</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a></li>
-          <li><a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© 2026 Timeless Automations · Nelly Opoku</p>
     </div>
   </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="mobile-cta">
+    <a href="#contact" class="btn btn-primary btn-block" data-i18n-sector="mobile.cta">Plan een gratis gesprek</a>
+  </div>
 
   <script src="i18n-sector.js"></script>
   <script src="app.js"></script>
   <script>
-    function toggleFAQ(button) {
-      const item = button.parentElement;
-      const answer = item.querySelector('.faq-answer');
-      const isOpen = item.classList.contains('faq-open');
+    // Video language and responsive handling
+    function updateVideoSource() {
+      const video = document.getElementById('realestateVideo');
+      if (!video) return;
       
-      // Close all other FAQs
-      document.querySelectorAll('.faq-item').forEach(faq => {
-        faq.classList.remove('faq-open');
-      });
+      const currentLang = localStorage.getItem('language') || 'nl';
+      const lang = currentLang === 'en' ? 'nl' : currentLang; // EN uses NL video
+      const isMobile = window.matchMedia('(max-width: 767px)').matches;
+      const aspectRatio = isMobile ? '9x16' : '16x9';
       
-      // Toggle current FAQ
-      if (!isOpen) {
-        item.classList.add('faq-open');
+      const videoSrc = `assets/video/realestate_crm_ad_30s_${lang}_${aspectRatio}.mp4`;
+      const posterSrc = `assets/video/realestate_crm_ad_30s_${lang}_${aspectRatio}_poster.jpg`;
+      
+      // Only update if source has changed
+      if (video.src !== videoSrc) {
+        const currentTime = video.currentTime;
+        video.src = videoSrc;
+        video.poster = posterSrc;
+        video.load();
+        if (currentTime > 0) {
+          video.currentTime = currentTime;
+        }
       }
     }
+    
+    // Update video on load and language change
+    document.addEventListener('DOMContentLoaded', () => {
+      updateVideoSource();
+      
+      // Listen for language changes
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setTimeout(updateVideoSource, 100);
+        });
+      });
+      
+      // Listen for responsive changes
+      const mediaQuery = window.matchMedia('(max-width: 767px)');
+      mediaQuery.addListener(updateVideoSource);
+    });
   </script>
 </body>
 </html>
