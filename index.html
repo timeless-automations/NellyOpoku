@@ -3,112 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Timeless Automations – Software en automatisatie voor bedrijven in België. Directe reactie op leads, automatische opvolging en verbinding met uw bestaande tools.">
-  <meta property="og:title" content="Timeless Automations | Software en automatisatie voor bedrijven">
-  <meta property="og:description" content="Directe reactie op leads, automatische opvolging en verbinding met uw bestaande tools. Voor vastgoed, verzekeringen, autodealers en meer.">
+  <meta name="description" content="Timeless Automations – Custom CRM, ERP en business software voor bedrijven in België. Wij bouwen software op maat rond de manier waarop uw bedrijf werkt.">
+  <meta property="og:title" content="Timeless Automations | Custom Software That Runs Your Business">
+  <meta property="og:description" content="Wij bouwen CRM-systemen, ERP-platformen, interne dashboards, klantenportalen en automatisering voor bedrijven in België.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timelessautomations.be">
   <meta property="og:locale" content="nl_BE">
   <meta property="og:locale:alternate" content="fr_BE">
-  <title>Timeless Automations | Software en automatisatie voor bedrijven</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4B6B'/%3E%3Cpath d='M8 22V10l8-4 8 4v12l-8 4-8-4z' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3Cpath d='M16 6v20M8 10l8 4 8-4' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3C/svg%3E">
+  <meta property="og:locale:alternate" content="en_GB">
+  <title>Timeless Automations | Custom Software That Runs Your Business</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000'/%3E%3Cpath d='M16 8l8 4v8l-8 4-8-4v-8l8-4z' fill='none' stroke='%2300D9FF' stroke-width='1.5'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="sector-page.css">
 </head>
 <body>
   <script>
-    /* === FORM CONFIG === */
-    const FORM_CONFIG = {
-      // Set to empty string to use mailto: fallback
-      // Set to your form endpoint (e.g. Formspree) to use a form service
-      // Example: "https://formspree.io/f/YOUR_FORM_ID"
-      endpoint: "",
-      
-      // Email for mailto: fallback
-      email: "nelly@timelessautomations.be"
-    };
-
     const CONTACT_INFO = {
-      businessName: "Timeless Automations",
       email: "nelly@timelessautomations.be",
       linkedinUrl: "https://linkedin.com/in/nellyopoku"
     };
   </script>
 
-  <header class="site-header">
-    <div class="container header-inner">
+  <header class="header" id="header">
+    <div class="header-container">
       <a href="#top" class="logo">Timeless Automations</a>
-      <nav class="nav" aria-label="Hoofdnavigatie">
-        <a href="#sectoren" data-i18n="navSectors">Sectoren</a>
-        <a href="#voordelen" data-i18n="navBenefits">Voordelen</a>
-        <a href="#werkwijze" data-i18n="navHow">Werkwijze</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#industries" data-i18n="nav.industries">Industries</a>
+        <a href="#process" data-i18n="nav.process">Our Process</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <div class="lang-toggle" role="group" aria-label="Taal / Langue">
-        <button type="button" id="btn-nl" class="lang-btn active" aria-pressed="true">NL</button>
-        <span class="lang-sep" aria-hidden="true">|</span>
-        <button type="button" id="btn-fr" class="lang-btn" aria-pressed="false">FR</button>
+      <div class="lang-switcher">
+        <button type="button" class="lang-btn active" data-lang="nl" aria-pressed="true">NL</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
       </div>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero sector-hero">
+    <section class="hero">
+      <div class="hero-bg"></div>
       <div class="container">
-        <div class="sector-hero-grid">
-          <div class="sector-hero-content">
-            <h1 data-i18n="heroTitle">Software &amp; automatisatie voor bedrijven</h1>
-            <p class="sector-hero-sub" data-i18n="heroSub">Directe reactie op elke nieuwe lead, automatische opvolging en naadloze verbinding met de tools die u al gebruikt.</p>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">Custom Software That Runs Your Business.</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">We build CRM systems, ERP platforms, dashboards and automations designed around how your company works.</p>
             <div class="hero-actions">
-              <a href="#sectoren" class="btn btn-primary" data-i18n="btnChooseSector">Kies uw sector</a>
-              <a href="#contact" class="btn btn-secondary" data-i18n="btnContact">Contact opnemen</a>
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.cta.primary">Book a Free Consultation</a>
+              <a href="#services" class="btn btn-secondary" data-i18n="hero.cta.secondary">See What We Build</a>
             </div>
+            <p class="hero-trust" data-i18n="hero.trust">Built around your business. Not another off-the-shelf tool.</p>
           </div>
-          <div class="sector-hero-visual">
-            <div class="hero-photo-wrapper">
-              <img src="images/hero-homepage.webp" alt="Business professional" class="hero-photo">
-            </div>
-            <div class="mockup-cards">
-              <div class="mockup-card mockup-card-summary">
-                <div class="mockup-label" data-i18n="mockupExample">Voorbeeld</div>
-                <div class="mockup-title" data-i18n="mockupHomeDashboard">Uw dag in één oogopslag</div>
-                <div class="mockup-stats-grid">
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">12</span>
-                    <span class="mockup-stat-label" data-i18n="mockupHomeNew">Nieuwe aanvragen</span>
+          <div class="hero-visual">
+            <div class="dashboard-mockup">
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-title" data-i18n="mockup.title">Business Dashboard</div>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-stats">
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n="mockup.leads">Leads</div>
+                    <div class="stat-value">124</div>
+                    <div class="stat-change positive">+18%</div>
                   </div>
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">10</span>
-                    <span class="mockup-stat-label" data-i18n="mockupHomeAnswered">Beantwoord</span>
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n="mockup.customers">Customers</div>
+                    <div class="stat-value">1,847</div>
+                    <div class="stat-change positive">+12%</div>
                   </div>
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">8</span>
-                    <span class="mockup-stat-label" data-i18n="mockupHomeScheduled">Gepland</span>
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n="mockup.revenue">Revenue</div>
+                    <div class="stat-value">€142k</div>
+                    <div class="stat-change positive">+24%</div>
                   </div>
-                  <div class="mockup-stat-item">
-                    <span class="mockup-stat-value">3</span>
-                    <span class="mockup-stat-label" data-i18n="mockupHomeFollowUp">Follow-up</span>
+                  <div class="stat-card">
+                    <div class="stat-label" data-i18n="mockup.tasks">Tasks</div>
+                    <div class="stat-value">38</div>
+                    <div class="stat-change">Today</div>
                   </div>
                 </div>
-                <div class="mockup-list">
-                  <div class="mockup-list-item">
-                    <div class="mockup-item-badge mockup-badge-website">Web</div>
-                    <div class="mockup-item-content">
-                      <div class="mockup-item-name" data-i18n="mockupHomeItem1">Nieuwe aanvraag</div>
-                      <div class="mockup-item-details" data-i18n="mockupHomeItem1Time">5 min geleden</div>
+                <div class="mockup-pipeline">
+                  <div class="pipeline-header" data-i18n="mockup.pipeline">Sales Pipeline</div>
+                  <div class="pipeline-stages">
+                    <div class="pipeline-stage">
+                      <div class="stage-label" data-i18n="mockup.stage.new">New</div>
+                      <div class="stage-count">24</div>
                     </div>
-                    <div class="mockup-item-status status-answered" data-i18n="statusAnswered">Beantwoord</div>
+                    <div class="pipeline-stage">
+                      <div class="stage-label" data-i18n="mockup.stage.contacted">Contacted</div>
+                      <div class="stage-count">18</div>
+                    </div>
+                    <div class="pipeline-stage">
+                      <div class="stage-label" data-i18n="mockup.stage.qualified">Qualified</div>
+                      <div class="stage-count">12</div>
+                    </div>
+                    <div class="pipeline-stage active">
+                      <div class="stage-label" data-i18n="mockup.stage.proposal">Proposal</div>
+                      <div class="stage-count">8</div>
+                    </div>
                   </div>
-                  <div class="mockup-list-item">
-                    <div class="mockup-item-badge type-auto">Lead</div>
-                    <div class="mockup-item-content">
-                      <div class="mockup-item-name" data-i18n="mockupHomeItem2">Afspraak gepland</div>
-                      <div class="mockup-item-details" data-i18n="mockupHomeItem2Time">Vandaag 14:00</div>
+                </div>
+                <div class="mockup-notifications">
+                  <div class="notification">
+                    <div class="notification-icon automated"></div>
+                    <div class="notification-content">
+                      <div class="notification-text" data-i18n="mockup.notification1">Automated follow-up sent</div>
+                      <div class="notification-time">2 min ago</div>
                     </div>
-                    <div class="mockup-item-status status-scheduled" data-i18n="statusScheduled">Gepland</div>
+                  </div>
+                  <div class="notification">
+                    <div class="notification-icon workflow"></div>
+                    <div class="notification-content">
+                      <div class="notification-text" data-i18n="mockup.notification2">New lead added to pipeline</div>
+                      <div class="notification-time">5 min ago</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -118,515 +133,327 @@
       </div>
     </section>
 
-    <!-- SECTOR PICKER -->
-    <section id="sectoren" class="section">
+    <!-- PROBLEM -->
+    <section class="section section-problem">
       <div class="container">
-        <h2 class="section-title" data-i18n="sectorsTitle">Gebouwd voor de manier waarop uw sector werkt</h2>
-        <p class="section-intro" data-i18n="sectorsIntro">Kies uw sector om te zien hoe we u kunnen helpen.</p>
-        
-        <div class="sector-grid-home">
-          <a href="vastgoed.html" class="sector-card-link">
-            <article class="sector-card">
-              <div class="sector-icon" aria-hidden="true">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-                  <path d="M9 22V12h6v10"/>
-                </svg>
-              </div>
-              <h3 data-i18n="sectorRealEstateTitle">Vastgoedkantoren</h3>
-              <p data-i18n="sectorRealEstateDesc">Directe reactie op leads van Immoweb en Zimmo, automatische opvolging van bezichtigingen en verbinding met uw CRM.</p>
-              <span class="sector-arrow" aria-hidden="true">→</span>
-            </article>
-          </a>
-
-          <a href="verzekeringen.html" class="sector-card-link">
-            <article class="sector-card">
-              <div class="sector-icon" aria-hidden="true">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
-              <h3 data-i18n="sectorInsuranceTitle">Verzekeringskantoren</h3>
-              <p data-i18n="sectorInsuranceDesc">Directe reactie op offerteaanvragen, automatische opvolging van offertes en herinneringen voor verlengingen.</p>
-              <span class="sector-arrow" aria-hidden="true">→</span>
-            </article>
-          </a>
-
-          <a href="autodealers.html" class="sector-card-link">
-            <article class="sector-card">
-              <div class="sector-icon" aria-hidden="true">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M5 17h14v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2z"/>
-                  <path d="M5 17l2-8h10l2 8M7 17a2 2 0 100-4 2 2 0 000 4zM17 17a2 2 0 100-4 2 2 0 000 4z"/>
-                </svg>
-              </div>
-              <h3 data-i18n="sectorAutomotiveTitle">Autodealers</h3>
-              <p data-i18n="sectorAutomotiveDesc">Directe reactie op testritaanvragen van AutoScout24 en 2dehands, opvolging van inruilwagens en boekingen.</p>
-              <span class="sector-arrow" aria-hidden="true">→</span>
-            </article>
-          </a>
-
-          <a href="#contact" class="sector-card-link">
-            <article class="sector-card">
-              <div class="sector-icon" aria-hidden="true">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 8v8M8 12h8"/>
-                </svg>
-              </div>
-              <h3 data-i18n="sectorOtherTitle">Andere sector</h3>
-              <p data-i18n="sectorOtherDesc">Werkt u in een andere sector? Laat ons weten waar u tijd verliest en wij bouwen een oplossing op maat.</p>
-              <span class="sector-arrow" aria-hidden="true">→</span>
-            </article>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTOR DETAILS -->
-    <section id="sector-realestate" class="section section-detail" style="display: none;">
-      <div class="container">
-        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
-        
-        <h2 class="section-title" data-i18n="realEstateDetailTitle">Voor vastgoedkantoren</h2>
-        <p class="section-intro" data-i18n="realEstateDetailIntro">Minder administratie, meer tijd voor uw klanten.</p>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
-                <path d="M8 10h8M8 14h4"/>
-              </svg>
-            </div>
-            <h3 data-i18n="realEstatePain1Title">Directe reactie op nieuwe leads</h3>
-            <p data-i18n="realEstatePain1Text">Nieuwe aanvragen van Immoweb, Zimmo en uw website krijgen meteen een reactie — ook buiten de kantooruren.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <h3 data-i18n="realEstatePain2Title">Automatische opvolging van bezichtigingen</h3>
-            <p data-i18n="realEstatePain2Text">Herinneringen en bevestigingen zodat geen enkele bezichtiging vergeten wordt. U weet precies wie nog een antwoord nodig heeft.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <rect x="3" y="4" width="18" height="18" rx="2"/>
-                <path d="M16 2v4M8 2v4M3 10h18"/>
-              </svg>
-            </div>
-            <h3 data-i18n="realEstatePain3Title">Verbinding met uw CRM</h3>
-            <p data-i18n="realEstatePain3Text">Werkt naadloos samen met Whise, Omnicasa en Zabun. Alle informatie op één plek, minder dubbel werk.</p>
-          </article>
-        </div>
-
-        <div class="flow-section">
-          <h3 class="flow-title" data-i18n="realEstateFlowTitle">Hoe leads vloeien door uw kantoor</h3>
-          <div class="flow-diagram">
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowRealEstate1">Lead van Immoweb/Zimmo/website</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowRealEstate2">Direct automatisch antwoord</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowRealEstate3">Opvolging &amp; herinnering</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowRealEstate4">Bezichtiging gepland</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowRealEstate5">Automatisch in uw CRM</span>
-            </div>
+        <h2 class="section-title" data-i18n="problem.title">How much time is your business losing to manual work?</h2>
+        <div class="problem-grid">
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 9v4l2 2"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span data-i18n="problem.item1">Leads falling through the cracks</span>
+          </div>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+            <span data-i18n="problem.item2">Manual follow-ups</span>
+          </div>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <span data-i18n="problem.item3">Data spread across different tools</span>
+          </div>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>
+            </svg>
+            <span data-i18n="problem.item4">Repetitive administration</span>
+          </div>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="8.5" cy="7" r="4"/>
+              <path d="M20 8v6M23 11h-6"/>
+            </svg>
+            <span data-i18n="problem.item5">Employees entering the same information multiple times</span>
+          </div>
+          <div class="problem-item">
+            <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span data-i18n="problem.item6">No clear overview of operations</span>
           </div>
         </div>
-
-        <div class="demo-cta">
-          <h3 data-i18n="realEstateDemoTitle">Bekijk de demo</h3>
-          <p data-i18n="realEstateDemoText">Een voorbeeld van 1 minuut met fictieve gegevens.</p>
-          <a href="demo/" class="btn btn-primary" data-i18n="btnViewDemo">Bekijk de demo</a>
-        </div>
+        <p class="problem-solution" data-i18n="problem.solution">We build one system around your workflow.</p>
       </div>
     </section>
 
-    <section id="sector-insurance" class="section section-detail" style="display: none;">
+    <!-- WHAT WE BUILD -->
+    <section id="services" class="section section-services">
       <div class="container">
-        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
-        
-        <h2 class="section-title" data-i18n="insuranceDetailTitle">Voor verzekeringskantoren</h2>
-        <p class="section-intro" data-i18n="insuranceDetailIntro">Minder administratie, meer tijd voor persoonlijk advies.</p>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
-                <path d="M8 10h8M8 14h4"/>
-              </svg>
-            </div>
-            <h3 data-i18n="insurancePain1Title">Directe reactie op offerteaanvragen</h3>
-            <p data-i18n="insurancePain1Text">Nieuwe aanvragen krijgen meteen een bevestiging en eerste informatie — ook buiten kantooruren.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <h3 data-i18n="insurancePain2Title">Automatische opvolging van offertes</h3>
-            <p data-i18n="insurancePain2Text">Herinneringen voor openstaande offertes en follow-up van potentiële klanten. Geen enkele kans laten liggen.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                <path d="M22 4L12 14.01l-3-3"/>
-              </svg>
-            </div>
-            <h3 data-i18n="insurancePain3Title">Herinneringen voor verlengingen</h3>
-            <p data-i18n="insurancePain3Text">Automatische meldingen voor polissen die verlopen. Uw klanten krijgen tijdig een herinnering en verlengvoorstel.</p>
-          </article>
-        </div>
-
-        <div class="flow-section">
-          <h3 class="flow-title" data-i18n="insuranceFlowTitle">Hoe offerteaanvragen worden behandeld</h3>
-          <div class="flow-diagram">
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowInsurance1">Offerteaanvraag</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowInsurance2">Direct bevestiging</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowInsurance3">Offerte opgesteld</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowInsurance4">Follow-up herinnering</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowInsurance5">Polis afgesloten</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sector-automotive" class="section section-detail" style="display: none;">
-      <div class="container">
-        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
-        
-        <h2 class="section-title" data-i18n="automotiveDetailTitle">Voor autodealers</h2>
-        <p class="section-intro" data-i18n="automotiveDetailIntro">Minder administratie, meer tijd voor uw klanten.</p>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/>
-                <path d="M8 10h8M8 14h4"/>
-              </svg>
-            </div>
-            <h3 data-i18n="automotivePain1Title">Directe reactie op testritaanvragen</h3>
-            <p data-i18n="automotivePain1Text">Aanvragen van AutoScout24, 2dehands en uw website krijgen meteen een reactie met beschikbaarheid.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <h3 data-i18n="automotivePain2Title">Automatische planning van testritten</h3>
-            <p data-i18n="automotivePain2Text">Bevestigingen, herinneringen en opvolging van testritten. Alles wordt automatisch ingepland en gevolgd.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                <circle cx="8.5" cy="7" r="4"/>
-                <path d="M20 8v6M23 11h-6"/>
-              </svg>
-            </div>
-            <h3 data-i18n="automotivePain3Title">Opvolging van inruilwagens</h3>
-            <p data-i18n="automotivePain3Text">Klanten met een inruilwagen krijgen automatisch een herinnering. Alle informatie bij elkaar voor snellere afhandeling.</p>
-          </article>
-        </div>
-
-        <div class="flow-section">
-          <h3 class="flow-title" data-i18n="automotiveFlowTitle">Hoe testritaanvragen worden behandeld</h3>
-          <div class="flow-diagram">
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowAutomotive1">Aanvraag AutoScout24/2dehands</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowAutomotive2">Direct bevestiging</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowAutomotive3">Testrit ingepland</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowAutomotive4">Herinnering &amp; follow-up</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <span class="flow-label" data-i18n="flowAutomotive5">Inruilwagen geregistreerd</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sector-other" class="section section-detail" style="display: none;">
-      <div class="container">
-        <button class="back-btn" onclick="hideSectorDetail()" data-i18n="btnBackToSectors">← Terug naar sectoren</button>
-        
-        <h2 class="section-title" data-i18n="otherSectorTitle">Andere sector</h2>
-        <p class="section-intro" data-i18n="otherSectorIntro">Vertel ons waar u tijd verliest en wij bouwen een oplossing op maat.</p>
-
-        <div class="contact-form-wrapper">
-          <form id="other-sector-form" class="contact-form" onsubmit="handleFormSubmit(event, 'other')">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="other-name" data-i18n="formLabelName">Naam *</label>
-                <input type="text" id="other-name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="other-company" data-i18n="formLabelCompany">Bedrijf *</label>
-                <input type="text" id="other-company" name="company" required>
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label for="other-sector" data-i18n="formLabelSector">In welke sector werkt u? *</label>
-              <input type="text" id="other-sector" name="sector" required>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="other-email" data-i18n="formLabelEmail">E-mail *</label>
-                <input type="email" id="other-email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="other-phone" data-i18n="formLabelPhone">Telefoon</label>
-                <input type="tel" id="other-phone" name="phone">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="other-message" data-i18n="formLabelMessage">Wat kost u het meeste tijd? *</label>
-              <textarea id="other-message" name="message" rows="5" required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" data-i18n="btnSendMessage">Bericht versturen</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENEFITS -->
-    <section id="voordelen" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title" data-i18n="benefitsTitle">Alles wat u nodig hebt — verbonden</h2>
-        <p class="section-intro" data-i18n="benefitsIntro">Praktische oplossingen die aansluiten bij hoe u vandaag al werkt.</p>
-
-        <div class="benefits-grid">
-          <article class="benefit-card">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <h3 data-i18n="benefit1Title">Werkt met uw bestaande tools</h3>
-            <p data-i18n="benefit1Text">Verbindt met de software die u al gebruikt. Geen grote veranderingen, wel meer efficiëntie.</p>
-          </article>
-
-          <article class="benefit-card">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-              </svg>
-            </div>
-            <h3 data-i18n="benefit2Title">Direct resultaat</h3>
-            <p data-i18n="benefit2Text">Geen lange trajecten. U ziet binnen enkele weken hoe het werkt, met een gratis demo vooraf.</p>
-          </article>
-
-          <article class="benefit-card">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-                <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/>
-              </svg>
-            </div>
-            <h3 data-i18n="benefit3Title">Op maat gebouwd</h3>
-            <p data-i18n="benefit3Text">Elke oplossing wordt aangepast aan uw manier van werken. Niet andersom.</p>
-          </article>
-
-          <article class="benefit-card">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+        <h2 class="section-title" data-i18n="services.title">What We Build</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
                 <circle cx="9" cy="7" r="4"/>
                 <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
               </svg>
             </div>
-            <h3 data-i18n="benefit4Title">Nederlands én Frans</h3>
-            <p data-i18n="benefit4Text">Voor bedrijven in Vlaanderen, Wallonië en Brussel. In de taal waarin u werkt.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="werkwijze" class="section">
-      <div class="container">
-        <h2 class="section-title" data-i18n="howTitle">Hoe het werkt in de praktijk</h2>
-        <p class="section-intro" data-i18n="howIntro">Van eerste gesprek tot werkende oplossing.</p>
-        
-        <div class="steps-grid">
-          <article class="step-card">
-            <span class="step-num">1</span>
-            <h3 data-i18n="step1Title">Kort gesprek</h3>
-            <p data-i18n="step1Text">We bekijken samen waar in uw bedrijf tijd verloren gaat — leads, opvolging of dagelijkse communicatie.</p>
-          </article>
-
-          <article class="step-card">
-            <span class="step-num">2</span>
-            <h3 data-i18n="step2Title">Gratis demo of mock-up</h3>
-            <p data-i18n="step2Text">U krijgt een voorstel op maat, zodat u ziet hoe het eruitziet vóór er iets gebouwd wordt.</p>
-          </article>
-
-          <article class="step-card">
-            <span class="step-num">3</span>
-            <h3 data-i18n="step3Title">Bouwen en opzetten</h3>
-            <p data-i18n="step3Text">Ik werk met de tools die u al gebruikt en zorg dat alles rustig in uw dagelijkse werking past.</p>
-          </article>
-        </div>
-
-        <div class="practice-note">
-          <p data-i18n="practiceNote">Zodra het loopt, worden leads automatisch gevolgd. Iedereen werkt vanuit dezelfde, actuele informatie. Het is duidelijk wat er gebeurt en wat aandacht nodig heeft.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOUNDER NOTE -->
-    <section class="section section-alt">
-      <div class="container founder-note">
-        <div class="founder-content">
-          <p class="founder-quote" data-i18n="founderQuote">"Ik bouw praktische oplossingen voor bedrijven in België — in het Nederlands én in het Frans. Geen grote beloftes, wel software die u tijd bespaart."</p>
-          <p class="founder-name">
-            <strong>Nelly Opoku</strong>
-            <span class="founder-sep">·</span>
-            <span>Timeless Automations</span>
-          </p>
-          <p class="founder-links">
-            <a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener noreferrer" class="founder-link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            <h3 data-i18n="services.crm.title">Custom CRM</h3>
+            <p data-i18n="services.crm.description">Lead management, customer tracking, pipelines and sales workflows.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
               </svg>
-              <span data-i18n="founderLinkedIn">LinkedIn</span>
-            </a>
-          </p>
+            </div>
+            <h3 data-i18n="services.erp.title">ERP & Business Management</h3>
+            <p data-i18n="services.erp.description">Centralize operations, projects, documents and workflows.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.webapps.title">Business Web Apps</h3>
+            <p data-i18n="services.webapps.description">Custom dashboards, portals and internal platforms.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3 data-i18n="services.automation.title">Automation & AI</h3>
+            <p data-i18n="services.automation.description">Connect your tools and automate repetitive tasks with AI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section section-process">
+      <div class="container">
+        <h2 class="section-title" data-i18n="process.title">From Business Problem to Working Software</h2>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <h3 data-i18n="process.step1.title">Understand</h3>
+            <p data-i18n="process.step1.description">We learn how your business currently operates.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <h3 data-i18n="process.step2.title">Design</h3>
+            <p data-i18n="process.step2.description">We map the workflow and design the right system.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <h3 data-i18n="process.step3.title">Build</h3>
+            <p data-i18n="process.step3.description">We develop the software, integrations and automations.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <h3 data-i18n="process.step4.title">Launch</h3>
+            <p data-i18n="process.step4.description">We deploy the system and help you get it running.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section id="industries" class="section section-industries">
+      <div class="container">
+        <h2 class="section-title" data-i18n="industries.title">Software built for the way your industry works.</h2>
+        <div class="industries-grid">
+          <div class="industry-card" data-industry="realestate">
+            <div class="industry-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                <path d="M9 22V12h6v10"/>
+              </svg>
+            </div>
+            <h3 data-i18n="industries.realestate.title">Real Estate</h3>
+            <div class="industry-details">
+              <p data-i18n="industries.realestate.description">Work alongside the tools you already use. Instant replies to enquiries, automated follow-ups, viewings booked automatically.</p>
+            </div>
+          </div>
+
+          <div class="industry-card" data-industry="insurance">
+            <div class="industry-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 data-i18n="industries.insurance.title">Insurance</h3>
+            <div class="industry-details">
+              <p data-i18n="industries.insurance.description">Automated quote requests, policy renewals, and client communication. Keep all client data in one place.</p>
+            </div>
+          </div>
+
+          <div class="industry-card" data-industry="property">
+            <div class="industry-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M3 15h18"/>
+              </svg>
+            </div>
+            <h3 data-i18n="industries.property.title">Property Management</h3>
+            <div class="industry-details">
+              <p data-i18n="industries.property.description">Tenant requests, maintenance tracking, rent collection, and property oversight in one unified system.</p>
+            </div>
+          </div>
+
+          <div class="industry-card" data-industry="professional">
+            <div class="industry-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 7h-9M14 17H5M17 17h3M7 7H4M4 12h16"/>
+              </svg>
+            </div>
+            <h3 data-i18n="industries.professional.title">Professional Services</h3>
+            <div class="industry-details">
+              <p data-i18n="industries.professional.description">Client management, project tracking, billing, and communication tools built for service businesses.</p>
+            </div>
+          </div>
+
+          <div class="industry-card" data-industry="hospitality">
+            <div class="industry-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                <path d="M9 22V12h6v10"/>
+              </svg>
+            </div>
+            <h3 data-i18n="industries.hospitality.title">Hospitality</h3>
+            <div class="industry-details">
+              <p data-i18n="industries.hospitality.description">Booking management, guest communication, and operations coordination for restaurants and venues.</p>
+            </div>
+          </div>
+
+          <div class="industry-card" data-industry="other">
+            <div class="industry-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v8M8 12h8"/>
+              </svg>
+            </div>
+            <h3 data-i18n="industries.other.title">Other Service Businesses</h3>
+            <div class="industry-details">
+              <p data-i18n="industries.other.description">Every business is unique. Tell us your challenges, and we'll build the right solution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section section-cta-dark">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title" data-i18n="cta.title">Your business already has a workflow. Let's turn it into software.</h2>
+          <p class="cta-text" data-i18n="cta.text">Tell us what's slowing you down. We'll show you where software can save time and reduce manual work.</p>
+          <a href="#contact" class="btn btn-primary btn-large" data-i18n="cta.button">Book a Free Consultation</a>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section section-cta">
+    <section id="contact" class="section section-contact">
       <div class="container">
-        <h2 class="section-title" data-i18n="contactTitle">Klaar om tijd te besparen?</h2>
-        <p class="section-intro" data-i18n="contactIntro">Vertel ons waar u tijd verliest en wij sturen u een voorstel.</p>
+        <h2 class="section-title" data-i18n="contact.title">Let's Talk About Your Business</h2>
+        <p class="contact-intro" data-i18n="contact.intro">Tell us what's taking up too much time, and we'll show you how software can help.</p>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3 data-i18n="contact.email.title">Email</h3>
+            <a href="mailto:nelly@timelessautomations.be" class="contact-link">nelly@timelessautomations.be</a>
+          </div>
+          <div class="contact-method">
+            <h3 data-i18n="contact.linkedin.title">LinkedIn</h3>
+            <a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/nellyopoku</a>
+          </div>
+        </div>
 
         <div class="contact-form-wrapper">
-          <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event, 'contact')">
+          <form class="contact-form" id="contactForm">
             <div class="form-row">
               <div class="form-group">
-                <label for="contact-name" data-i18n="formLabelName">Naam *</label>
-                <input type="text" id="contact-name" name="name" required>
+                <label for="name" data-i18n="contact.form.name">Name *</label>
+                <input type="text" id="name" name="name" required>
               </div>
               <div class="form-group">
-                <label for="contact-company" data-i18n="formLabelCompany">Bedrijf *</label>
-                <input type="text" id="contact-company" name="company" required>
+                <label for="company" data-i18n="contact.form.company">Company *</label>
+                <input type="text" id="company" name="company" required>
               </div>
             </div>
             
-            <div class="form-group">
-              <label for="contact-sector" data-i18n="formLabelSector">In welke sector werkt u? *</label>
-              <input type="text" id="contact-sector" name="sector" required>
-            </div>
-
             <div class="form-row">
               <div class="form-group">
-                <label for="contact-email" data-i18n="formLabelEmail">E-mail *</label>
-                <input type="email" id="contact-email" name="email" required>
+                <label for="email" data-i18n="contact.form.email">Email *</label>
+                <input type="email" id="email" name="email" required>
               </div>
               <div class="form-group">
-                <label for="contact-phone" data-i18n="formLabelPhone">Telefoon</label>
-                <input type="tel" id="contact-phone" name="phone">
+                <label for="phone" data-i18n="contact.form.phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
               </div>
             </div>
 
             <div class="form-group">
-              <label for="contact-message" data-i18n="formLabelMessage">Wat kost u het meeste tijd? *</label>
-              <textarea id="contact-message" name="message" rows="5" required></textarea>
+              <label for="message" data-i18n="contact.form.message">What's slowing your business down? *</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" data-i18n="btnSendMessage">Bericht versturen</button>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Message</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-col">
-        <h4 class="footer-title">Timeless Automations</h4>
-        <p class="footer-tagline" data-i18n="footerTagline">Software &amp; automatisatie voor bedrijven in België</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Timeless Automations</div>
+          <p class="footer-tagline" data-i18n="footer.tagline">Custom software. Smarter workflows.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" data-i18n="services.crm.title">Custom CRM</a></li>
+            <li><a href="#services" data-i18n="services.erp.title">ERP & Business Management</a></li>
+            <li><a href="#services" data-i18n="services.webapps.title">Business Web Apps</a></li>
+            <li><a href="#services" data-i18n="services.automation.title">Automation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.industries">Industries</h4>
+          <ul class="footer-links">
+            <li><a href="#industries" data-i18n="industries.realestate.title">Real Estate</a></li>
+            <li><a href="#industries" data-i18n="industries.insurance.title">Insurance</a></li>
+            <li><a href="#industries" data-i18n="industries.professional.title">Professional Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a></li>
+            <li><a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-title" data-i18n="footerSectorsTitle">Sectoren</h4>
-        <ul class="footer-links">
-          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('realestate')" data-i18n="sectorRealEstateTitle">Vastgoedkantoren</a></li>
-          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('insurance')" data-i18n="sectorInsuranceTitle">Verzekeringskantoren</a></li>
-          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('automotive')" data-i18n="sectorAutomotiveTitle">Autodealers</a></li>
-          <li><a href="#" onclick="event.preventDefault(); showSectorDetail('other')" data-i18n="sectorOtherTitle">Andere sector</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2026 Timeless Automations · Nelly Opoku</p>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-title" data-i18n="footerContactTitle">Contact</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a></li>
-          <li><a href="https://linkedin.com/in/nellyopoku" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© 2026 Timeless Automations · Nelly Opoku</p>
     </div>
   </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="mobile-cta">
+    <a href="#contact" class="btn btn-primary btn-block" data-i18n="hero.cta.primary">Book a Free Consultation</a>
+  </div>
 
   <script src="i18n.js"></script>
   <script src="app.js"></script>

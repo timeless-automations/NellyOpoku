@@ -1,347 +1,319 @@
-/* === INTERNATIONALIZATION === */
+// i18n.js - Internationalization for Timeless Automations
 
-const I18N = {
+const translations = {
   nl: {
-    // Navigation
-    navSectors: "Sectoren",
-    navBenefits: "Voordelen",
-    navHow: "Werkwijze",
-    navContact: "Contact",
-
-    // Hero
-    heroTitle: "Software & automatisatie voor bedrijven",
-    heroSub: "Directe reactie op elke nieuwe lead, automatische opvolging en naadloze verbinding met de tools die u al gebruikt.",
-    btnChooseSector: "Kies uw sector",
-    btnContact: "Contact opnemen",
-
-    // Homepage mockup
-    mockupHomeDashboard: "Uw dag in één oogopslag",
-    mockupHomeNew: "Nieuwe aanvragen",
-    mockupHomeAnswered: "Beantwoord",
-    mockupHomeScheduled: "Gepland",
-    mockupHomeFollowUp: "Follow-up",
-    mockupHomeItem1: "Nieuwe aanvraag",
-    mockupHomeItem1Time: "5 min geleden",
-    mockupHomeItem2: "Afspraak gepland",
-    mockupHomeItem2Time: "Vandaag 14:00",
-
-    // Sectors overview
-    sectorsTitle: "Gebouwd voor de manier waarop uw sector werkt",
-    sectorsIntro: "Kies uw sector om te zien hoe we u kunnen helpen.",
+    "nav.services": "Diensten",
+    "nav.industries": "Sectoren",
+    "nav.process": "Aanpak",
+    "nav.contact": "Contact",
     
-    sectorRealEstateTitle: "Vastgoedkantoren",
-    sectorRealEstateDesc: "Directe reactie op leads van Immoweb en Zimmo, automatische opvolging van bezichtigingen en verbinding met uw CRM.",
+    "hero.title": "Software op maat die uw bedrijf draait.",
+    "hero.subtitle": "Wij bouwen CRM-systemen, ERP-platformen, dashboards en automatisering op maat van uw bedrijf.",
+    "hero.cta.primary": "Plan een gratis gesprek",
+    "hero.cta.secondary": "Wat wij bouwen",
+    "hero.trust": "Gebouwd rond uw bedrijf. Geen standaardoplossing.",
     
-    sectorInsuranceTitle: "Verzekeringskantoren",
-    sectorInsuranceDesc: "Directe reactie op offerteaanvragen, automatische opvolging van offertes en herinneringen voor verlengingen.",
+    "mockup.title": "Dashboard",
+    "mockup.leads": "Leads",
+    "mockup.customers": "Klanten",
+    "mockup.revenue": "Omzet",
+    "mockup.tasks": "Taken",
+    "mockup.pipeline": "Verkooppijplijn",
+    "mockup.stage.new": "Nieuw",
+    "mockup.stage.contacted": "Gecontacteerd",
+    "mockup.stage.qualified": "Gekwalificeerd",
+    "mockup.stage.proposal": "Offerte",
+    "mockup.notification1": "Automatische follow-up verstuurd",
+    "mockup.notification2": "Nieuwe lead toegevoegd",
     
-    sectorAutomotiveTitle: "Autodealers",
-    sectorAutomotiveDesc: "Directe reactie op testritaanvragen van AutoScout24 en 2dehands, opvolging van inruilwagens en boekingen.",
+    "problem.title": "Hoeveel tijd verliest uw bedrijf aan handmatig werk?",
+    "problem.item1": "Leads vallen tussen wal en schip",
+    "problem.item2": "Handmatige follow-ups",
+    "problem.item3": "Data verspreid over verschillende tools",
+    "problem.item4": "Repetitieve administratie",
+    "problem.item5": "Medewerkers voeren dezelfde informatie meerdere keren in",
+    "problem.item6": "Geen duidelijk overzicht van de operaties",
+    "problem.solution": "Wij bouwen één systeem rond uw werkwijze.",
     
-    sectorOtherTitle: "Andere sector",
-    sectorOtherDesc: "Werkt u in een andere sector? Laat ons weten waar u tijd verliest en wij bouwen een oplossing op maat.",
+    "services.title": "Wat wij bouwen",
+    "services.crm.title": "CRM op maat",
+    "services.crm.description": "Leadbeheer, klantopvolging, pijplijnen en verkoopworkflows.",
+    "services.erp.title": "ERP & Business Management",
+    "services.erp.description": "Centraliseer operaties, projecten, documenten en workflows.",
+    "services.webapps.title": "Business Web Apps",
+    "services.webapps.description": "Dashboards, portalen en interne platformen op maat.",
+    "services.automation.title": "Automatisering & AI",
+    "services.automation.description": "Verbind uw tools en automatiseer repetitieve taken met AI.",
     
-    btnLearnMore: "Meer info",
-    btnContactUs: "Neem contact op",
-    btnBackToSectors: "← Terug naar sectoren",
-
-    // Real estate detail
-    realEstateDetailTitle: "Voor vastgoedkantoren",
-    realEstateDetailIntro: "Minder administratie, meer tijd voor uw klanten.",
+    "process.title": "Van bedrijfsprobleem tot werkende software",
+    "process.step1.title": "Begrijpen",
+    "process.step1.description": "We leren hoe uw bedrijf momenteel werkt.",
+    "process.step2.title": "Ontwerpen",
+    "process.step2.description": "We brengen de workflow in kaart en ontwerpen het juiste systeem.",
+    "process.step3.title": "Bouwen",
+    "process.step3.description": "We ontwikkelen de software, integraties en automatiseringen.",
+    "process.step4.title": "Lanceren",
+    "process.step4.description": "We implementeren het systeem en helpen u op weg.",
     
-    realEstatePain1Title: "Directe reactie op nieuwe leads",
-    realEstatePain1Text: "Nieuwe aanvragen van Immoweb, Zimmo en uw website krijgen meteen een reactie — ook buiten de kantooruren.",
+    "industries.title": "Software gebouwd voor uw sector.",
+    "industries.realestate.title": "Vastgoed",
+    "industries.realestate.description": "Werkt naast de tools die u al gebruikt. Directe reactie op aanvragen, automatische follow-ups, bezichtigingen automatisch ingepland.",
+    "industries.insurance.title": "Verzekeringen",
+    "industries.insurance.description": "Geautomatiseerde offerteaanvragen, polisvernieuwingen en klantcommunicatie. Houd alle klantgegevens op één plek.",
+    "industries.property.title": "Property Management",
+    "industries.property.description": "Huurdersvragen, onderhoud, huurinning en vastgoedbeheer in één systeem.",
+    "industries.professional.title": "Zakelijke diensten",
+    "industries.professional.description": "Klantbeheer, projectopvolging, facturatie en communicatie voor dienstenbedrijven.",
+    "industries.hospitality.title": "Horeca",
+    "industries.hospitality.description": "Boekingsbeheer, gastcommunicatie en operationele coördinatie voor restaurants en venues.",
+    "industries.other.title": "Andere sectoren",
+    "industries.other.description": "Elk bedrijf is uniek. Vertel ons uw uitdagingen en wij bouwen de juiste oplossing.",
     
-    realEstatePain2Title: "Automatische opvolging van bezichtigingen",
-    realEstatePain2Text: "Herinneringen en bevestigingen zodat geen enkele bezichtiging vergeten wordt. U weet precies wie nog een antwoord nodig heeft.",
+    "cta.title": "Uw bedrijf heeft al een workflow. Laten we er software van maken.",
+    "cta.text": "Vertel ons wat u vertraagt. Wij tonen waar software tijd kan besparen en handmatig werk kan verminderen.",
+    "cta.button": "Plan een gratis gesprek",
     
-    realEstatePain3Title: "Verbinding met uw CRM",
-    realEstatePain3Text: "Werkt naadloos samen met Whise, Omnicasa en Zabun. Alle informatie op één plek, minder dubbel werk.",
+    "contact.title": "Laten we praten over uw bedrijf",
+    "contact.intro": "Vertel ons wat te veel tijd kost, en wij tonen hoe software kan helpen.",
+    "contact.email.title": "E-mail",
+    "contact.linkedin.title": "LinkedIn",
+    "contact.form.name": "Naam *",
+    "contact.form.company": "Bedrijf *",
+    "contact.form.email": "E-mail *",
+    "contact.form.phone": "Telefoon",
+    "contact.form.message": "Wat vertraagt uw bedrijf? *",
+    "contact.form.submit": "Bericht versturen",
     
-    realEstateFlowTitle: "Hoe leads vloeien door uw kantoor",
-    flowRealEstate1: "Lead van Immoweb/Zimmo/website",
-    flowRealEstate2: "Direct automatisch antwoord",
-    flowRealEstate3: "Opvolging & herinnering",
-    flowRealEstate4: "Bezichtiging gepland",
-    flowRealEstate5: "Automatisch in uw CRM",
-    
-    realEstateDemoTitle: "Bekijk de demo",
-    realEstateDemoText: "Een voorbeeld van 1 minuut met fictieve gegevens.",
-    btnViewDemo: "Bekijk de demo",
-
-    // Insurance detail
-    insuranceDetailTitle: "Voor verzekeringskantoren",
-    insuranceDetailIntro: "Minder administratie, meer tijd voor persoonlijk advies.",
-    
-    insurancePain1Title: "Directe reactie op offerteaanvragen",
-    insurancePain1Text: "Nieuwe aanvragen krijgen meteen een bevestiging en eerste informatie — ook buiten kantooruren.",
-    
-    insurancePain2Title: "Automatische opvolging van offertes",
-    insurancePain2Text: "Herinneringen voor openstaande offertes en follow-up van potentiële klanten. Geen enkele kans laten liggen.",
-    
-    insurancePain3Title: "Herinneringen voor verlengingen",
-    insurancePain3Text: "Automatische meldingen voor polissen die verlopen. Uw klanten krijgen tijdig een herinnering en verlengvoorstel.",
-    
-    insuranceFlowTitle: "Hoe offerteaanvragen worden behandeld",
-    flowInsurance1: "Offerteaanvraag",
-    flowInsurance2: "Direct bevestiging",
-    flowInsurance3: "Offerte opgesteld",
-    flowInsurance4: "Follow-up herinnering",
-    flowInsurance5: "Polis afgesloten",
-
-    // Automotive detail
-    automotiveDetailTitle: "Voor autodealers",
-    automotiveDetailIntro: "Minder administratie, meer tijd voor uw klanten.",
-    
-    automotivePain1Title: "Directe reactie op testritaanvragen",
-    automotivePain1Text: "Aanvragen van AutoScout24, 2dehands en uw website krijgen meteen een reactie met beschikbaarheid.",
-    
-    automotivePain2Title: "Automatische planning van testritten",
-    automotivePain2Text: "Bevestigingen, herinneringen en opvolging van testritten. Alles wordt automatisch ingepland en gevolgd.",
-    
-    automotivePain3Title: "Opvolging van inruilwagens",
-    automotivePain3Text: "Klanten met een inruilwagen krijgen automatisch een herinnering. Alle informatie bij elkaar voor snellere afhandeling.",
-    
-    automotiveFlowTitle: "Hoe testritaanvragen worden behandeld",
-    flowAutomotive1: "Aanvraag AutoScout24/2dehands",
-    flowAutomotive2: "Direct bevestiging",
-    flowAutomotive3: "Testrit ingepland",
-    flowAutomotive4: "Herinnering & follow-up",
-    flowAutomotive5: "Inruilwagen geregistreerd",
-
-    // Other sector
-    otherSectorTitle: "Andere sector",
-    otherSectorIntro: "Vertel ons waar u tijd verliest en wij bouwen een oplossing op maat.",
-
-    // Benefits
-    benefitsTitle: "Alles wat u nodig hebt — verbonden",
-    benefitsIntro: "Praktische oplossingen die aansluiten bij hoe u vandaag al werkt.",
-    
-    benefit1Title: "Werkt met uw bestaande tools",
-    benefit1Text: "Verbindt met de software die u al gebruikt. Geen grote veranderingen, wel meer efficiëntie.",
-    
-    benefit2Title: "Direct resultaat",
-    benefit2Text: "Geen lange trajecten. U ziet binnen enkele weken hoe het werkt, met een gratis demo vooraf.",
-    
-    benefit3Title: "Op maat gebouwd",
-    benefit3Text: "Elke oplossing wordt aangepast aan uw manier van werken. Niet andersom.",
-    
-    benefit4Title: "Nederlands én Frans",
-    benefit4Text: "Voor bedrijven in Vlaanderen, Wallonië en Brussel. In de taal waarin u werkt.",
-
-    // How it works
-    howTitle: "Hoe het werkt in de praktijk",
-    howIntro: "Van eerste gesprek tot werkende oplossing.",
-    
-    step1Title: "Kort gesprek",
-    step1Text: "We bekijken samen waar in uw bedrijf tijd verloren gaat — leads, opvolging of dagelijkse communicatie.",
-    
-    step2Title: "Gratis demo of mock-up",
-    step2Text: "U krijgt een voorstel op maat, zodat u ziet hoe het eruitziet vóór er iets gebouwd wordt.",
-    
-    step3Title: "Bouwen en opzetten",
-    step3Text: "Ik werk met de tools die u al gebruikt en zorg dat alles rustig in uw dagelijkse werking past.",
-    
-    practiceNote: "Zodra het loopt, worden leads automatisch gevolgd. Iedereen werkt vanuit dezelfde, actuele informatie. Het is duidelijk wat er gebeurt en wat aandacht nodig heeft.",
-
-    // Founder
-    founderQuote: "Ik bouw praktische oplossingen voor bedrijven in België — in het Nederlands én in het Frans. Geen grote beloftes, wel software die u tijd bespaart.",
-    founderLinkedIn: "LinkedIn",
-
-    // Contact
-    contactTitle: "Klaar om tijd te besparen?",
-    contactIntro: "Vertel ons waar u tijd verliest en wij sturen u een voorstel.",
-    
-    formLabelName: "Naam *",
-    formLabelCompany: "Bedrijf *",
-    formLabelSector: "In welke sector werkt u? *",
-    formLabelEmail: "E-mail *",
-    formLabelPhone: "Telefoon",
-    formLabelMessage: "Wat kost u het meeste tijd? *",
-    btnSendMessage: "Bericht versturen",
-    
-    formSuccess: "Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.",
-    formError: "Er is iets misgegaan. Probeer het opnieuw of stuur een e-mail naar",
-    
-    // Footer
-    footerTagline: "Software & automatisatie voor bedrijven in België",
-    footerSectorsTitle: "Sectoren",
-    footerContactTitle: "Contact",
-
-    // Meta
-    metaTitle: "Timeless Automations | Software en automatisatie voor bedrijven",
-    metaDesc: "Directe reactie op leads, automatische opvolging en verbinding met uw bestaande tools. Voor vastgoed, verzekeringen, autodealers en meer.",
+    "footer.tagline": "Software op maat. Slimmere workflows.",
+    "footer.services": "Diensten",
+    "footer.industries": "Sectoren",
+    "footer.contact": "Contact"
   },
-
+  
+  en: {
+    "nav.services": "Services",
+    "nav.industries": "Industries",
+    "nav.process": "Our Process",
+    "nav.contact": "Contact",
+    
+    "hero.title": "Custom Software That Runs Your Business.",
+    "hero.subtitle": "We build CRM systems, ERP platforms, dashboards and automations designed around how your company works.",
+    "hero.cta.primary": "Book a Free Consultation",
+    "hero.cta.secondary": "See What We Build",
+    "hero.trust": "Built around your business. Not another off-the-shelf tool.",
+    
+    "mockup.title": "Business Dashboard",
+    "mockup.leads": "Leads",
+    "mockup.customers": "Customers",
+    "mockup.revenue": "Revenue",
+    "mockup.tasks": "Tasks",
+    "mockup.pipeline": "Sales Pipeline",
+    "mockup.stage.new": "New",
+    "mockup.stage.contacted": "Contacted",
+    "mockup.stage.qualified": "Qualified",
+    "mockup.stage.proposal": "Proposal",
+    "mockup.notification1": "Automated follow-up sent",
+    "mockup.notification2": "New lead added to pipeline",
+    
+    "problem.title": "How much time is your business losing to manual work?",
+    "problem.item1": "Leads falling through the cracks",
+    "problem.item2": "Manual follow-ups",
+    "problem.item3": "Data spread across different tools",
+    "problem.item4": "Repetitive administration",
+    "problem.item5": "Employees entering the same information multiple times",
+    "problem.item6": "No clear overview of operations",
+    "problem.solution": "We build one system around your workflow.",
+    
+    "services.title": "What We Build",
+    "services.crm.title": "Custom CRM",
+    "services.crm.description": "Lead management, customer tracking, pipelines and sales workflows.",
+    "services.erp.title": "ERP & Business Management",
+    "services.erp.description": "Centralize operations, projects, documents and workflows.",
+    "services.webapps.title": "Business Web Apps",
+    "services.webapps.description": "Custom dashboards, portals and internal platforms.",
+    "services.automation.title": "Automation & AI",
+    "services.automation.description": "Connect your tools and automate repetitive tasks with AI.",
+    
+    "process.title": "From Business Problem to Working Software",
+    "process.step1.title": "Understand",
+    "process.step1.description": "We learn how your business currently operates.",
+    "process.step2.title": "Design",
+    "process.step2.description": "We map the workflow and design the right system.",
+    "process.step3.title": "Build",
+    "process.step3.description": "We develop the software, integrations and automations.",
+    "process.step4.title": "Launch",
+    "process.step4.description": "We deploy the system and help you get it running.",
+    
+    "industries.title": "Software built for the way your industry works.",
+    "industries.realestate.title": "Real Estate",
+    "industries.realestate.description": "Work alongside the tools you already use. Instant replies to enquiries, automated follow-ups, viewings booked automatically.",
+    "industries.insurance.title": "Insurance",
+    "industries.insurance.description": "Automated quote requests, policy renewals, and client communication. Keep all client data in one place.",
+    "industries.property.title": "Property Management",
+    "industries.property.description": "Tenant requests, maintenance tracking, rent collection, and property oversight in one unified system.",
+    "industries.professional.title": "Professional Services",
+    "industries.professional.description": "Client management, project tracking, billing, and communication tools built for service businesses.",
+    "industries.hospitality.title": "Hospitality",
+    "industries.hospitality.description": "Booking management, guest communication, and operations coordination for restaurants and venues.",
+    "industries.other.title": "Other Service Businesses",
+    "industries.other.description": "Every business is unique. Tell us your challenges, and we'll build the right solution.",
+    
+    "cta.title": "Your business already has a workflow. Let's turn it into software.",
+    "cta.text": "Tell us what's slowing you down. We'll show you where software can save time and reduce manual work.",
+    "cta.button": "Book a Free Consultation",
+    
+    "contact.title": "Let's Talk About Your Business",
+    "contact.intro": "Tell us what's taking up too much time, and we'll show you how software can help.",
+    "contact.email.title": "Email",
+    "contact.linkedin.title": "LinkedIn",
+    "contact.form.name": "Name *",
+    "contact.form.company": "Company *",
+    "contact.form.email": "Email *",
+    "contact.form.phone": "Phone",
+    "contact.form.message": "What's slowing your business down? *",
+    "contact.form.submit": "Send Message",
+    
+    "footer.tagline": "Custom software. Smarter workflows.",
+    "footer.services": "Services",
+    "footer.industries": "Industries",
+    "footer.contact": "Contact"
+  },
+  
   fr: {
-    // Navigation
-    navSectors: "Secteurs",
-    navBenefits: "Avantages",
-    navHow: "Démarche",
-    navContact: "Contact",
-
-    // Hero
-    heroTitle: "Logiciels & automatisation pour entreprises",
-    heroSub: "Réponse immédiate à chaque nouveau lead, suivi automatique et connexion fluide avec les outils que vous utilisez déjà.",
-    btnChooseSector: "Choisissez votre secteur",
-    btnContact: "Me contacter",
-
-    // Homepage mockup
-    mockupHomeDashboard: "Votre journée en un coup d'œil",
-    mockupHomeNew: "Nouvelles demandes",
-    mockupHomeAnswered: "Répondu",
-    mockupHomeScheduled: "Planifié",
-    mockupHomeFollowUp: "Suivi",
-    mockupHomeItem1: "Nouvelle demande",
-    mockupHomeItem1Time: "Il y a 5 min",
-    mockupHomeItem2: "Rendez-vous planifié",
-    mockupHomeItem2Time: "Aujourd'hui 14:00",
-
-    // Sectors overview
-    sectorsTitle: "Conçu pour la manière dont votre secteur fonctionne",
-    sectorsIntro: "Choisissez votre secteur pour voir comment nous pouvons vous aider.",
+    "nav.services": "Services",
+    "nav.industries": "Secteurs",
+    "nav.process": "Notre approche",
+    "nav.contact": "Contact",
     
-    sectorRealEstateTitle: "Agences immobilières",
-    sectorRealEstateDesc: "Réponse immédiate aux leads d'Immoweb et Zimmo, suivi automatique des visites et connexion avec votre CRM.",
+    "hero.title": "Des logiciels sur mesure qui font tourner votre entreprise.",
+    "hero.subtitle": "Nous créons des systèmes CRM, plateformes ERP, dashboards et automatisations adaptés à votre entreprise.",
+    "hero.cta.primary": "Réservez un appel gratuit",
+    "hero.cta.secondary": "Ce que nous créons",
+    "hero.trust": "Construit autour de votre entreprise. Pas une solution standard.",
     
-    sectorInsuranceTitle: "Courtiers en assurances",
-    sectorInsuranceDesc: "Réponse immédiate aux demandes de devis, suivi automatique des offres et rappels pour les renouvellements.",
+    "mockup.title": "Tableau de bord",
+    "mockup.leads": "Leads",
+    "mockup.customers": "Clients",
+    "mockup.revenue": "Chiffre d'affaires",
+    "mockup.tasks": "Tâches",
+    "mockup.pipeline": "Pipeline de vente",
+    "mockup.stage.new": "Nouveau",
+    "mockup.stage.contacted": "Contacté",
+    "mockup.stage.qualified": "Qualifié",
+    "mockup.stage.proposal": "Offre",
+    "mockup.notification1": "Suivi automatique envoyé",
+    "mockup.notification2": "Nouveau lead ajouté",
     
-    sectorAutomotiveTitle: "Concessionnaires automobiles",
-    sectorAutomotiveDesc: "Réponse immédiate aux demandes d'essai d'AutoScout24 et 2dehands, suivi des reprises et des réservations.",
+    "problem.title": "Combien de temps votre entreprise perd-elle en travail manuel ?",
+    "problem.item1": "Des leads qui passent entre les mailles",
+    "problem.item2": "Des suivis manuels",
+    "problem.item3": "Des données dispersées entre différents outils",
+    "problem.item4": "De l'administration répétitive",
+    "problem.item5": "Des employés qui encodent les mêmes informations plusieurs fois",
+    "problem.item6": "Aucune vue d'ensemble claire des opérations",
+    "problem.solution": "Nous construisons un système unique autour de votre flux de travail.",
     
-    sectorOtherTitle: "Autre secteur",
-    sectorOtherDesc: "Vous travaillez dans un autre secteur ? Dites-nous où vous perdez du temps et nous construisons une solution sur mesure.",
+    "services.title": "Ce que nous créons",
+    "services.crm.title": "CRM sur mesure",
+    "services.crm.description": "Gestion des leads, suivi client, pipelines et workflows de vente.",
+    "services.erp.title": "ERP & Gestion d'entreprise",
+    "services.erp.description": "Centralisez les opérations, projets, documents et workflows.",
+    "services.webapps.title": "Applications web métier",
+    "services.webapps.description": "Dashboards, portails et plateformes internes sur mesure.",
+    "services.automation.title": "Automatisation & IA",
+    "services.automation.description": "Connectez vos outils et automatisez les tâches répétitives avec l'IA.",
     
-    btnLearnMore: "En savoir plus",
-    btnContactUs: "Contactez-nous",
-    btnBackToSectors: "← Retour aux secteurs",
-
-    // Real estate detail
-    realEstateDetailTitle: "Pour agences immobilières",
-    realEstateDetailIntro: "Moins d'administration, plus de temps pour vos clients.",
+    "process.title": "Du problème d'entreprise au logiciel opérationnel",
+    "process.step1.title": "Comprendre",
+    "process.step1.description": "Nous apprenons comment votre entreprise fonctionne actuellement.",
+    "process.step2.title": "Concevoir",
+    "process.step2.description": "Nous cartographions le workflow et concevons le bon système.",
+    "process.step3.title": "Développer",
+    "process.step3.description": "Nous développons le logiciel, les intégrations et les automatisations.",
+    "process.step4.title": "Lancer",
+    "process.step4.description": "Nous déployons le système et vous aidons à démarrer.",
     
-    realEstatePain1Title: "Réponse immédiate aux nouveaux leads",
-    realEstatePain1Text: "Les nouvelles demandes d'Immoweb, Zimmo et de votre site reçoivent une réponse tout de suite — aussi en dehors des heures de bureau.",
+    "industries.title": "Des logiciels adaptés à votre secteur.",
+    "industries.realestate.title": "Immobilier",
+    "industries.realestate.description": "Fonctionne avec les outils que vous utilisez déjà. Réponses instantanées aux demandes, suivis automatisés, visites planifiées automatiquement.",
+    "industries.insurance.title": "Assurances",
+    "industries.insurance.description": "Demandes d'offres automatisées, renouvellements de polices et communication client. Gardez toutes les données client au même endroit.",
+    "industries.property.title": "Gestion immobilière",
+    "industries.property.description": "Demandes locataires, suivi d'entretien, perception de loyers et supervision immobilière dans un système unifié.",
+    "industries.professional.title": "Services professionnels",
+    "industries.professional.description": "Gestion client, suivi de projets, facturation et outils de communication pour entreprises de services.",
+    "industries.hospitality.title": "Horeca",
+    "industries.hospitality.description": "Gestion des réservations, communication clients et coordination opérationnelle pour restaurants et établissements.",
+    "industries.other.title": "Autres secteurs",
+    "industries.other.description": "Chaque entreprise est unique. Parlez-nous de vos défis, et nous construirons la bonne solution.",
     
-    realEstatePain2Title: "Suivi automatique des visites",
-    realEstatePain2Text: "Rappels et confirmations pour qu'aucune visite ne soit oubliée. Vous savez exactement qui attend encore une réponse.",
+    "cta.title": "Votre entreprise a déjà un workflow. Transformons-le en logiciel.",
+    "cta.text": "Dites-nous ce qui vous ralentit. Nous vous montrerons où le logiciel peut gagner du temps et réduire le travail manuel.",
+    "cta.button": "Réservez un appel gratuit",
     
-    realEstatePain3Title: "Connexion avec votre CRM",
-    realEstatePain3Text: "Fonctionne parfaitement avec Whise, Omnicasa et Zabun. Toutes les informations au même endroit, moins de double travail.",
+    "contact.title": "Parlons de votre entreprise",
+    "contact.intro": "Dites-nous ce qui prend trop de temps, et nous vous montrerons comment un logiciel peut aider.",
+    "contact.email.title": "Email",
+    "contact.linkedin.title": "LinkedIn",
+    "contact.form.name": "Nom *",
+    "contact.form.company": "Entreprise *",
+    "contact.form.email": "Email *",
+    "contact.form.phone": "Téléphone",
+    "contact.form.message": "Qu'est-ce qui ralentit votre entreprise ? *",
+    "contact.form.submit": "Envoyer le message",
     
-    realEstateFlowTitle: "Comment les leads circulent dans votre agence",
-    flowRealEstate1: "Lead d'Immoweb/Zimmo/site web",
-    flowRealEstate2: "Réponse automatique immédiate",
-    flowRealEstate3: "Suivi & rappel",
-    flowRealEstate4: "Visite planifiée",
-    flowRealEstate5: "Automatiquement dans votre CRM",
-    
-    realEstateDemoTitle: "Voir la démo",
-    realEstateDemoText: "Un exemple d'1 minute avec des données fictives.",
-    btnViewDemo: "Voir la démo",
-
-    // Insurance detail
-    insuranceDetailTitle: "Pour courtiers en assurances",
-    insuranceDetailIntro: "Moins d'administration, plus de temps pour les conseils personnalisés.",
-    
-    insurancePain1Title: "Réponse immédiate aux demandes de devis",
-    insurancePain1Text: "Les nouvelles demandes reçoivent immédiatement une confirmation et les premières informations — aussi en dehors des heures de bureau.",
-    
-    insurancePain2Title: "Suivi automatique des offres",
-    insurancePain2Text: "Rappels pour les devis en attente et suivi des clients potentiels. Ne laissez passer aucune opportunité.",
-    
-    insurancePain3Title: "Rappels pour les renouvellements",
-    insurancePain3Text: "Notifications automatiques pour les polices qui expirent. Vos clients reçoivent un rappel et une proposition de renouvellement à temps.",
-    
-    insuranceFlowTitle: "Comment les demandes de devis sont traitées",
-    flowInsurance1: "Demande de devis",
-    flowInsurance2: "Confirmation immédiate",
-    flowInsurance3: "Offre établie",
-    flowInsurance4: "Rappel de suivi",
-    flowInsurance5: "Police souscrite",
-
-    // Automotive detail
-    automotiveDetailTitle: "Pour concessionnaires automobiles",
-    automotiveDetailIntro: "Moins d'administration, plus de temps pour vos clients.",
-    
-    automotivePain1Title: "Réponse immédiate aux demandes d'essai",
-    automotivePain1Text: "Les demandes d'AutoScout24, 2dehands et de votre site reçoivent immédiatement une réponse avec les disponibilités.",
-    
-    automotivePain2Title: "Planification automatique des essais",
-    automotivePain2Text: "Confirmations, rappels et suivi des essais. Tout est automatiquement planifié et suivi.",
-    
-    automotivePain3Title: "Suivi des reprises",
-    automotivePain3Text: "Les clients avec une reprise reçoivent automatiquement un rappel. Toutes les informations réunies pour un traitement plus rapide.",
-    
-    automotiveFlowTitle: "Comment les demandes d'essai sont traitées",
-    flowAutomotive1: "Demande AutoScout24/2dehands",
-    flowAutomotive2: "Confirmation immédiate",
-    flowAutomotive3: "Essai planifié",
-    flowAutomotive4: "Rappel & suivi",
-    flowAutomotive5: "Reprise enregistrée",
-
-    // Other sector
-    otherSectorTitle: "Autre secteur",
-    otherSectorIntro: "Dites-nous où vous perdez du temps et nous construisons une solution sur mesure.",
-
-    // Benefits
-    benefitsTitle: "Tout ce dont vous avez besoin — connecté",
-    benefitsIntro: "Des solutions pratiques qui s'alignent sur votre façon de travailler aujourd'hui.",
-    
-    benefit1Title: "Fonctionne avec vos outils existants",
-    benefit1Text: "Se connecte aux logiciels que vous utilisez déjà. Pas de grands changements, mais plus d'efficacité.",
-    
-    benefit2Title: "Résultat immédiat",
-    benefit2Text: "Pas de longs parcours. Vous voyez comment ça fonctionne en quelques semaines, avec une démo gratuite au préalable.",
-    
-    benefit3Title: "Construit sur mesure",
-    benefit3Text: "Chaque solution est adaptée à votre façon de travailler. Pas l'inverse.",
-    
-    benefit4Title: "Néerlandais et français",
-    benefit4Text: "Pour les entreprises en Flandre, en Wallonie et à Bruxelles. Dans la langue dans laquelle vous travaillez.",
-
-    // How it works
-    howTitle: "Comment ça fonctionne en pratique",
-    howIntro: "Du premier entretien à la solution opérationnelle.",
-    
-    step1Title: "Court entretien",
-    step1Text: "Nous regardons ensemble où votre entreprise perd du temps — leads, suivi ou communication quotidienne.",
-    
-    step2Title: "Démo ou maquette gratuite",
-    step2Text: "Vous recevez une proposition sur mesure, pour voir le résultat avant que quoi que ce soit soit construit.",
-    
-    step3Title: "Construction et mise en place",
-    step3Text: "Je travaille avec les outils que vous utilisez déjà et j'intègre tout calmement dans votre fonctionnement quotidien.",
-    
-    practiceNote: "Une fois lancé, les leads sont automatiquement suivis. Tout le monde travaille à partir des mêmes informations à jour. Il est clair ce qui se passe et ce qui nécessite de l'attention.",
-
-    // Founder
-    founderQuote: "Je construis des solutions pratiques pour les entreprises en Belgique — en néerlandais et en français. Pas de grandes promesses, mais des logiciels qui vous font gagner du temps.",
-    founderLinkedIn: "LinkedIn",
-
-    // Contact
-    contactTitle: "Prêt à gagner du temps ?",
-    contactIntro: "Dites-nous où vous perdez du temps et nous vous envoyons une proposition.",
-    
-    formLabelName: "Nom *",
-    formLabelCompany: "Entreprise *",
-    formLabelSector: "Dans quel secteur travaillez-vous ? *",
-    formLabelEmail: "E-mail *",
-    formLabelPhone: "Téléphone",
-    formLabelMessage: "Qu'est-ce qui vous prend le plus de temps ? *",
-    btnSendMessage: "Envoyer le message",
-    
-    formSuccess: "Merci pour votre message ! Nous vous contactons dès que possible.",
-    formError: "Quelque chose s'est mal passé. Réessayez ou envoyez un e-mail à",
-    
-    // Footer
-    footerTagline: "Logiciels & automatisation pour entreprises en Belgique",
-    footerSectorsTitle: "Secteurs",
-    footerContactTitle: "Contact",
-
-    // Meta
-    metaTitle: "Timeless Automations | Logiciels et automatisation pour entreprises",
-    metaDesc: "Réponse immédiate aux leads, suivi automatique et connexion avec vos outils existants. Pour l'immobilier, les assurances, les concessionnaires automobiles et plus encore.",
+    "footer.tagline": "Logiciels sur mesure. Workflows plus intelligents.",
+    "footer.services": "Services",
+    "footer.industries": "Secteurs",
+    "footer.contact": "Contact"
   }
 };
+
+// Set default language to NL (Belgian market)
+let currentLang = 'nl';
+
+function setLanguage(lang) {
+  if (!translations[lang]) {
+    console.error(`Language ${lang} not found`);
+    return;
+  }
+  
+  currentLang = lang;
+  localStorage.setItem('language', lang);
+  document.documentElement.lang = lang;
+  
+  // Update all i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+  
+  // Update language buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    const btnLang = btn.getAttribute('data-lang');
+    if (btnLang === lang) {
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+    } else {
+      btn.classList.remove('active');
+      btn.setAttribute('aria-pressed', 'false');
+    }
+  });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+  // Get saved language or default to NL
+  const savedLang = localStorage.getItem('language') || 'nl';
+  setLanguage(savedLang);
+  
+  // Add click handlers to language buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      setLanguage(lang);
+    });
+  });
+});
