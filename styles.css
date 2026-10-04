@@ -216,7 +216,7 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  padding: 12rem 0 8rem;
+  padding: 9rem 0 6rem;
   overflow: hidden;
 }
 
@@ -235,7 +235,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  min-height: 700px;
+  min-height: 600px;
 }
 
 .hero-title {
@@ -312,7 +312,7 @@ body {
 .hero-image-wrapper {
   position: relative;
   width: 560px;
-  height: 700px;
+  height: 650px;
   border-radius: var(--radius-large);
   overflow: hidden;
   box-shadow: 0 20px 60px var(--color-shadow-lg);
