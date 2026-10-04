@@ -17,7 +17,8 @@ const TRANSLATIONS = {
     "mobile.cta": "Plan een gratis gesprek",
 
     // === REAL ESTATE ===
-    "realestate.hero.title": "Gebouwd voor vastgoedkantoren.",
+    "realestate.hero.title": "Gebouwd voor",
+    "realestate.hero.title.accent": "vastgoedkantoren.",
     "realestate.hero.subtitle": "Automatisering bovenop uw bestaande CRM. Directe reactie op leads van Immoweb en Zimmo, automatische opvolging van bezichtigingen. Geen nieuwe tools. Geen handmatig werk.",
     "realestate.hero.cta": "Plan een gratis gesprek",
 
@@ -55,7 +56,8 @@ const TRANSLATIONS = {
     "realestate.video.intro": "Een kort overzicht van automatisering voor vastgoedkantoren.",
 
     // === INSURANCE ===
-    "insurance.hero.title": "Gebouwd voor verzekeringskantoren.",
+    "insurance.hero.title": "Gebouwd voor",
+    "insurance.hero.title.accent": "verzekeringskantoren.",
     "insurance.hero.subtitle": "Directe reactie op offerteaanvragen, automatische opvolging van polissen en tijdige herinneringen voor verlengingen. Geen handmatig werk.",
     "insurance.hero.cta": "Plan een gratis gesprek",
 
@@ -90,7 +92,8 @@ const TRANSLATIONS = {
     "insurance.workflow.step5": "Automatische verlenging",
 
     // === AUTOMOTIVE ===
-    "automotive.hero.title": "Gebouwd voor autodealers.",
+    "automotive.hero.title": "Gebouwd voor",
+    "automotive.hero.title.accent": "autodealers.",
     "automotive.hero.subtitle": "Directe reactie op testritaanvragen van AutoScout24 en 2dehands, automatische planning en opvolging van inruilwagens. Geen handmatig werk.",
     "automotive.hero.cta": "Plan een gratis gesprek",
 
@@ -178,7 +181,8 @@ const TRANSLATIONS = {
     "mobile.cta": "Schedule a free call",
 
     // === REAL ESTATE ===
-    "realestate.hero.title": "Built for real estate agencies.",
+    "realestate.hero.title": "Built for",
+    "realestate.hero.title.accent": "real estate agencies.",
     "realestate.hero.subtitle": "Automation on top of your existing CRM. Instant response to leads from Immoweb and Zimmo, automatic follow-up of viewings. No new tools. No manual work.",
     "realestate.hero.cta": "Schedule a free call",
 
@@ -216,7 +220,8 @@ const TRANSLATIONS = {
     "realestate.video.intro": "A quick overview of automation for real estate offices.",
 
     // === INSURANCE ===
-    "insurance.hero.title": "Built for insurance agencies.",
+    "insurance.hero.title": "Built for",
+    "insurance.hero.title.accent": "insurance agencies.",
     "insurance.hero.subtitle": "Instant response to quote requests, automatic policy follow-up and timely renewal reminders. No manual work.",
     "insurance.hero.cta": "Schedule a free call",
 
@@ -251,7 +256,8 @@ const TRANSLATIONS = {
     "insurance.workflow.step5": "Automatic renewal",
 
     // === AUTOMOTIVE ===
-    "automotive.hero.title": "Built for car dealerships.",
+    "automotive.hero.title": "Built for",
+    "automotive.hero.title.accent": "car dealerships.",
     "automotive.hero.subtitle": "Instant response to test drive requests from AutoScout24 and 2dehands, automatic scheduling and trade-in follow-up. No manual work.",
     "automotive.hero.cta": "Schedule a free call",
 
@@ -339,7 +345,8 @@ const TRANSLATIONS = {
     "mobile.cta": "Planifier un appel gratuit",
 
     // === REAL ESTATE ===
-    "realestate.hero.title": "Conçu pour les agences immobilières.",
+    "realestate.hero.title": "Conçu pour",
+    "realestate.hero.title.accent": "les agences immobilières.",
     "realestate.hero.subtitle": "Automatisation au-dessus de votre CRM existant. Réponse immédiate aux leads d'Immoweb et Zimmo, suivi automatique des visites. Aucun nouvel outil. Aucun travail manuel.",
     "realestate.hero.cta": "Planifier un appel gratuit",
 
@@ -377,7 +384,8 @@ const TRANSLATIONS = {
     "realestate.video.intro": "Un aperçu rapide de l'automatisation pour les agences immobilières.",
 
     // === INSURANCE ===
-    "insurance.hero.title": "Conçu pour les courtiers en assurances.",
+    "insurance.hero.title": "Conçu pour",
+    "insurance.hero.title.accent": "les courtiers en assurances.",
     "insurance.hero.subtitle": "Réponse immédiate aux demandes de devis, suivi automatique des polices et rappels opportuns pour les renouvellements. Aucun travail manuel.",
     "insurance.hero.cta": "Planifier un appel gratuit",
 
@@ -412,7 +420,8 @@ const TRANSLATIONS = {
     "insurance.workflow.step5": "Renouvellement automatique",
 
     // === AUTOMOTIVE ===
-    "automotive.hero.title": "Conçu pour les concessionnaires automobiles.",
+    "automotive.hero.title": "Conçu pour",
+    "automotive.hero.title.accent": "les concessionnaires automobiles.",
     "automotive.hero.subtitle": "Réponse immédiate aux demandes d'essai d'AutoScout24 et 2dehands, planification automatique et suivi des reprises. Aucun travail manuel.",
     "automotive.hero.cta": "Planifier un appel gratuit",
 
