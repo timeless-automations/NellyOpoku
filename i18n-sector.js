@@ -127,6 +127,9 @@ const TRANSLATIONS = {
     "automotive.workflow.step4": "Klant komt proefrijden",
     "automotive.workflow.step5": "Automatische follow-up",
 
+    "automotive.video.title": "Bekijk hoe het werkt (30 sec)",
+    "automotive.video.intro": "Een kort overzicht van automatisering voor autodealers.",
+
     // === SHARED PROCESS SECTION ===
     "process.title": "Van gesprek tot werkende oplossing",
     "process.step1.title": "Begrijpen",
@@ -291,6 +294,9 @@ const TRANSLATIONS = {
     "automotive.workflow.step4": "Client comes for test drive",
     "automotive.workflow.step5": "Automatic follow-up",
 
+    "automotive.video.title": "See how it works (30 sec)",
+    "automotive.video.intro": "A quick overview of automation for car dealerships.",
+
     // === SHARED PROCESS SECTION ===
     "process.title": "From conversation to working solution",
     "process.step1.title": "Understand",
@@ -454,6 +460,9 @@ const TRANSLATIONS = {
     "automotive.workflow.step3": "Essai planifié",
     "automotive.workflow.step4": "Client vient pour l'essai",
     "automotive.workflow.step5": "Suivi automatique",
+
+    "automotive.video.title": "Voyez comment ça marche (30 s)",
+    "automotive.video.intro": "Un aperçu rapide de l'automatisation pour les concessionnaires automobiles.",
 
     // === SHARED PROCESS SECTION ===
     "process.title": "De la conversation à la solution opérationnelle",
