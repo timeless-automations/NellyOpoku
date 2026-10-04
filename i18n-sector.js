@@ -498,6 +498,37 @@ const TRANSLATIONS = {
 // Initialize i18n
 let currentLanguage = 'nl';
 
+function getInitialLanguage() {
+  const langParam = new URLSearchParams(window.location.search).get('lang');
+  if (langParam && TRANSLATIONS[langParam]) {
+    return langParam;
+  }
+  try {
+    const saved = localStorage.getItem('preferred-language');
+    if (saved && TRANSLATIONS[saved]) return saved;
+  } catch (_) {}
+  return 'nl';
+}
+
+function applyLangToPageLinks(lang) {
+  const pageNames = ['index.html', 'vastgoed.html', 'verzekeringen.html', 'autodealers.html'];
+  document.querySelectorAll('a[href]').forEach((anchor) => {
+    const href = anchor.getAttribute('href');
+    if (!href || href.startsWith('mailto:') || href.startsWith('http') || href.startsWith('#')) return;
+    let url;
+    try {
+      url = new URL(href, window.location.href);
+    } catch (_) {
+      return;
+    }
+    const file = url.pathname.split('/').pop() || 'index.html';
+    if (!pageNames.includes(file)) return;
+    url.searchParams.set('lang', lang);
+    const nextHref = file + url.search + url.hash;
+    anchor.setAttribute('href', nextHref);
+  });
+}
+
 function setLanguage(lang) {
   if (!TRANSLATIONS[lang]) {
     console.warn(`Language ${lang} not found, defaulting to nl`);
@@ -538,17 +569,16 @@ function setLanguage(lang) {
   });
   
   // Save preference
-  localStorage.setItem('preferred-language', lang);
+  try { localStorage.setItem('preferred-language', lang); } catch (_) {}
   
   // Update HTML lang attribute
   document.documentElement.lang = lang;
+  applyLangToPageLinks(lang);
 }
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  // Check for saved preference
-  const savedLang = localStorage.getItem('preferred-language') || 'nl';
-  setLanguage(savedLang);
+  setLanguage(getInitialLanguage());
   
   // Add click handlers to language buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {

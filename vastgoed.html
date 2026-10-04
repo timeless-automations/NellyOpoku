@@ -385,8 +385,10 @@
       const video = document.getElementById('realestateVideo');
       if (!video) return;
       
-      const currentLang = localStorage.getItem('language') || 'nl';
-      const lang = currentLang === 'en' ? 'nl' : currentLang; // EN uses NL video
+      const resolved = (typeof currentLanguage !== 'undefined' && currentLanguage)
+        ? currentLanguage
+        : (localStorage.getItem('preferred-language') || localStorage.getItem('language') || 'nl');
+      const lang = resolved === 'en' ? 'nl' : resolved; // EN uses NL video
       const isMobile = window.matchMedia('(max-width: 767px)').matches;
       const aspectRatio = isMobile ? '9x16' : '16x9';
       
