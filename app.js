@@ -106,7 +106,7 @@ if ('IntersectionObserver' in window) {
   
   // Observe sections with reduced motion support
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.section').forEach(section => {
+    document.querySelectorAll('.section:not(.section-sector-pick)').forEach(section => {
       section.style.opacity = '0';
       section.style.transform = 'translateY(20px)';
       section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';

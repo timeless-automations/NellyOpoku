@@ -13,6 +13,12 @@ const translations = {
     "hero.cta.primary": "Plan een gratis gesprek",
     "hero.cta.secondary": "Wat wij bouwen",
     "hero.trust": "Gebouwd rond uw bedrijf. Geen standaardoplossing.",
+
+    "sectorPick.eyebrow": "Sectoren",
+    "sectorPick.title": "Kies uw sector",
+    "sectorPick.realestate.benefit": "Directe reactie op leads en automatische bezichtigingen.",
+    "sectorPick.insurance.benefit": "Offertes, polissen en klantopvolging op één plek.",
+    "sectorPick.automotive.benefit": "Testritten en leads automatisch opgevolgd.",
     
     "mockup.title": "Dashboard",
     "mockup.leads": "Leads",
@@ -57,6 +63,7 @@ const translations = {
     "process.step4.description": "We implementeren het systeem en helpen u op weg.",
     
     "industries.title": "Software gebouwd voor uw sector.",
+    "industries.more.title": "Ook voor andere dienstverleners.",
     "industries.realestate.title": "Vastgoed",
     "industries.realestate.description": "Werkt naast de tools die u al gebruikt. Directe reactie op aanvragen, automatische follow-ups, bezichtigingen automatisch ingepland.",
     "industries.insurance.title": "Verzekeringen",
@@ -106,6 +113,12 @@ const translations = {
     "hero.cta.primary": "Book a Free Consultation",
     "hero.cta.secondary": "See What We Build",
     "hero.trust": "Built around your business. Not another off-the-shelf tool.",
+
+    "sectorPick.eyebrow": "Industries",
+    "sectorPick.title": "Choose your industry",
+    "sectorPick.realestate.benefit": "Instant replies and viewings booked automatically.",
+    "sectorPick.insurance.benefit": "Quotes, renewals and client follow-up in one place.",
+    "sectorPick.automotive.benefit": "Test drives and leads followed up automatically.",
     
     "mockup.title": "Business Dashboard",
     "mockup.leads": "Leads",
@@ -150,6 +163,7 @@ const translations = {
     "process.step4.description": "We deploy the system and help you get it running.",
     
     "industries.title": "Software built for the way your industry works.",
+    "industries.more.title": "Also for other service businesses.",
     "industries.realestate.title": "Real Estate",
     "industries.realestate.description": "Work alongside the tools you already use. Instant replies to enquiries, automated follow-ups, viewings booked automatically.",
     "industries.insurance.title": "Insurance",
@@ -199,6 +213,12 @@ const translations = {
     "hero.cta.primary": "Réservez un appel gratuit",
     "hero.cta.secondary": "Ce que nous créons",
     "hero.trust": "Construit autour de votre entreprise. Pas une solution standard.",
+
+    "sectorPick.eyebrow": "Secteurs",
+    "sectorPick.title": "Choisissez votre secteur",
+    "sectorPick.realestate.benefit": "Réponses instantanées et visites planifiées automatiquement.",
+    "sectorPick.insurance.benefit": "Offres, renouvellements et suivi client au même endroit.",
+    "sectorPick.automotive.benefit": "Essais et leads suivis automatiquement.",
     
     "mockup.title": "Tableau de bord",
     "mockup.leads": "Leads",
@@ -243,6 +263,7 @@ const translations = {
     "process.step4.description": "Nous déployons le système et vous aidons à démarrer.",
     
     "industries.title": "Des logiciels adaptés à votre secteur.",
+    "industries.more.title": "Aussi pour d'autres entreprises de services.",
     "industries.realestate.title": "Immobilier",
     "industries.realestate.description": "Fonctionne avec les outils que vous utilisez déjà. Réponses instantanées aux demandes, suivis automatisés, visites planifiées automatiquement.",
     "industries.insurance.title": "Assurances",
