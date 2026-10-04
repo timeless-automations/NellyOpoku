@@ -51,6 +51,9 @@ const TRANSLATIONS = {
     "realestate.workflow.step4": "Bezichtiging gepland",
     "realestate.workflow.step5": "Automatisch in uw CRM",
 
+    "realestate.video.title": "Bekijk hoe het werkt",
+    "realestate.video.intro": "Een kort overzicht van automatisering voor vastgoedkantoren.",
+
     // === INSURANCE ===
     "insurance.hero.title": "Gebouwd voor verzekeringskantoren.",
     "insurance.hero.subtitle": "Directe reactie op offerteaanvragen, automatische opvolging van polissen en tijdige herinneringen voor verlengingen. Geen handmatig werk.",
@@ -207,6 +210,9 @@ const TRANSLATIONS = {
     "realestate.workflow.step4": "Viewing scheduled",
     "realestate.workflow.step5": "Automatically in your CRM",
 
+    "realestate.video.title": "See how it works",
+    "realestate.video.intro": "A quick overview of automation for real estate offices.",
+
     // === INSURANCE ===
     "insurance.hero.title": "Built for insurance agencies.",
     "insurance.hero.subtitle": "Instant response to quote requests, automatic policy follow-up and timely renewal reminders. No manual work.",
@@ -362,6 +368,9 @@ const TRANSLATIONS = {
     "realestate.workflow.step3": "Suivi et rappel",
     "realestate.workflow.step4": "Visite planifiée",
     "realestate.workflow.step5": "Automatiquement dans votre CRM",
+
+    "realestate.video.title": "Découvrez comment ça fonctionne",
+    "realestate.video.intro": "Un aperçu rapide de l'automatisation pour les agences immobilières.",
 
     // === INSURANCE ===
     "insurance.hero.title": "Conçu pour les courtiers en assurances.",

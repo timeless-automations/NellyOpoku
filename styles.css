@@ -1121,6 +1121,32 @@ body {
   }
 }
 
+/* VIDEO SECTION */
+.section-video {
+  background: var(--color-bg);
+}
+
+.video-wrapper {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  box-shadow: 0 12px 40px var(--color-shadow-lg);
+}
+
+.sector-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+@media (max-width: 767px) {
+  .video-wrapper {
+    max-width: 400px;
+  }
+}
+
 /* ANIMATIONS */
 @media (prefers-reduced-motion: no-preference) {
   .service-card,
