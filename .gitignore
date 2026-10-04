@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Package files
+package*.json
+
+# Dev scripts
+*.js.backup
+test-*.js
+check-*.js
+screenshot-*.js
+verify-*.js
+capture-*.js
