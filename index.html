@@ -139,6 +139,54 @@
       </div>
     </section>
 
+    <!-- SECTOR PICKER -->
+    <section id="industries" class="section section-sector-pick">
+      <div class="container">
+        <p class="sector-pick-eyebrow" data-i18n="sectorPick.eyebrow">Sectoren</p>
+        <h2 class="sector-pick-title" data-i18n="sectorPick.title">Kies uw sector</h2>
+        <div class="sector-pick-grid">
+          <a href="vastgoed.html" class="sector-pick-card">
+            <div class="sector-pick-photo">
+              <img src="images/hero-realestate.webp" alt="" width="400" height="250">
+            </div>
+            <div class="sector-pick-copy">
+              <div class="sector-pick-heading">
+                <h3 data-i18n="industries.realestate.title">Vastgoed</h3>
+                <span class="sector-pick-arrow" aria-hidden="true">→</span>
+              </div>
+              <p data-i18n="sectorPick.realestate.benefit">Directe reactie op leads en automatische bezichtigingen.</p>
+            </div>
+          </a>
+
+          <a href="verzekeringen.html" class="sector-pick-card">
+            <div class="sector-pick-photo">
+              <img src="images/hero-insurance.webp" alt="" width="400" height="250">
+            </div>
+            <div class="sector-pick-copy">
+              <div class="sector-pick-heading">
+                <h3 data-i18n="industries.insurance.title">Verzekeringen</h3>
+                <span class="sector-pick-arrow" aria-hidden="true">→</span>
+              </div>
+              <p data-i18n="sectorPick.insurance.benefit">Offertes, polissen en klantopvolging op één plek.</p>
+            </div>
+          </a>
+
+          <a href="autodealers.html" class="sector-pick-card">
+            <div class="sector-pick-photo">
+              <img src="images/hero-automotive.webp" alt="" width="400" height="250">
+            </div>
+            <div class="sector-pick-copy">
+              <div class="sector-pick-heading">
+                <h3 data-i18n="industries.automotive.title">Autohandelaars</h3>
+                <span class="sector-pick-arrow" aria-hidden="true">→</span>
+              </div>
+              <p data-i18n="sectorPick.automotive.benefit">Testritten en leads automatisch opgevolgd.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- PROBLEM -->
     <section class="section section-problem">
       <div class="container">
@@ -270,56 +318,11 @@
       </div>
     </section>
 
-    <!-- INDUSTRIES -->
-    <section id="industries" class="section section-industries">
+    <!-- OTHER INDUSTRIES -->
+    <section id="other-industries" class="section section-industries">
       <div class="container">
-        <h2 class="section-title" data-i18n="industries.title">Software built for the way your industry works.</h2>
-        <div class="industries-grid">
-          <a href="vastgoed.html" class="industry-card-link">
-            <div class="industry-card" data-industry="realestate">
-              <div class="industry-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-                  <path d="M9 22V12h6v10"/>
-                </svg>
-              </div>
-              <h3 data-i18n="industries.realestate.title">Real Estate</h3>
-              <div class="industry-details">
-                <p data-i18n="industries.realestate.description">Work alongside the tools you already use. Instant replies to enquiries, automated follow-ups, viewings booked automatically.</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="verzekeringen.html" class="industry-card-link">
-            <div class="industry-card" data-industry="insurance">
-              <div class="industry-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
-              <h3 data-i18n="industries.insurance.title">Insurance</h3>
-              <div class="industry-details">
-                <p data-i18n="industries.insurance.description">Automated quote requests, policy renewals, and client communication. Keep all client data in one place.</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="autodealers.html" class="industry-card-link">
-            <div class="industry-card" data-industry="automotive">
-              <div class="industry-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="7" cy="17" r="2"/>
-                  <circle cx="17" cy="17" r="2"/>
-                  <path d="M5 17H3v-6l2-5h9l4 5h2a2 2 0 012 2v4h-2"/>
-                </svg>
-              </div>
-              <h3 data-i18n="industries.automotive.title">Car Dealerships</h3>
-              <div class="industry-details">
-                <p data-i18n="industries.automotive.description">Test drive bookings, trade-in tracking, and automated follow-ups for leads from AutoScout24 and 2dehands.</p>
-              </div>
-            </div>
-          </a>
-
+        <h2 class="section-title" data-i18n="industries.more.title">Ook voor andere dienstverleners.</h2>
+        <div class="industries-grid industries-grid-other">
           <div class="industry-card" data-industry="property">
             <div class="industry-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -460,9 +463,9 @@
         <div class="footer-col">
           <h4 data-i18n="footer.industries">Industries</h4>
           <ul class="footer-links">
-            <li><a href="#industries" data-i18n="industries.realestate.title">Real Estate</a></li>
-            <li><a href="#industries" data-i18n="industries.insurance.title">Insurance</a></li>
-            <li><a href="#industries" data-i18n="industries.professional.title">Professional Services</a></li>
+            <li><a href="vastgoed.html" data-i18n="industries.realestate.title">Vastgoed</a></li>
+            <li><a href="verzekeringen.html" data-i18n="industries.insurance.title">Verzekeringen</a></li>
+            <li><a href="autodealers.html" data-i18n="industries.automotive.title">Autohandelaars</a></li>
           </ul>
         </div>
         <div class="footer-col">
