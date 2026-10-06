@@ -114,6 +114,25 @@
       </div>
     </section>
 
+    <!-- VIDEO SECTION -->
+    <section class="section section-alt section-video">
+      <div class="container">
+        <h2 class="section-title" data-i18n-sector="insurance.video.title">Bekijk hoe het werkt (30 sec)</h2>
+        <p class="section-intro" data-i18n-sector="insurance.video.intro">Een kort overzicht van automatisering voor verzekeringskantoren.</p>
+        <div class="video-wrapper">
+          <video id="insuranceVideo" 
+                 class="sector-video" 
+                 controls 
+                 playsinline 
+                 preload="metadata"
+                 poster="assets/video/insurance_ad_30s_nl_16x9_poster.jpg"
+                 src="assets/video/insurance_ad_30s_nl_16x9.mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
     <!-- PROBLEMS -->
     <section class="section section-problem">
       <div class="container">
@@ -360,5 +379,44 @@
 
   <script src="i18n-sector.js"></script>
   <script src="app.js"></script>
+  <script>
+    // Video language and poster handling
+    function updateVideoSource() {
+      const video = document.getElementById('insuranceVideo');
+      if (!video) return;
+      
+      const resolved = (typeof currentLanguage !== 'undefined' && currentLanguage)
+        ? currentLanguage
+        : (localStorage.getItem('preferred-language') || localStorage.getItem('language') || 'nl');
+      const lang = resolved;
+      const aspectRatio = '16x9';
+      
+      const videoSrc = `assets/video/insurance_ad_30s_${lang}_${aspectRatio}.mp4`;
+      const posterSrc = `assets/video/insurance_ad_30s_${lang}_${aspectRatio}_poster.jpg`;
+      
+      // Only update if source has changed
+      if (video.src !== videoSrc) {
+        const currentTime = video.currentTime;
+        video.src = videoSrc;
+        video.poster = posterSrc;
+        video.load();
+        if (currentTime > 0) {
+          video.currentTime = currentTime;
+        }
+      }
+    }
+    
+    // Update video on load and language change
+    document.addEventListener('DOMContentLoaded', () => {
+      updateVideoSource();
+      
+      // Listen for language changes
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setTimeout(updateVideoSource, 100);
+        });
+      });
+    });
+  </script>
 </body>
 </html>

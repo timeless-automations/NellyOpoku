@@ -91,6 +91,9 @@ const TRANSLATIONS = {
     "insurance.workflow.step4": "Polis afgesloten",
     "insurance.workflow.step5": "Automatische verlenging",
 
+    "insurance.video.title": "Bekijk hoe het werkt (30 sec)",
+    "insurance.video.intro": "Een kort overzicht van automatisering voor verzekeringskantoren.",
+
     // === AUTOMOTIVE ===
     "automotive.hero.title": "Gebouwd voor",
     "automotive.hero.title.accent": "autodealers.",
@@ -258,6 +261,9 @@ const TRANSLATIONS = {
     "insurance.workflow.step4": "Policy closed",
     "insurance.workflow.step5": "Automatic renewal",
 
+    "insurance.video.title": "See how it works (30 sec)",
+    "insurance.video.intro": "A quick overview of automation for insurance offices.",
+
     // === AUTOMOTIVE ===
     "automotive.hero.title": "Built for",
     "automotive.hero.title.accent": "car dealerships.",
@@ -424,6 +430,9 @@ const TRANSLATIONS = {
     "insurance.workflow.step3": "Suivi et rappel",
     "insurance.workflow.step4": "Police souscrite",
     "insurance.workflow.step5": "Renouvellement automatique",
+
+    "insurance.video.title": "Voyez comment ça marche (30 s)",
+    "insurance.video.intro": "Un aperçu rapide de l'automatisation pour les cabinets d'assurances.",
 
     // === AUTOMOTIVE ===
     "automotive.hero.title": "Conçu pour",
