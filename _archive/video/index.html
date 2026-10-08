@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nooit meer een lead verliezen: zo volgt Timeless Automations elke nieuwe lead van uw vastgoedkantoor automatisch op.">
+  <meta property="og:title" content="Nooit meer een lead verliezen | Timeless Automations">
+  <meta property="og:description" content="Zo volgt uw vastgoedkantoor elke nieuwe lead automatisch op. Bekijk de video van 30 seconden.">
+  <meta property="og:type" content="video.other">
+  <meta property="og:image" content="https://timelessautomations.be/assets/video/realestate_crm_ad_30s_nl_16x9_poster.jpg">
+  <meta property="og:video" content="https://timelessautomations.be/assets/video/realestate_crm_ad_30s_nl_16x9.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:locale:alternate" content="fr_BE">
+  <title>Nooit meer een lead verliezen | Timeless Automations</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4B6B'/%3E%3Cpath d='M8 22V10l8-4 8 4v12l-8 4-8-4z' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3Cpath d='M16 6v20M8 10l8 4 8-4' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .video-container { max-width: 880px; margin: 0 auto; text-align: center; }
+    .video-container .section-intro { margin-left: auto; margin-right: auto; }
+    .video-wrapper {
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin: 2rem auto;
+    }
+    .ad-video { width: 100%; height: auto; display: block; background: #000; aspect-ratio: 16 / 9; }
+    .video-tagline { font-size: 1.125rem; color: var(--text); margin: 1.5rem auto 0; max-width: 640px; }
+    .video-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin: 1.75rem 0 0; }
+    .video-email { margin-top: 0.85rem; font-size: 0.9375rem; color: var(--text-muted); }
+    .video-email a { color: var(--accent); }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      color: var(--text-muted); text-decoration: none; font-size: 0.9375rem; font-weight: 500;
+      margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link svg { width: 16px; height: 16px; }
+    @media (max-width: 768px) {
+      .video-wrapper { max-width: 420px; }
+      .ad-video { aspect-ratio: 9 / 16; }
+    }
+    @media (max-width: 520px) {
+      .video-actions { flex-direction: column; }
+      .video-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../" class="logo">Timeless Automations</a>
+      <div class="lang-toggle" role="group" aria-label="Taal / Langue">
+        <button type="button" id="btn-nl" class="lang-btn active" aria-pressed="true">NL</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" id="btn-fr" class="lang-btn" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container video-container">
+        <h1 data-i18n="title">Nooit meer een lead verliezen</h1>
+        <p class="section-intro" data-i18n="intro">Zo volgt uw vastgoedkantoor elke nieuwe lead automatisch op, in 30 seconden uitgelegd.</p>
+
+        <div class="video-wrapper">
+          <video id="ad-video" class="ad-video" controls playsinline preload="metadata"
+                 poster="../assets/video/realestate_crm_ad_30s_nl_16x9_poster.jpg" aria-label="Video">
+            <source src="../assets/video/realestate_crm_ad_30s_nl_16x9.mp4" type="video/mp4">
+            <p data-i18n="videoFallback">Uw browser ondersteunt deze video niet.</p>
+          </video>
+        </div>
+
+        <p class="video-tagline" data-i18n="tagline">Benieuwd wat dit voor uw kantoor kan betekenen? Plan een vrijblijvend gesprek van 15 minuten.</p>
+        <div class="video-actions">
+          <a id="cta" href="mailto:nelly@timelessautomations.be?subject=Gesprek%20van%2015%20minuten" class="btn btn-primary" data-i18n="btnContact">Plan een gesprek van 15 minuten</a>
+        </div>
+        <p class="video-email"><a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a></p>
+
+        <a href="../" class="back-link">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12L6 8l4-4"/></svg>
+          <span data-i18n="backToHome">Terug naar hoofdpagina</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        <span>Nelly Opoku</span><span class="footer-sep">·</span><span>Timeless Automations</span><span class="footer-sep">·</span><span>2026</span>
+      </p>
+      <p><a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const I18N = {
+      nl: {
+        title: "Nooit meer een lead verliezen",
+        intro: "Zo volgt uw vastgoedkantoor elke nieuwe lead automatisch op, in 30 seconden uitgelegd.",
+        tagline: "Benieuwd wat dit voor uw kantoor kan betekenen? Plan een vrijblijvend gesprek van 15 minuten.",
+        btnContact: "Plan een gesprek van 15 minuten",
+        mailSubject: "Gesprek van 15 minuten",
+        backToHome: "Terug naar hoofdpagina",
+        videoFallback: "Uw browser ondersteunt deze video niet.",
+        pageTitle: "Nooit meer een lead verliezen | Timeless Automations",
+        ogDesc: "Zo volgt uw vastgoedkantoor elke nieuwe lead automatisch op. Bekijk de video van 30 seconden.",
+        metaDesc: "Nooit meer een lead verliezen: zo volgt Timeless Automations elke nieuwe lead van uw vastgoedkantoor automatisch op."
+      },
+      fr: {
+        title: "Ne perdez plus jamais un lead",
+        intro: "Comment votre agence immobilière suit automatiquement chaque nouveau lead, expliqué en 30 secondes.",
+        tagline: "Envie de savoir ce que cela peut apporter à votre agence ? Planifiez un appel sans engagement de 15 minutes.",
+        btnContact: "Planifier un appel de 15 minutes",
+        mailSubject: "Appel de 15 minutes",
+        backToHome: "Retour à la page d'accueil",
+        videoFallback: "Votre navigateur ne prend pas en charge cette vidéo.",
+        pageTitle: "Ne perdez plus jamais un lead | Timeless Automations",
+        ogDesc: "Comment votre agence immobilière suit automatiquement chaque nouveau lead. Regardez la vidéo de 30 secondes.",
+        metaDesc: "Ne perdez plus jamais un lead : Timeless Automations suit automatiquement chaque nouveau lead de votre agence immobilière."
+      }
+    };
+
+    const BASE = "../assets/video/";
+    const ABS = "https://timelessautomations.be/assets/video/";
+    const video = document.getElementById("ad-video");
+    const source = video.querySelector("source");
+    const mobileMQ = window.matchMedia("(max-width: 768px)");
+    let currentLang = "nl";
+    let currentFile = "";
+
+    function updateVideo() {
+      const ratio = mobileMQ.matches ? "9x16" : "16x9";
+      const name = "realestate_crm_ad_30s_" + currentLang + "_" + ratio;
+      if (name === currentFile) return;
+      currentFile = name;
+      source.src = BASE + name + ".mp4";
+      video.poster = BASE + name + "_poster.jpg";
+      video.load();
+    }
+
+    function setMeta(sel, val) {
+      const el = document.querySelector(sel);
+      if (el) el.setAttribute("content", val);
+    }
+
+    function setLang(lang) {
+      const t = I18N[lang];
+      if (!t) return;
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key]) el.textContent = t[key];
+      });
+      document.getElementById("cta").href = "mailto:nelly@timelessautomations.be?subject=" + encodeURIComponent(t.mailSubject);
+      document.title = t.pageTitle;
+      setMeta('meta[name="description"]', t.metaDesc);
+      setMeta('meta[property="og:title"]', t.pageTitle);
+      setMeta('meta[property="og:description"]', t.ogDesc);
+      setMeta('meta[property="og:image"]', ABS + "realestate_crm_ad_30s_" + lang + "_16x9_poster.jpg");
+      setMeta('meta[property="og:video"]', ABS + "realestate_crm_ad_30s_" + lang + "_16x9.mp4");
+      setMeta('meta[property="og:locale"]', lang === "fr" ? "fr_BE" : "nl_BE");
+      ["nl", "fr"].forEach(l => {
+        const b = document.getElementById("btn-" + l);
+        b.classList.toggle("active", l === lang);
+        b.setAttribute("aria-pressed", l === lang ? "true" : "false");
+      });
+      try { localStorage.setItem("video-lang", lang); } catch (_) {}
+      updateVideo();
+    }
+
+    document.getElementById("btn-nl").addEventListener("click", () => setLang("nl"));
+    document.getElementById("btn-fr").addEventListener("click", () => setLang("fr"));
+    if (mobileMQ.addEventListener) mobileMQ.addEventListener("change", updateVideo);
+    else mobileMQ.addListener(updateVideo);
+
+    let initial = "nl";
+    const langParam = new URLSearchParams(window.location.search).get("lang");
+    if (langParam === "fr" || langParam === "nl") {
+      initial = langParam;
+    } else {
+      try {
+        const saved = localStorage.getItem("video-lang");
+        if (saved === "fr" || saved === "nl") initial = saved;
+      } catch (_) {}
+    }
+    setLang(initial);
+  </script>
+</body>
+</html>

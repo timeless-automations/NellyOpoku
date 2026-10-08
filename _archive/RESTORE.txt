@@ -1,0 +1,7 @@
+Original Timeless Automations pages, kept for later restore.
+This folder is not published on GitHub Pages (underscore prefix).
+
+To restore the old site:
+  copy _archive/index.html, vastgoed.html, verzekeringen.html, autodealers.html
+  to the repo root; copy video/ and demo/ index files back; restore i18n.js,
+  i18n-sector.js, app.js and styles.css if needed.

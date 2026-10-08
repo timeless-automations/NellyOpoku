@@ -1,0 +1,3 @@
+# Static GitHub Pages site (waitlist only).
+# Underscore-prefixed folders are not published, so _archive/ stays in git
+# but is not served. HTML files have no Front Matter and are copied through.
