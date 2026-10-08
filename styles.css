@@ -2183,7 +2183,7 @@ footer {
   .waitlist-deco-card {
     width: 148px;
     padding: 0.45rem 0.5rem;
-    opacity: 0.11;
+    opacity: 0.13;
     gap: 0.35rem;
   }
 
@@ -2218,9 +2218,9 @@ footer {
     display: none;
   }
 
-  .waitlist-deco-card--1 { top: 5.6rem; left: -1.25rem; }
-  .waitlist-deco-card--2 { top: auto; bottom: 5.5rem; right: -1.4rem; left: auto; }
-  .waitlist-deco-stat--1 { top: 36%; left: -1.1rem; }
+  .waitlist-deco-card--1 { top: 5.75rem; left: -0.35rem; }
+  .waitlist-deco-card--2 { top: auto; bottom: 5.25rem; right: -0.45rem; left: auto; }
+  .waitlist-deco-stat--1 { top: 34%; left: -0.85rem; }
 
   .waitlist-highlight {
     font-size: 0.975rem;
