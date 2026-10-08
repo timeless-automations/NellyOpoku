@@ -1848,6 +1848,20 @@ footer {
   margin-right: auto;
 }
 
+.waitlist-highlight {
+  display: block;
+  max-width: 36rem;
+  margin: 0 auto 1.25rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: var(--radius);
+  background: rgba(79, 123, 255, 0.08);
+  border: 1px solid rgba(79, 123, 255, 0.22);
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 .waitlist-lead {
   max-width: 42rem;
   margin: 0 auto 2.5rem;
@@ -1996,6 +2010,11 @@ footer {
 @media (max-width: 768px) {
   .waitlist-hero {
     padding: 7.25rem 0 3rem;
+  }
+
+  .waitlist-highlight {
+    font-size: 0.975rem;
+    padding: 0.7rem 1rem;
   }
 
   .waitlist-benefits {
