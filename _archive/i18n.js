@@ -98,64 +98,7 @@ const translations = {
     "footer.tagline": "Software op maat. Slimmere workflows.",
     "footer.services": "Diensten",
     "footer.industries": "Sectoren",
-    "footer.contact": "Contact",
-
-    "waitlist.meta.title": "Timeless X | Wachtlijst — Timeless Automations",
-    "waitlist.meta.description": "Mis nooit meer een oproep of WhatsApp. Geen keuzemenu: Lena voert een echt gesprek, boekt afspraken en beantwoordt vragen. Schrijf u in op de wachtlijst.",
-    "waitlist.og.locale": "nl_BE",
-    "waitlist.skip": "Ga naar het inschrijfformulier",
-    "waitlist.badge": "Binnenkort",
-    "waitlist.product": "Timeless X",
-    "waitlist.headline": "Mis nooit meer een oproep of WhatsApp",
-    "waitlist.highlight": "Geen keuzemenu met druk 1, druk 2. Lena voert een echt gesprek.",
-    "waitlist.lead": "Een AI die menselijk klinkt, begrijpt wat de klant wil en het afhandelt — 24/7 via telefoon en WhatsApp. Eerst voor garages, autodealers en vastgoedkantoren in België.",
-    "waitlist.benefit1.title": "Echt gesprek, 24/7",
-    "waitlist.benefit1.text": "In het Nederlands en Frans. Geen druk 1, druk 2.",
-    "waitlist.benefit2.title": "Boekt in uw agenda",
-    "waitlist.benefit2.text": "Checkt uw echte beschikbaarheid en plant de afspraak.",
-    "waitlist.benefit3.title": "Dashboard",
-    "waitlist.benefit3.text": "Elke oproep en WhatsApp: wat de klant wou, wat geboekt of beantwoord is. Van daaruit opvolgen, bovenop uw huidige tools.",
-    "waitlist.deco.appt.title": "Afspraak geboekt",
-    "waitlist.deco.appt.meta": "do 10:30 · onderhoud",
-    "waitlist.deco.viewing.title": "Bezichtiging ingepland",
-    "waitlist.deco.viewing.meta": "za 11:00",
-    "waitlist.deco.whatsapp.title": "WhatsApp beantwoord",
-    "waitlist.deco.whatsapp.meta": "2 min geleden",
-    "waitlist.deco.call.title": "Oproep afgehandeld",
-    "waitlist.deco.call.meta": "vraag over prijs",
-    "waitlist.deco.lead.title": "Nieuwe lead",
-    "waitlist.deco.lead.meta": "testrit EV",
-    "waitlist.deco.callback.title": "Terugbelverzoek genoteerd",
-    "waitlist.deco.callback.meta": "opvolging",
-    "waitlist.deco.stat247": "24/7",
-    "waitlist.deco.statcalls": "oproepen deze week",
-    "waitlist.form.title": "Schrijf u in op de wachtlijst",
-    "waitlist.form.company": "Bedrijfsnaam *",
-    "waitlist.form.name": "Contactpersoon *",
-    "waitlist.form.email": "E-mail *",
-    "waitlist.form.phone": "Telefoon *",
-    "waitlist.form.sector": "Sector *",
-    "waitlist.form.sector.placeholder": "Kies uw sector",
-    "waitlist.form.sector.garage": "Garage",
-    "waitlist.form.sector.dealer": "Autodealer",
-    "waitlist.form.sector.realestate": "Vastgoedkantoor",
-    "waitlist.form.sector.other": "Andere",
-    "waitlist.form.calls": "Ongeveer aantal oproepen per dag *",
-    "waitlist.form.calls.placeholder": "Kies een aantal",
-    "waitlist.form.calls.lt10": "Minder dan 10",
-    "waitlist.form.calls.10to30": "10–30",
-    "waitlist.form.calls.30to60": "30–60",
-    "waitlist.form.calls.60plus": "60 of meer",
-    "waitlist.form.message": "Bericht (optioneel)",
-    "waitlist.form.gdpr": "Ik ga akkoord dat Timeless Automations mijn gegevens gebruikt om contact op te nemen over Timeless X. *",
-    "waitlist.form.privacy": "We gebruiken uw gegevens alleen hiervoor en delen ze niet met derden.",
-    "waitlist.form.submit": "Schrijf me in",
-    "thanks.meta.title": "Bedankt — Timeless X",
-    "thanks.meta.description": "Uw inschrijving op de Timeless X-wachtlijst is ontvangen.",
-    "thanks.badge": "Timeless X",
-    "thanks.title": "Bedankt voor uw inschrijving",
-    "thanks.lead": "We hebben uw aanvraag goed ontvangen. Nelly neemt zo snel mogelijk contact met u op.",
-    "thanks.back": "Terug naar de wachtlijst"
+    "footer.contact": "Contact"
   },
   
   en: {
@@ -255,64 +198,7 @@ const translations = {
     "footer.tagline": "Custom software. Smarter workflows.",
     "footer.services": "Services",
     "footer.industries": "Industries",
-    "footer.contact": "Contact",
-
-    "waitlist.meta.title": "Timeless X | Waitlist — Timeless Automations",
-    "waitlist.meta.description": "Never miss a call or WhatsApp again. Not a phone menu: Lena has a real conversation, books appointments and answers questions. Join the waitlist.",
-    "waitlist.og.locale": "en_GB",
-    "waitlist.skip": "Skip to the sign-up form",
-    "waitlist.badge": "Coming soon",
-    "waitlist.product": "Timeless X",
-    "waitlist.headline": "Never miss a call or WhatsApp again",
-    "waitlist.highlight": "Not a phone menu with press 1, press 2. Lena has a real conversation.",
-    "waitlist.lead": "A human-sounding AI that understands what the customer wants and handles it — 24/7 by phone and WhatsApp. First for garages, car dealers and real estate offices in Belgium.",
-    "waitlist.benefit1.title": "A real conversation, 24/7",
-    "waitlist.benefit1.text": "In Dutch and French. No press 1, press 2.",
-    "waitlist.benefit2.title": "Booked into your calendar",
-    "waitlist.benefit2.text": "Checks your real availability and books the appointment.",
-    "waitlist.benefit3.title": "Dashboard",
-    "waitlist.benefit3.text": "Every call and WhatsApp: what they wanted, what was booked or answered. Follow up from there, on top of your current tools.",
-    "waitlist.deco.appt.title": "Appointment booked",
-    "waitlist.deco.appt.meta": "Thu 10:30 · servicing",
-    "waitlist.deco.viewing.title": "Viewing scheduled",
-    "waitlist.deco.viewing.meta": "Sat 11:00",
-    "waitlist.deco.whatsapp.title": "WhatsApp answered",
-    "waitlist.deco.whatsapp.meta": "2 min ago",
-    "waitlist.deco.call.title": "Call handled",
-    "waitlist.deco.call.meta": "question about price",
-    "waitlist.deco.lead.title": "New lead",
-    "waitlist.deco.lead.meta": "EV test drive",
-    "waitlist.deco.callback.title": "Callback request noted",
-    "waitlist.deco.callback.meta": "follow-up",
-    "waitlist.deco.stat247": "24/7",
-    "waitlist.deco.statcalls": "calls this week",
-    "waitlist.form.title": "Join the waitlist",
-    "waitlist.form.company": "Company name *",
-    "waitlist.form.name": "Contact name *",
-    "waitlist.form.email": "Email *",
-    "waitlist.form.phone": "Phone *",
-    "waitlist.form.sector": "Sector *",
-    "waitlist.form.sector.placeholder": "Choose your sector",
-    "waitlist.form.sector.garage": "Garage",
-    "waitlist.form.sector.dealer": "Car dealer",
-    "waitlist.form.sector.realestate": "Real estate office",
-    "waitlist.form.sector.other": "Other",
-    "waitlist.form.calls": "Approx. calls per day *",
-    "waitlist.form.calls.placeholder": "Choose a range",
-    "waitlist.form.calls.lt10": "Fewer than 10",
-    "waitlist.form.calls.10to30": "10–30",
-    "waitlist.form.calls.30to60": "30–60",
-    "waitlist.form.calls.60plus": "60 or more",
-    "waitlist.form.message": "Message (optional)",
-    "waitlist.form.gdpr": "I agree that Timeless Automations may use my details to contact me about Timeless X. *",
-    "waitlist.form.privacy": "We only use your details for this purpose and do not share them with third parties.",
-    "waitlist.form.submit": "Join the waitlist",
-    "thanks.meta.title": "Thank you — Timeless X",
-    "thanks.meta.description": "Your Timeless X waitlist sign-up has been received.",
-    "thanks.badge": "Timeless X",
-    "thanks.title": "Thank you for signing up",
-    "thanks.lead": "We have received your request. Nelly will get in touch as soon as possible.",
-    "thanks.back": "Back to the waitlist"
+    "footer.contact": "Contact"
   },
   
   fr: {
@@ -412,64 +298,7 @@ const translations = {
     "footer.tagline": "Logiciels sur mesure. Workflows plus intelligents.",
     "footer.services": "Services",
     "footer.industries": "Secteurs",
-    "footer.contact": "Contact",
-
-    "waitlist.meta.title": "Timeless X | Liste d'attente — Timeless Automations",
-    "waitlist.meta.description": "Ne manquez plus jamais un appel ou un WhatsApp. Pas un menu vocal : Lena mène une vraie conversation, réserve des rendez-vous et répond aux questions. Inscrivez-vous sur la liste d'attente.",
-    "waitlist.og.locale": "fr_BE",
-    "waitlist.skip": "Aller au formulaire d'inscription",
-    "waitlist.badge": "Prochainement",
-    "waitlist.product": "Timeless X",
-    "waitlist.headline": "Ne manquez plus jamais un appel ou un WhatsApp",
-    "waitlist.highlight": "Pas de menu « tapez 1, tapez 2 ». Lena mène une vraie conversation.",
-    "waitlist.lead": "Une IA à la voix naturelle, qui comprend ce que le client veut et s'en charge — 24h/24 au téléphone et sur WhatsApp. D'abord pour les garages, concessionnaires et agences immobilières en Belgique.",
-    "waitlist.benefit1.title": "Vraie conversation, 24h/24",
-    "waitlist.benefit1.text": "En néerlandais et en français. Pas de tapez 1, tapez 2.",
-    "waitlist.benefit2.title": "Réserve dans votre agenda",
-    "waitlist.benefit2.text": "Elle vérifie vos vraies disponibilités et fixe le rendez-vous.",
-    "waitlist.benefit3.title": "Tableau de bord",
-    "waitlist.benefit3.text": "Chaque appel et WhatsApp : ce que le client voulait, ce qui a été réservé ou répondu. Relancez depuis là, en plus de vos outils actuels.",
-    "waitlist.deco.appt.title": "Rendez-vous réservé",
-    "waitlist.deco.appt.meta": "jeu 10:30 · entretien",
-    "waitlist.deco.viewing.title": "Visite planifiée",
-    "waitlist.deco.viewing.meta": "sam 11:00",
-    "waitlist.deco.whatsapp.title": "WhatsApp répondu",
-    "waitlist.deco.whatsapp.meta": "il y a 2 min",
-    "waitlist.deco.call.title": "Appel traité",
-    "waitlist.deco.call.meta": "question sur le prix",
-    "waitlist.deco.lead.title": "Nouveau lead",
-    "waitlist.deco.lead.meta": "essai VE",
-    "waitlist.deco.callback.title": "Rappel noté",
-    "waitlist.deco.callback.meta": "suivi",
-    "waitlist.deco.stat247": "24/7",
-    "waitlist.deco.statcalls": "appels cette semaine",
-    "waitlist.form.title": "Inscrivez-vous sur la liste d'attente",
-    "waitlist.form.company": "Nom de l'entreprise *",
-    "waitlist.form.name": "Personne de contact *",
-    "waitlist.form.email": "E-mail *",
-    "waitlist.form.phone": "Téléphone *",
-    "waitlist.form.sector": "Secteur *",
-    "waitlist.form.sector.placeholder": "Choisissez votre secteur",
-    "waitlist.form.sector.garage": "Garage",
-    "waitlist.form.sector.dealer": "Concessionnaire auto",
-    "waitlist.form.sector.realestate": "Agence immobilière",
-    "waitlist.form.sector.other": "Autre",
-    "waitlist.form.calls": "Nombre d'appels par jour (approx.) *",
-    "waitlist.form.calls.placeholder": "Choisissez un nombre",
-    "waitlist.form.calls.lt10": "Moins de 10",
-    "waitlist.form.calls.10to30": "10–30",
-    "waitlist.form.calls.30to60": "30–60",
-    "waitlist.form.calls.60plus": "60 ou plus",
-    "waitlist.form.message": "Message (facultatif)",
-    "waitlist.form.gdpr": "J'accepte que Timeless Automations utilise mes données pour me contacter au sujet de Timeless X. *",
-    "waitlist.form.privacy": "Nous utilisons vos données uniquement à cette fin et ne les partageons pas avec des tiers.",
-    "waitlist.form.submit": "Je m'inscris",
-    "thanks.meta.title": "Merci — Timeless X",
-    "thanks.meta.description": "Votre inscription à la liste d'attente Timeless X a bien été reçue.",
-    "thanks.badge": "Timeless X",
-    "thanks.title": "Merci pour votre inscription",
-    "thanks.lead": "Nous avons bien reçu votre demande. Nelly vous recontactera dès que possible.",
-    "thanks.back": "Retour à la liste d'attente"
+    "footer.contact": "Contact"
   }
 };
 
@@ -502,10 +331,8 @@ function applyLangToPageLinks(lang) {
     const file = url.pathname.split('/').pop() || 'index.html';
     if (!pageNames.includes(file)) return;
     url.searchParams.set('lang', lang);
-    const pathOnly = href.split('#')[0].split('?')[0];
-    const slash = pathOnly.lastIndexOf('/');
-    const dir = slash >= 0 ? pathOnly.slice(0, slash + 1) : '';
-    anchor.setAttribute('href', dir + file + url.search + url.hash);
+    const nextHref = file + url.search + url.hash;
+    anchor.setAttribute('href', nextHref);
   });
 }
 
@@ -527,19 +354,6 @@ function setLanguage(lang) {
       element.textContent = translations[lang][key];
     }
   });
-
-  document.querySelectorAll('[data-i18n-content]').forEach(element => {
-    const key = element.getAttribute('data-i18n-content');
-    if (translations[lang][key]) {
-      element.setAttribute('content', translations[lang][key]);
-    }
-  });
-
-  const nextField = document.getElementById('form-next');
-  if (nextField) {
-    const thanks = 'https://timelessautomations.be/bedankt/';
-    nextField.value = lang === 'nl' ? thanks : thanks + '?lang=' + encodeURIComponent(lang);
-  }
   
   // Update language buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {

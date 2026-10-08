@@ -542,10 +542,8 @@ function applyLangToPageLinks(lang) {
     const file = url.pathname.split('/').pop() || 'index.html';
     if (!pageNames.includes(file)) return;
     url.searchParams.set('lang', lang);
-    const pathOnly = href.split('#')[0].split('?')[0];
-    const slash = pathOnly.lastIndexOf('/');
-    const dir = slash >= 0 ? pathOnly.slice(0, slash + 1) : '';
-    anchor.setAttribute('href', dir + file + url.search + url.hash);
+    const nextHref = file + url.search + url.hash;
+    anchor.setAttribute('href', nextHref);
   });
 }
 

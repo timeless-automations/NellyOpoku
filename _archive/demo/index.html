@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bekijk hoe Timeless Automations u helpt elke nieuwe lead automatisch op te volgen. Een korte demo met fictieve gegevens.">
+  <meta property="og:title" content="Demo: Automatische leadopvolging | Timeless Automations">
+  <meta property="og:description" content="Bekijk hoe uw vastgoed­kantoor automatisch nieuwe leads kan opvolgen. Een voorbeeld van 1 minuut met fictieve gegevens.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://timelessautomations.be/demo/poster-nl.jpg">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:locale:alternate" content="fr_BE">
+  <title>Demo: Automatische leadopvolging | Timeless Automations</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B4B6B'/%3E%3Cpath d='M8 22V10l8-4 8 4v12l-8 4-8-4z' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3Cpath d='M16 6v20M8 10l8 4 8-4' fill='none' stroke='%23E8F1F5' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .demo-container {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .video-wrapper {
+      position: relative;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin: 2rem 0;
+    }
+
+    .demo-video {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
+    .demo-note {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 0.85rem 1.1rem;
+      margin: 1.5rem 0;
+      font-size: 0.9375rem;
+      color: var(--text);
+    }
+
+    .demo-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 2rem 0;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .back-link:hover {
+      color: var(--accent);
+    }
+
+    .back-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 520px) {
+      .demo-actions {
+        flex-direction: column;
+      }
+      .demo-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../" class="logo">Timeless Automations</a>
+      <div class="lang-toggle" role="group" aria-label="Taal / Langue">
+        <button type="button" id="btn-nl" class="lang-btn active" aria-pressed="true">NL</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" id="btn-fr" class="lang-btn" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container demo-container">
+        <h1 data-i18n="title">Zo volgt u elke nieuwe lead automatisch op</h1>
+        <p class="section-intro" data-i18n="intro">Een voorbeeld van 1 minuut met fictieve gegevens.</p>
+
+        <div class="video-wrapper">
+          <video 
+            id="demo-video"
+            class="demo-video"
+            controls 
+            playsinline 
+            preload="metadata"
+            poster="poster-nl.jpg"
+            aria-label="Demo video"
+          >
+            <source src="demo-nl.mp4" type="video/mp4">
+            <p data-i18n="videoFallback">Uw browser ondersteunt deze video niet. Download het bestand om het te bekijken.</p>
+          </video>
+        </div>
+
+        <div class="demo-note" data-i18n="customNote">
+          Dit is maar één voorbeeld: alles wordt op maat gebouwd.
+        </div>
+
+        <div class="demo-actions">
+          <a href="mailto:nelly@timelessautomations.be" class="btn btn-primary" data-i18n="btnContact">Contact opnemen</a>
+        </div>
+
+        <a href="../" class="back-link">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 12L6 8l4-4"/>
+          </svg>
+          <span data-i18n="backToHome">Terug naar hoofdpagina</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        <span>Nelly Opoku</span>
+        <span class="footer-sep">·</span>
+        <span>Timeless Automations</span>
+        <span class="footer-sep">·</span>
+        <span>2026</span>
+      </p>
+      <p>
+        <a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const I18N = {
+      nl: {
+        title: "Zo volgt u elke nieuwe lead automatisch op",
+        intro: "Een voorbeeld van 1 minuut met fictieve gegevens.",
+        customNote: "Dit is maar één voorbeeld: alles wordt op maat gebouwd.",
+        btnContact: "Contact opnemen",
+        backToHome: "Terug naar hoofdpagina",
+        videoFallback: "Uw browser ondersteunt deze video niet. Download het bestand om het te bekijken.",
+        ogTitle: "Demo: Automatische leadopvolging | Timeless Automations",
+        ogDesc: "Bekijk hoe uw vastgoed­kantoor automatisch nieuwe leads kan opvolgen. Een voorbeeld van 1 minuut met fictieve gegevens.",
+        metaDesc: "Bekijk hoe Timeless Automations u helpt elke nieuwe lead automatisch op te volgen. Een korte demo met fictieve gegevens."
+      },
+      fr: {
+        title: "Suivez automatiquement chaque nouveau lead",
+        intro: "Un exemple d'1 minute avec des données fictives.",
+        customNote: "Ce n'est qu'un exemple : tout est construit sur mesure.",
+        btnContact: "Me contacter",
+        backToHome: "Retour à la page d'accueil",
+        videoFallback: "Votre navigateur ne prend pas en charge cette vidéo. Téléchargez le fichier pour le voir.",
+        ogTitle: "Démo : Suivi automatique des leads | Timeless Automations",
+        ogDesc: "Découvrez comment votre agence immobilière peut automatiquement suivre les nouveaux leads. Un exemple d'1 minute avec des données fictives.",
+        metaDesc: "Découvrez comment Timeless Automations vous aide à suivre automatiquement chaque nouveau lead. Une courte démo avec des données fictives."
+      }
+    };
+
+    const video = document.getElementById("demo-video");
+    const videoSource = video.querySelector("source");
+
+    function setLang(lang) {
+      const t = I18N[lang];
+      if (!t) return;
+
+      document.documentElement.lang = lang === "fr" ? "fr" : "nl";
+
+      // Update text content
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key]) {
+          el.textContent = t[key];
+        }
+      });
+
+      // Update video source and poster
+      const videoFile = lang === "fr" ? "demo-fr.mp4" : "demo-nl.mp4";
+      const posterFile = lang === "fr" ? "poster-fr.jpg" : "poster-nl.jpg";
+      
+      videoSource.src = videoFile;
+      video.poster = posterFile;
+      video.load(); // Reload video with new source
+
+      // Update meta tags
+      document.title = t.ogTitle;
+      
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute("content", t.metaDesc);
+
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", t.ogTitle);
+
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", t.ogDesc);
+
+      const ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogImage) {
+        const baseUrl = "https://timelessautomations.be/demo/";
+        ogImage.setAttribute("content", baseUrl + posterFile);
+      }
+
+      const ogLocale = document.querySelector('meta[property="og:locale"]');
+      if (ogLocale) ogLocale.setAttribute("content", lang === "fr" ? "fr_BE" : "nl_BE");
+
+      // Update buttons
+      document.getElementById("btn-nl").classList.toggle("active", lang === "nl");
+      document.getElementById("btn-fr").classList.toggle("active", lang === "fr");
+      document.getElementById("btn-nl").setAttribute("aria-pressed", lang === "nl" ? "true" : "false");
+      document.getElementById("btn-fr").setAttribute("aria-pressed", lang === "fr" ? "true" : "false");
+
+      // Save preference
+      try { 
+        localStorage.setItem("demo-lang", lang);
+      } catch (_) {}
+    }
+
+    // Event listeners
+    document.getElementById("btn-nl").addEventListener("click", () => setLang("nl"));
+    document.getElementById("btn-fr").addEventListener("click", () => setLang("fr"));
+
+    // Initialize language from URL param, localStorage, or default to NL
+    let initial = "nl";
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get("lang");
+    
+    if (langParam === "fr" || langParam === "nl") {
+      initial = langParam;
+    } else {
+      try {
+        const saved = localStorage.getItem("demo-lang");
+        if (saved === "fr" || saved === "nl") initial = saved;
+      } catch (_) {}
+    }
+    
+    setLang(initial);
+  </script>
+</body>
+</html>
