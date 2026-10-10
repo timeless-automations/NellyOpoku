@@ -1,233 +1,718 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="nl" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mis nooit meer een oproep of WhatsApp. Geen keuzemenu: Lena voert een echt gesprek, boekt afspraken en beantwoordt vragen. Schrijf u in op de wachtlijst." data-i18n-content="waitlist.meta.description">
-  <meta property="og:title" content="Timeless X | Wachtlijst — Timeless Automations" data-i18n-content="waitlist.meta.title">
-  <meta property="og:description" content="Mis nooit meer een oproep of WhatsApp. Geen keuzemenu: Lena voert een echt gesprek, boekt afspraken en beantwoordt vragen. Schrijf u in op de wachtlijst." data-i18n-content="waitlist.meta.description">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://timelessautomations.be">
-  <meta property="og:locale" content="nl_BE" data-i18n-content="waitlist.og.locale">
-  <meta property="og:locale:alternate" content="fr_BE">
-  <meta property="og:locale:alternate" content="en_GB">
-  <meta property="og:site_name" content="Timeless Automations">
-  <link rel="canonical" href="https://timelessautomations.be/">
-  <title data-i18n="waitlist.meta.title">Timeless X | Wachtlijst — Timeless Automations</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1530'/%3E%3Cpath d='M16 8l8 4v8l-8 4-8-4v-8l8-4z' fill='none' stroke='%237FA8FF' stroke-width='1.5'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F7F9FF">
+<title>Timeless X — Lena, uw AI-receptioniste voor telefoon &amp; WhatsApp</title>
+<meta name="description" content="Lena is de AI-receptioniste van Timeless X. Ze beantwoordt 24/7 uw oproepen en WhatsApp-berichten, plant afspraken in en vangt leads op, voor garages, autodealers en vastgoedkantoren. Schrijf u in op de wachtlijst.">
+<link rel="canonical" href="https://timelessautomations.be/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Timeless Automations">
+<meta property="og:title" content="Timeless X — Lena, uw AI-receptioniste voor telefoon &amp; WhatsApp">
+<meta property="og:description" content="Lena is de AI-receptioniste van Timeless X. Ze beantwoordt 24/7 uw oproepen en WhatsApp-berichten, plant afspraken in en vangt leads op, voor garages, autodealers en vastgoedkantoren. Schrijf u in op de wachtlijst.">
+<meta property="og:url" content="https://timelessautomations.be/">
+<meta property="og:image" content="https://timelessautomations.be/assets/lena/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="nl_BE">
+<meta property="og:locale:alternate" content="fr_BE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Timeless X — Lena, uw AI-receptioniste voor telefoon &amp; WhatsApp">
+<meta name="twitter:description" content="Lena is de AI-receptioniste van Timeless X. Ze beantwoordt 24/7 uw oproepen en WhatsApp-berichten, plant afspraken in en vangt leads op, voor garages, autodealers en vastgoedkantoren. Schrijf u in op de wachtlijst.">
+<meta name="twitter:image" content="https://timelessautomations.be/assets/lena/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/lena/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/lena/favicon-180.png">
+<link rel="preload" href="assets/lena/Inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/lena/styles.css">
 </head>
-<body class="waitlist-page">
-  <a href="#aanmelden" class="skip-link" data-i18n="waitlist.skip">Ga naar het inschrijfformulier</a>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="i-calendar-check" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol><symbol id="i-phone-forwarded" viewBox="0 0 24 24"><path d="m18 2 4 4-4 4M14 6h8"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol><symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol><symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol><symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol><symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol><symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6M2 9h20"/></symbol><symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol><symbol id="i-user-check" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></symbol><symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3"/></symbol><symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol><symbol id="i-quote" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-voicemail" viewBox="0 0 24 24"><circle cx="6" cy="12" r="4"/><circle cx="18" cy="12" r="4"/><path d="M6 16h12"/></symbol><symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M16 13H8M16 17H8M10 9H8"/></symbol><symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h4"/></symbol><symbol id="i-trending" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4M21 2l-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></symbol><symbol id="i-dashboard" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol><symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol><symbol id="i-replay" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol><symbol id="i-pencil" viewBox="0 0 24 24"><path d="M21.17 6.81a1 1 0 0 0-3.99-3.99L3.84 16.17a2 2 0 0 0-.5.83l-1.32 4.35a.5.5 0 0 0 .62.62l4.35-1.32a2 2 0 0 0 .83-.5z"/></symbol><symbol id="i-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol><symbol id="i-home-fill" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM9.75 21v-6a1 1 0 0 1 1-1h2.5a1 1 0 0 1 1 1v6z"/></symbol><symbol id="i-users-fill" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2z"/><path d="M16 3.13a4 4 0 0 1 0 7.75M22 21v-2a4 4 0 0 0-3-3.87" fill="none"/></symbol><symbol id="i-calendar-fill" viewBox="0 0 24 24"><path d="M3 11h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M5 4h14a2 2 0 0 1 2 2v2H3V6a2 2 0 0 1 2-2z"/><path d="M8 2v3M16 2v3" fill="none"/></symbol><symbol id="i-settings-fill" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2zM15 12a3 3 0 1 0-6 0 3 3 0 1 0 6 0z"/></symbol></svg>
+<div class="bg-orbs" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
 
-  <header class="header" id="header">
-    <div class="header-container">
-      <a href="#top" class="logo">Timeless Automations</a>
-      <div class="lang-switcher" role="group" aria-label="Taal / Langue / Language">
-        <button type="button" class="lang-btn active" data-lang="nl" aria-pressed="true">NL</button>
-        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
-        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+<div class="app" id="app">
+
+  <!-- Top bar (onboarding) -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn back-btn" id="backBtn" aria-label="Back">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="brand" href="#" data-go="1">
+        <img src="assets/lena/timelessx-hourglass.png" alt="" class="brand-logo">
+        <span class="brand-name">Timeless&nbsp;X</span>
+      </a>
+    </div>
+    <div class="progress" id="progress" aria-label="Onboarding progress">
+      <div class="progress-meta"><span id="progressLabel">Step 1 of 4</span><span class="progress-name" id="progressName">Business</span></div>
+      <div class="progress-track">
+        <span class="seg" data-seg="2"><i></i></span><span class="seg" data-seg="3"><i></i></span><span class="seg" data-seg="4"><i></i></span><span class="seg" data-seg="5"><i></i></span>
       </div>
+    </div>
+    <nav class="top-links" aria-label="Page sections">
+      <a href="#how">How it works</a><a href="#features">Features</a><a href="#industries">Industries</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="topbar-right">
+      <button class="btn btn-primary top-cta" data-go="2">Create your Lena</button>
+      <div class="lang-switch" role="group" aria-label="Language" data-noi18n><span class="ls-ind" aria-hidden="true"></span><button type="button" data-lang="nl" lang="nl" aria-label="Nederlands">NL</button><button type="button" data-lang="fr" lang="fr" aria-label="Français">FR</button><button type="button" data-lang="en" lang="en" aria-label="English">EN</button></div>
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" width="19" height="19"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="19" height="19"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.9"/><g stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg>
+      </button>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero waitlist-hero" aria-labelledby="waitlist-heading">
-      <div class="hero-bg"></div>
-      <div class="waitlist-deco" aria-hidden="true">
-        <div class="waitlist-deco-card waitlist-deco-card--1">
-          <span class="waitlist-deco-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          </span>
-          <span class="waitlist-deco-copy">
-            <span class="waitlist-deco-title" data-i18n="waitlist.deco.appt.title">Afspraak geboekt</span>
-            <span class="waitlist-deco-meta" data-i18n="waitlist.deco.appt.meta">do 10:30 · onderhoud</span>
-          </span>
+  <main class="stage" id="stage">
+
+    <!-- ============ 1 WELCOME ============ -->
+    <section class="screen screen-welcome" data-screen="1">
+      <div class="welcome-grid">
+        <div class="welcome-copy">
+          <div class="welcome-logo-row">
+            <img src="assets/lena/timelessx-hourglass.png" alt="Timeless X" class="welcome-logo">
+            <span class="welcome-wordmark">Timeless&nbsp;X</span>
+          </div>
+          <span class="eyebrow"><span class="live-dot"></span>AI receptionist · Phone &amp; WhatsApp</span>
+          <h1 class="hero-title">Meet Lena — <span class="grad-text">your AI employee</span> that answers calls, books appointments, and captures leads 24/7.</h1>
+          <p class="hero-sub">Never miss a call or a lead again, even in the evenings and at weekends.<span class="sub-more"> Lena picks up, helps your customer and books them in while you focus on your work.</span></p>
+          <div class="welcome-actions">
+            <button class="btn btn-primary btn-lg" data-go="2">
+              <span>Create your Lena</span>
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <a class="btn btn-secondary btn-lg" href="https://lena-api-production-daf6.up.railway.app/dashboard/login">Log in</a>
+          </div>
+          <p class="small-print">Already have an account? <a href="https://lena-api-production-daf6.up.railway.app/dashboard/login">Log in</a></p>
+          <ul class="trust-row">
+            <li><span class="emo" aria-hidden="true">⚡</span>Test before going live</li>
+            <li><span class="emo" aria-hidden="true">🌙</span>Works 24/7</li>
+            <li><span class="emo" aria-hidden="true">💬</span>Dutch &amp; French</li>
+          </ul>
         </div>
-        <div class="waitlist-deco-card waitlist-deco-card--2">
-          <span class="waitlist-deco-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
-          </span>
-          <span class="waitlist-deco-copy">
-            <span class="waitlist-deco-title" data-i18n="waitlist.deco.viewing.title">Bezichtiging ingepland</span>
-            <span class="waitlist-deco-meta" data-i18n="waitlist.deco.viewing.meta">za 11:00</span>
-          </span>
+        <div class="welcome-visual">
+          <div class="lena-stage">
+            <div class="halo"></div>
+            <div class="ring r1"></div><div class="ring r2"></div>
+            <div class="lena-float">
+              <img src="assets/lena/lena-full.png" alt="Lena, your AI receptionist" class="lena-full">
+              <span class="headset-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="float-card fc-call">
+              <div class="fc-icon blue emo" aria-hidden="true">📞</div>
+              <div><b>Incoming call</b><small>Answered in 1 ring</small></div>
+            </div>
+            <div class="float-card fc-book">
+              <div class="fc-icon violet emo" aria-hidden="true">📅</div>
+              <div><b>Viewing booked</b><small>Thu · 14:30</small></div>
+            </div>
+            <div class="float-card fc-lead">
+              <div class="fc-icon green emo" aria-hidden="true">✓</div>
+              <div><b>New lead</b><small>Sent to WhatsApp</small></div>
+            </div>
+          </div>
         </div>
-        <div class="waitlist-deco-card waitlist-deco-card--3">
-          <span class="waitlist-deco-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-          </span>
-          <span class="waitlist-deco-copy">
-            <span class="waitlist-deco-title" data-i18n="waitlist.deco.whatsapp.title">WhatsApp beantwoord</span>
-            <span class="waitlist-deco-meta" data-i18n="waitlist.deco.whatsapp.meta">2 min geleden</span>
-          </span>
-        </div>
-        <div class="waitlist-deco-card waitlist-deco-card--4">
-          <span class="waitlist-deco-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
-          </span>
-          <span class="waitlist-deco-copy">
-            <span class="waitlist-deco-title" data-i18n="waitlist.deco.call.title">Oproep afgehandeld</span>
-            <span class="waitlist-deco-meta" data-i18n="waitlist.deco.call.meta">vraag over prijs</span>
-          </span>
-        </div>
-        <div class="waitlist-deco-card waitlist-deco-card--5 waitlist-deco-card--faint">
-          <span class="waitlist-deco-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
-          </span>
-          <span class="waitlist-deco-copy">
-            <span class="waitlist-deco-title" data-i18n="waitlist.deco.lead.title">Nieuwe lead</span>
-            <span class="waitlist-deco-meta" data-i18n="waitlist.deco.lead.meta">testrit EV</span>
-          </span>
-        </div>
-        <div class="waitlist-deco-card waitlist-deco-card--6 waitlist-deco-card--faint">
-          <span class="waitlist-deco-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </span>
-          <span class="waitlist-deco-copy">
-            <span class="waitlist-deco-title" data-i18n="waitlist.deco.callback.title">Terugbelverzoek genoteerd</span>
-            <span class="waitlist-deco-meta" data-i18n="waitlist.deco.callback.meta">opvolging</span>
-          </span>
-        </div>
-        <div class="waitlist-deco-stat waitlist-deco-stat--1">
-          <span class="waitlist-deco-stat-value" data-i18n="waitlist.deco.stat247">24/7</span>
-        </div>
-        <div class="waitlist-deco-stat waitlist-deco-stat--2 waitlist-deco-card--faint">
-          <span class="waitlist-deco-stat-value">42</span>
-          <span class="waitlist-deco-stat-label" data-i18n="waitlist.deco.statcalls">oproepen deze week</span>
-        </div>
-        <span class="waitlist-deco-blob waitlist-deco-blob--1"></span>
-        <span class="waitlist-deco-blob waitlist-deco-blob--2"></span>
-        <span class="waitlist-deco-blob waitlist-deco-blob--3"></span>
       </div>
-      <div class="container waitlist-container">
-        <p class="waitlist-badge" data-i18n="waitlist.badge">Binnenkort</p>
-        <p class="waitlist-product" data-i18n="waitlist.product">Timeless X</p>
-        <h1 id="waitlist-heading" class="hero-title waitlist-title" data-i18n="waitlist.headline">Mis nooit meer een oproep of WhatsApp</h1>
-        <p class="waitlist-highlight" data-i18n="waitlist.highlight">Geen keuzemenu met druk 1, druk 2. Lena voert een echt gesprek.</p>
-        <p class="hero-subtitle waitlist-lead" data-i18n="waitlist.lead">Een AI die menselijk klinkt, begrijpt wat de klant wil en het afhandelt — 24/7 via telefoon en WhatsApp. Eerst voor garages, autodealers en vastgoedkantoren in België.</p>
+      <a href="#how" class="scroll-cue" aria-label="Learn more"><span>Learn more</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 
-        <ul class="waitlist-benefits">
-          <li class="waitlist-benefit">
-            <div class="waitlist-benefit-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/>
-              </svg>
-            </div>
-            <p class="waitlist-benefit-title" data-i18n="waitlist.benefit1.title">Echt gesprek, 24/7</p>
-            <p data-i18n="waitlist.benefit1.text">In het Nederlands en Frans. Geen druk 1, druk 2.</p>
-          </li>
-          <li class="waitlist-benefit">
-            <div class="waitlist-benefit-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2"/>
-                <path d="M16 2v4M8 2v4M3 10h18"/>
-              </svg>
-            </div>
-            <p class="waitlist-benefit-title" data-i18n="waitlist.benefit2.title">Boekt in uw agenda</p>
-            <p data-i18n="waitlist.benefit2.text">Checkt uw echte beschikbaarheid en plant de afspraak.</p>
-          </li>
-          <li class="waitlist-benefit">
-            <div class="waitlist-benefit-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="9" rx="1"/>
-                <rect x="14" y="3" width="7" height="5" rx="1"/>
-                <rect x="14" y="12" width="7" height="9" rx="1"/>
-                <rect x="3" y="16" width="7" height="5" rx="1"/>
-              </svg>
-            </div>
-            <p class="waitlist-benefit-title" data-i18n="waitlist.benefit3.title">Dashboard</p>
-            <p data-i18n="waitlist.benefit3.text">Elke oproep en WhatsApp: wat de klant wou, wat geboekt of beantwoord is. Van daaruit opvolgen, bovenop uw huidige tools.</p>
-          </li>
-        </ul>
+      <div class="landing">
 
-        <div class="waitlist-form-card" id="aanmelden">
-          <h2 class="waitlist-form-title" data-i18n="waitlist.form.title">Schrijf u in op de wachtlijst</h2>
-          <form class="contact-form waitlist-form" id="waitlistForm" action="https://lena-api-production-daf6.up.railway.app/waitlist" method="POST">
-            <input type="hidden" name="_next" id="form-next" value="https://timelessautomations.be/bedankt/">
+        <!-- PROBLEM -->
+        <section class="l-section" id="problem">
+          <div class="l-head reveal">
+            <span class="l-eyebrow warn">The problem</span>
+            <h2>Missed calls are missed customers</h2>
+            <p>You can't be on the phone and do your job at the same time. A caller who doesn't get through may simply try the next business on their list.</p>
+          </div>
+          <div class="pains">
+            <div class="pain reveal"><span class="pain-ico"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span><h3>Busy with a customer</h3><p>Under a car, on a test drive or at a viewing. The phone rings and nobody can pick up.</p></div>
+            <div class="pain reveal" style="--d:.08s"><span class="pain-ico"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg></span><h3>Evenings and weekends</h3><p>Many people only have time to call after work, exactly when your business is closed.</p></div>
+            <div class="pain reveal" style="--d:.16s"><span class="pain-ico"><svg class="ic" aria-hidden="true"><use href="#i-voicemail"/></svg></span><h3>Voicemail and callbacks</h3><p>Messages pile up, callbacks get forgotten, and a warm lead quietly goes cold.</p></div>
+          </div>
+          <div class="solve reveal"><img src="assets/lena/lena-portrait.jpg" alt=""><p><b>Lena picks up every one of those calls</b> and makes sure you never lose track of who called and what they need.</p></div>
+        </section>
 
-            <div class="hp-field" aria-hidden="true">
-              <label for="website">Website</label>
-              <input type="text" id="website" name="_honey" tabindex="-1" autocomplete="off">
+        <!-- HOW IT WORKS -->
+        <section class="l-section" id="how">
+          <div class="l-head reveal">
+            <span class="l-eyebrow">How it works</span>
+            <h2>Hire Lena in three simple steps</h2>
+            <p>No scripts to write, no phone menus to build. Brief her like you would a new colleague.</p>
+          </div>
+          <div class="steps">
+            <div class="step reveal">
+              <div class="step-num">1</div>
+              <div class="step-visual sv-1"><span class="sv-chip active"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg>Garage</span><span class="sv-chip"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg>Car Dealership</span><span class="sv-chip"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg>Real Estate</span></div>
+              <h3>Choose your business</h3>
+              <p>Garage, car dealership or real estate. Lena starts with the questions and workflows of your industry.</p>
             </div>
+            <div class="step reveal" style="--d:.1s">
+              <div class="step-num">2</div>
+              <div class="step-visual sv-2"><span class="sv-line"><b><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></b>Open Monday–Friday 8–17:30</span><span class="sv-line"><b><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></b>Servicing, repairs, tyres</span><span class="sv-line"><b><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></b>Callback if unsure</span></div>
+              <h3>Teach Lena</h3>
+              <p>Tell her about your services, opening hours, prices and house rules in your own words.</p>
+            </div>
+            <div class="step reveal" style="--d:.2s">
+              <div class="step-num">3</div>
+              <div class="step-visual sv-3"><span class="sv-live"><span class="live-dot"></span>Lena is live</span><span class="sv-ch"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Calls</span><span class="sv-ch"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg>WhatsApp</span></div>
+              <h3>Go live</h3>
+              <p>Forward your calls and connect WhatsApp. Lena answers, books appointments and passes every lead to you.</p>
+            </div>
+          </div>
+          <div class="inline-cta reveal">
+            <button class="btn btn-primary" data-go="2">Create your Lena <svg viewBox="0 0 24 24" width="17" height="17"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <small class="micro">Create and test your Lena before going live.</small>
+          </div>
+        </section>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="company" data-i18n="waitlist.form.company">Bedrijfsnaam *</label>
-                <input type="text" id="company" name="Bedrijf" autocomplete="organization" required>
+        <!-- WHAT LENA DOES -->
+        <section class="l-section" id="features">
+          <div class="l-head reveal">
+            <span class="l-eyebrow">What Lena does</span>
+            <h2>Everything a great receptionist does, around the clock</h2>
+            <p>Lena handles the conversations, so you and your team can focus on the work in front of you.</p>
+          </div>
+          <div class="bento">
+            <div class="feat feat-wide reveal">
+              <div class="feat-copy">
+                <span class="feat-ico"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <h3>Answers every call, 24/7</h3>
+                <p>No “press 1, press 2” menus. Callers simply talk, and Lena replies in a natural, human-sounding voice, evenings and weekends included.</p>
               </div>
-              <div class="form-group">
-                <label for="contact-name" data-i18n="waitlist.form.name">Contactpersoon *</label>
-                <input type="text" id="contact-name" name="Contactpersoon" autocomplete="name" required>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email" data-i18n="waitlist.form.email">E-mail *</label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-              </div>
-              <div class="form-group">
-                <label for="phone" data-i18n="waitlist.form.phone">Telefoon *</label>
-                <input type="tel" id="phone" name="Telefoon" autocomplete="tel" required>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="sector" data-i18n="waitlist.form.sector">Sector *</label>
-                <select id="sector" name="Sector" required>
-                  <option value="" disabled selected data-i18n="waitlist.form.sector.placeholder">Kies uw sector</option>
-                  <option value="garage" data-i18n="waitlist.form.sector.garage">Garage</option>
-                  <option value="autodealer" data-i18n="waitlist.form.sector.dealer">Autodealer</option>
-                  <option value="vastgoedkantoor" data-i18n="waitlist.form.sector.realestate">Vastgoedkantoor</option>
-                  <option value="andere" data-i18n="waitlist.form.sector.other">Andere</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="calls" data-i18n="waitlist.form.calls">Ongeveer aantal oproepen per dag *</label>
-                <select id="calls" name="Oproepen per dag" required>
-                  <option value="" disabled selected data-i18n="waitlist.form.calls.placeholder">Kies een aantal</option>
-                  <option value="<10" data-i18n="waitlist.form.calls.lt10">Minder dan 10</option>
-                  <option value="10-30" data-i18n="waitlist.form.calls.10to30">10–30</option>
-                  <option value="30-60" data-i18n="waitlist.form.calls.30to60">30–60</option>
-                  <option value="60+" data-i18n="waitlist.form.calls.60plus">60 of meer</option>
-                </select>
+              <div class="feat-visual fv-call">
+                <div class="fv-ivr"><s>Press 1 for sales, press 2 for…</s></div>
+                <div class="fv-bubble"><img src="assets/lena/lena-portrait.jpg" alt="">“Good evening, you're speaking with Lena. How can I help?”</div>
               </div>
             </div>
-
-            <div class="form-group">
-              <label for="message" data-i18n="waitlist.form.message">Bericht (optioneel)</label>
-              <textarea id="message" name="Bericht" rows="4"></textarea>
+            <div class="feat reveal" style="--d:.08s">
+              <span class="feat-ico"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg></span>
+              <h3>Replies on WhatsApp</h3>
+              <p>Customers who prefer to message get the same quick, helpful answers on WhatsApp.</p>
             </div>
-
-            <div class="form-consent">
-              <input type="checkbox" id="gdpr" name="GDPR" value="Akkoord" required>
-              <label for="gdpr" data-i18n="waitlist.form.gdpr">Ik ga akkoord dat Timeless Automations mijn gegevens gebruikt om contact op te nemen over Timeless X. *</label>
+            <div class="feat reveal">
+              <span class="feat-ico"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg></span>
+              <h3>Books appointments</h3>
+              <p>Lena looks at your calendar and only offers the slots that are actually free.</p>
+              <div class="fv-slots"><span class="taken">09:00</span><span>10:30</span><span class="picked">14:00</span><span>16:30</span></div>
             </div>
-            <p class="form-privacy" data-i18n="waitlist.form.privacy">We gebruiken uw gegevens alleen hiervoor en delen ze niet met derden.</p>
+            <div class="feat reveal" style="--d:.08s">
+              <span class="feat-ico"><svg class="ic" aria-hidden="true"><use href="#i-user-check"/></svg></span>
+              <h3>Captures &amp; qualifies leads</h3>
+              <p>She asks the right questions and saves name, number and what they need as a lead.</p>
+            </div>
+            <div class="feat reveal" style="--d:.16s">
+              <span class="feat-ico"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg></span>
+              <h3>Call summaries &amp; daily recap</h3>
+              <p>Every conversation is summarised, and you get a short recap of the day.</p>
+            </div>
+            <div class="feat reveal">
+              <span class="feat-ico"><svg class="ic" aria-hidden="true"><use href="#i-bell"/></svg></span>
+              <h3>Notifications</h3>
+              <p>Get notified the moment Lena books someone in or captures a new lead.</p>
+              <div class="fv-notif"><span class="fv-n-ico"><img src="assets/lena/timelessx-hourglass.png" alt=""></span><span><b>Lena booked an appointment</b><small>Example notification</small></span></div>
+            </div>
+            <div class="feat feat-wide reveal" style="--d:.08s">
+              <div class="feat-copy">
+                <span class="feat-ico"><svg class="ic" aria-hidden="true"><use href="#i-languages"/></svg></span>
+                <h3>Speaks Dutch and French</h3>
+                <p>Lena talks with your customers in Dutch or French, so every caller feels at home.</p>
+              </div>
+              <div class="feat-visual fv-lang">
+                <span class="lang-b nl" data-noi18n>“Goedemiddag, met Lena. Waarmee kan ik u helpen?”</span>
+                <span class="lang-b fr" data-noi18n>“Bonjour, ici Lena. Comment puis-je vous aider ?”</span>
+              </div>
+            </div>
+          </div>
+          <div class="inline-cta reveal">
+            <button class="btn btn-primary" data-go="2">Create your Lena <svg viewBox="0 0 24 24" width="17" height="17"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <small class="micro">Create and test your Lena before going live.</small>
+          </div>
+        </section>
 
-            <button type="submit" class="btn btn-primary btn-block" data-i18n="waitlist.form.submit">Schrijf me in</button>
-          </form>
-        </div>
+        <!-- BUILT FOR YOUR BUSINESS -->
+        <section class="l-section" id="industries">
+          <div class="l-head reveal">
+            <span class="l-eyebrow">Built for your business</span>
+            <h2>She already speaks your industry</h2>
+            <p>Pick your sector and Lena starts with the right questions from day one.</p>
+          </div>
+          <div class="ind reveal">
+            <div class="ind-tabs" role="tablist">
+              <button class="ind-tab active" role="tab" data-ind="garage"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg>Garage</button>
+              <button class="ind-tab" role="tab" data-ind="dealer"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg>Car Dealership</button>
+              <button class="ind-tab" role="tab" data-ind="realestate"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg>Real Estate</button>
+              <span class="ind-glider"></span>
+            </div>
+            <div class="ind-panels">
+              <div class="ind-panel active" data-panel="garage">
+                <ul class="ind-list">
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span><div><b>Schedules repairs and servicing</b><small>Books maintenance, repairs and tyre changes in your free slots.</small></div></li>
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg></span><div><b>Answers service questions</b><small>Opening hours, services and the prices you've shared with her.</small></div></li>
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-clipboard"/></svg></span><div><b>Takes clear messages</b><small>Notes the car, the problem and a callback number for your mechanics.</small></div></li>
+                </ul>
+                <div class="ind-demo"><div class="ind-q">“My brakes are squeaking, can you fit me in this week?”</div><div class="ind-a"><img src="assets/lena/lena-portrait.jpg" alt="">“Of course. I have Wednesday at 8:30 free. Shall I book that for you?”</div></div>
+              </div>
+              <div class="ind-panel" data-panel="dealer">
+                <ul class="ind-list">
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg></span><div><b>Answers vehicle questions</b><small>Availability, specs and details of the cars you have in stock.</small></div></li>
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg></span><div><b>Books test drives</b><small>Schedules test drives and showroom visits in your calendar.</small></div></li>
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-trending"/></svg></span><div><b>Follows up with leads</b><small>Captures trade-in and financing requests for your sales team.</small></div></li>
+                </ul>
+                <div class="ind-demo"><div class="ind-q">“Is the white Audi Q4 still available? Can I test drive it?”</div><div class="ind-a"><img src="assets/lena/lena-portrait.jpg" alt="">“It is! I can book a test drive on Saturday at 10:00. Does that suit you?”</div></div>
+              </div>
+              <div class="ind-panel" data-panel="realestate">
+                <ul class="ind-list">
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg></span><div><b>Handles property inquiries</b><small>Answers questions about your listings, day and night.</small></div></li>
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg></span><div><b>Qualifies buyers</b><small>Asks about budget, timing and financing before you call back.</small></div></li>
+                  <li><span><svg class="ic" aria-hidden="true"><use href="#i-key"/></svg></span><div><b>Schedules viewings</b><small>Books viewings straight into your agents' free slots.</small></div></li>
+                </ul>
+                <div class="ind-demo"><div class="ind-q">“Is the apartment on Mechelsesteenweg still for sale?”</div><div class="ind-a"><img src="assets/lena/lena-portrait.jpg" alt="">“Yes, it is. Would you like to view it on Thursday at 14:30?”</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-cta reveal">
+            <button class="btn btn-primary" data-go="2">Create your Lena <svg viewBox="0 0 24 24" width="17" height="17"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <small class="micro">Create and test your Lena before going live.</small>
+          </div>
+        </section>
+
+        <!-- HEAR LENA -->
+        <section class="l-section" id="hear">
+          <div class="hear reveal">
+            <div class="hear-copy">
+              <span class="l-eyebrow">Hear Lena</span>
+              <h2>A conversation with Lena</h2>
+              <p>This is how a typical call to a garage could go. Friendly, to the point, and it ends with a booking.</p>
+              <span class="sample-badge">Sample conversation · scripted example</span>
+              <div class="hear-actions">
+                <button class="btn btn-secondary" id="replayConvo"><svg class="ic" aria-hidden="true"><use href="#i-replay"/></svg>Replay</button>
+                <button class="btn btn-primary" data-go="2">Create your Lena</button>
+              </div>
+            </div>
+            <div class="convo" id="convo">
+              <div class="convo-top"><img src="assets/lena/lena-portrait.jpg" alt=""><div><b>Lena</b><small>Garage Peeters · sample call</small></div><span class="convo-wave"><i></i><i></i><i></i><i></i><i></i></span></div>
+              <div class="cb lena">Garage Peeters, good afternoon, you're speaking with Lena. How can I help?</div>
+              <div class="cb caller">Hi, my car is due for its annual service. Do you have anything next week?</div>
+              <div class="cb lena">Certainly. Which car is it, and roughly how many kilometres?</div>
+              <div class="cb caller">A 2019 Škoda Octavia, about 80,000 km.</div>
+              <div class="cb lena">Thank you. I have Tuesday at 8:00 or Thursday at 13:00. Which suits you?</div>
+              <div class="cb caller">Tuesday at 8:00, please.</div>
+              <div class="cb lena">You're booked for Tuesday at 8:00. I'll send a confirmation by WhatsApp. Have a nice day!</div>
+              <div class="convo-result"><span><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>Appointment booked · team notified</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORKS ON TOP -->
+        <section class="l-section" id="tools">
+          <div class="tools reveal">
+            <div class="tools-copy">
+              <span class="l-eyebrow">No switching systems</span>
+              <h2>Works on top of your current tools</h2>
+              <div class="tools-points">
+                <div><span><svg class="ic" aria-hidden="true"><use href="#i-phone-forwarded"/></svg></span><p><b>Keep your own phone number.</b> Simply forward calls to Lena, all the time or only when you're busy.</p></div>
+                <div><span><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg></span><p><b>A dashboard on top of what you already use.</b> See calls, leads and appointments in one place, without changing how you work.</p></div>
+              </div>
+            </div>
+            <div class="tools-flow">
+              <div class="tf-node"><span><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><div><b>Your number</b><small>stays the same</small></div></div>
+              <div class="tf-arrow"><i></i><small>call forwarding</small></div>
+              <div class="tf-node tf-lena"><img src="assets/lena/lena-portrait.jpg" alt=""><div><b>Lena</b><small>answers &amp; books</small></div></div>
+              <div class="tf-arrow"><i></i><small>leads &amp; summaries</small></div>
+              <div class="tf-node"><span><svg class="ic" aria-hidden="true"><use href="#i-dashboard"/></svg></span><div><b>Your dashboard</b><small>on top of your tools</small></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="l-section" id="faq">
+          <div class="l-head reveal">
+            <span class="l-eyebrow">FAQ</span>
+            <h2>Questions, answered</h2>
+          </div>
+          <div class="faq reveal">
+            <details open><summary>Can I keep my own phone number?<i></i></summary><p>Yes. You keep your number and forward calls to Lena. You decide when: all the time, after hours, or only when you can't pick up.</p></details>
+            <details><summary>Which languages does Lena speak?<i></i></summary><p>Lena speaks Dutch and French with your customers.</p></details>
+            <details><summary>What if Lena doesn't know an answer?<i></i></summary><p>She doesn't guess. Lena takes a message and a callback request, and you're notified so you can follow up yourself.</p></details>
+            <details><summary>Doesn't an AI receptionist sound robotic?<i></i></summary><p>Lena talks in a natural, human-sounding voice, without “press 1, press 2” menus. Don't take our word for it: create your Lena and give her a test call.</p></details>
+            <details><summary>How long does setup take?<i></i></summary><p>You can create and test your Lena with this short onboarding. Going live is a matter of setting up call forwarding and connecting WhatsApp, and we help you with that.</p></details>
+            <details><summary>Does it work with my current tools?<i></i></summary><p>Yes. Lena works on top of what you already use. You keep your phone number and your way of working, and see calls, leads and appointments in the Timeless X dashboard.</p></details>
+          </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="l-section l-cta-wrap">
+          <div class="l-cta reveal">
+            <div class="l-cta-copy">
+              <h2>Ready to meet your new employee?</h2>
+              <p>Create and test your Lena before going live. Teach her about your business and give her a call.</p>
+              <div class="l-cta-actions">
+                <button class="btn btn-white btn-lg" data-go="2">Create your Lena <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <a class="btn btn-glass btn-lg" href="https://lena-api-production-daf6.up.railway.app/dashboard/login">Log in</a>
+              </div>
+            </div>
+            <img src="assets/lena/lena-full.png" alt="" class="l-cta-lena">
+          </div>
+        </section>
+
+        <footer class="l-footer">
+          <div class="lf-brand"><img src="assets/lena/timelessx-hourglass.png" alt=""><span>Timeless&nbsp;X</span></div>
+          <div class="lf-links">
+            <a href="https://timelessautomations.be" target="_blank" rel="noopener">timelessautomations.be</a>
+            <a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a>
+          </div>
+          <small class="lf-copy">Built in Belgium by Timeless Automations · © 2026</small>
+        </footer>
       </div>
     </section>
-  </main>
 
-  <footer class="footer footer-waitlist">
-    <div class="container">
-      <p>
-        <span>Timeless Automations</span>
-        <span class="footer-sep" aria-hidden="true"> · </span>
-        <a href="mailto:nelly@timelessautomations.be">nelly@timelessautomations.be</a>
-      </p>
+    <!-- ============ ONBOARDING (2–5) two-pane wrapper ============ -->
+    <div class="onboard" id="onboard">
+      <div class="onboard-main">
+
+        <!-- 2 BUSINESS -->
+        <section class="screen" data-screen="2">
+          <div class="screen-head">
+            <h2>Choose your business</h2>
+            <p class="lead">Lena will learn the language, questions and workflows of your industry.</p>
+          </div>
+          <div class="biz-list" role="radiogroup">
+            <button class="biz-card" role="radio" data-sector="realestate">
+              <span class="biz-emoji"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg></span>
+              <span class="biz-text"><b>Real Estate</b><span>Handle property inquiries, qualify buyers, schedule viewings.</span></span>
+              <span class="check"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <button class="biz-card" role="radio" data-sector="dealer">
+              <span class="biz-emoji"><svg class="ic" aria-hidden="true"><use href="#i-car"/></svg></span>
+              <span class="biz-text"><b>Car Dealership</b><span>Answer vehicle questions, book test drives, follow up with leads.</span></span>
+              <span class="check"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <button class="biz-card" role="radio" data-sector="garage">
+              <span class="biz-emoji"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+              <span class="biz-text"><b>Garage</b><span>Schedule repairs, answer service questions.</span></span>
+              <span class="check"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+          <div class="screen-foot">
+            <button class="btn btn-primary btn-block" id="toTrain" data-go="3" disabled>Continue</button>
+          </div>
+        </section>
+
+        <!-- 3 TRAIN -->
+        <section class="screen" data-screen="3">
+          <div class="screen-head">
+            <h2>Teach Lena about your business</h2>
+            <p class="lead">Write it like you'd brief a new colleague. Lena picks out the facts.</p>
+          </div>
+          <label class="field">
+            <span class="field-label">Business name</span>
+            <input type="text" id="bizName" class="input" autocomplete="off">
+          </label>
+          <div class="teach-card" id="teachCard">
+            <div class="teach-top">
+              <img src="assets/lena/lena-portrait.jpg" alt="" class="mini-avatar">
+              <div class="teach-hint"><b>Lena</b><span id="teachStatus">Listening…</span></div>
+              <span class="learn-badge" id="learnBadge"><span class="spinner"></span>Learning</span>
+            </div>
+            <textarea id="teachInput" rows="5" placeholder="Tell Lena anything she needs to know…"></textarea>
+            <div class="chips" id="chips">
+              <button class="chip" data-chip="Business information">🏢 Business information</button>
+              <button class="chip" data-chip="Services">🧰 Services</button>
+              <button class="chip" data-chip="Opening hours">🕘 Opening hours</button>
+              <button class="chip" data-chip="Pricing">💶 Pricing</button>
+              <button class="chip" data-chip="FAQs">💬 FAQs</button>
+              <button class="chip" data-chip="Rules Lena should follow">🛡️ Rules Lena should follow</button>
+            </div>
+          </div>
+          <div class="learned only-mobile-learned">
+            <div class="learned-head"><span>What Lena learned</span><span class="count" id="learnCount">0</span></div>
+            <ul class="facts" id="facts"></ul>
+          </div>
+          <div class="screen-foot">
+            <button class="btn btn-primary btn-block" data-go="4">Continue</button>
+          </div>
+        </section>
+
+        <!-- 4 CUSTOMIZE -->
+        <section class="screen" data-screen="4">
+          <div class="screen-head">
+            <h2>Customize Lena</h2>
+            <p class="lead">Pick how Lena sounds when she picks up the phone.</p>
+          </div>
+          <div class="sub-label">Voice</div>
+          <div class="voice-grid" id="voiceGrid">
+            <button class="voice-card" data-voice="Professional"><span class="v-emoji"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></span><b>Professional</b><small>Calm &amp; precise</small><span class="play" aria-label="Play sample"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span><span class="v-wave"><i></i><i></i><i></i><i></i><i></i></span></button>
+            <button class="voice-card" data-voice="Friendly"><span class="v-emoji"><svg class="ic" aria-hidden="true"><use href="#i-smile"/></svg></span><b>Friendly</b><small>Warm &amp; upbeat</small><span class="play" aria-label="Play sample"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span><span class="v-wave"><i></i><i></i><i></i><i></i><i></i></span></button>
+            <button class="voice-card" data-voice="Luxury"><span class="v-emoji"><svg class="ic" aria-hidden="true"><use href="#i-gem"/></svg></span><b>Luxury</b><small>Elegant &amp; refined</small><span class="play" aria-label="Play sample"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span><span class="v-wave"><i></i><i></i><i></i><i></i><i></i></span></button>
+            <button class="voice-card" data-voice="Energetic"><span class="v-emoji"><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg></span><b>Energetic</b><small>Lively &amp; fast</small><span class="play" aria-label="Play sample"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span><span class="v-wave"><i></i><i></i><i></i><i></i><i></i></span></button>
+          </div>
+          <div class="sub-label">Personality</div>
+          <div class="slider-card">
+            <div class="slider-ends"><span>Friendly</span><span id="personaVal">Balanced</span><span>Professional</span></div>
+            <input type="range" min="0" max="100" value="55" id="persona" class="range">
+          </div>
+          <div class="sub-label">Greeting</div>
+          <div class="greet-card">
+            <div class="greet-bubble-icon"><svg class="ic" aria-hidden="true"><use href="#i-quote"/></svg></div>
+            <textarea id="greeting" rows="2" class="greet-input"></textarea>
+            <span class="edit-hint"><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg>Tap to edit</span>
+          </div>
+          <div class="screen-foot">
+            <button class="btn btn-primary btn-block" data-go="5">Continue</button>
+          </div>
+        </section>
+
+        <!-- 5 TEST -->
+        <section class="screen screen-test" data-screen="5">
+          <div class="screen-head center">
+            <h2>Test Lena</h2>
+            <p class="lead">Try a conversation before going live.</p>
+          </div>
+          <div class="call-launch">
+            <div class="launch-avatar">
+              <span class="pulse p1"></span><span class="pulse p2"></span><span class="pulse p3"></span>
+              <img src="assets/lena/lena-portrait.jpg" alt="Lena">
+            </div>
+            <div class="launch-name"><b>Lena</b><span id="launchBiz">Receptionist</span></div>
+            <button class="btn-call" id="callBtn"><span class="btn-call-ico"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>Call Lena</button>
+            <p class="muted tiny">Simulated call · no real phone number is used</p>
+          </div>
+          <div class="test-tips">
+            <div class="tip"><span><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg></span><span>Try asking: <i id="tipQ">“Can I book a viewing this Saturday?”</i></span></div>
+          </div>
+          <div class="screen-foot">
+            <button class="btn btn-ghost btn-block" data-go="6">Skip &amp; go live</button>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Desktop live preview pane -->
+      <aside class="preview" id="preview" aria-label="Live preview of Lena">
+        <div class="preview-card">
+          <div class="preview-top">
+            <span class="pill"><span class="live-dot"></span>Live preview</span>
+            <span class="pill ghost" id="pvSector">No business yet</span>
+          </div>
+          <div class="preview-lena">
+            <div class="halo small"></div>
+            <img src="assets/lena/lena-full.png" alt="" class="pv-lena">
+          </div>
+          <div class="pv-name"><b id="pvName">Lena</b><span id="pvRole">AI receptionist</span></div>
+          <div class="pv-bubble" id="pvBubble">Hi! Choose your business and I'll start learning right away.</div>
+          <div class="pv-stats">
+            <div><small>Voice</small><b id="pvVoice">Friendly</b></div>
+            <div><small>Tone</small><b id="pvTone">Balanced</b></div>
+            <div><small>Facts learned</small><b id="pvFacts">0</b></div>
+          </div>
+          <ul class="pv-facts" id="pvFactList"></ul>
+        </div>
+      </aside>
     </div>
-  </footer>
 
-  <script src="i18n.js"></script>
-  <script src="app.js"></script>
+    <!-- ============ 6 DASHBOARD ============ -->
+    <section class="screen screen-dash" data-screen="6">
+      <div class="dash">
+        <nav class="sidebar" aria-label="Main">
+          <div class="sb-brand"><img src="assets/lena/timelessx-hourglass.png" alt=""><span>Timeless&nbsp;X</span></div>
+          <a class="sb-item active" href="#"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</a>
+          <a class="sb-item" href="#" data-toast="Leads view coming soon"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg>Leads<em>8</em></a>
+          <a class="sb-item" href="#" data-toast="Lena settings coming soon"><svg class="ic" aria-hidden="true"><use href="#i-headset"/></svg>Lena</a>
+          <a class="sb-item" href="#" data-toast="Calendar coming soon"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>Calendar</a>
+          <a class="sb-item" href="#" data-toast="Settings coming soon"><svg class="ic" aria-hidden="true"><use href="#i-settings"/></svg>Settings</a>
+          <div class="sb-spacer"></div>
+          <div class="sb-lena">
+            <img src="assets/lena/lena-portrait.jpg" alt="">
+            <div><b>Lena</b><small><span class="dot-green"></span>On duty</small></div>
+          </div>
+          <div class="sb-lang"><span>Language</span><div class="lang-switch ls-sm" role="group" aria-label="Language" data-noi18n><span class="ls-ind" aria-hidden="true"></span><button type="button" data-lang="nl" lang="nl" aria-label="Nederlands">NL</button><button type="button" data-lang="fr" lang="fr" aria-label="Français">FR</button><button type="button" data-lang="en" lang="en" aria-label="English">EN</button></div></div>
+          <button class="sb-item sb-theme" id="themeToggle2"><svg class="ic" aria-hidden="true"><use href="#i-contrast"/></svg>Appearance</button>
+        </nav>
+
+        <div class="dash-main">
+          <div class="dash-head">
+            <div>
+              <p class="muted" id="dashDate">Saturday, 10 October</p>
+              <h2 class="dash-title">Good evening, <span id="dashBiz">your team</span></h2>
+            </div>
+            <div class="dash-head-actions">
+              <div class="lang-switch mobile-only" role="group" aria-label="Language" data-noi18n><span class="ls-ind" aria-hidden="true"></span><button type="button" data-lang="nl" lang="nl" aria-label="Nederlands">NL</button><button type="button" data-lang="fr" lang="fr" aria-label="Français">FR</button><button type="button" data-lang="en" lang="en" aria-label="English">EN</button></div>
+              <button class="icon-btn theme-toggle mobile-only" id="themeToggle3" aria-label="Toggle dark mode">
+                <svg class="i-moon" viewBox="0 0 24 24" width="19" height="19"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+                <svg class="i-sun" viewBox="0 0 24 24" width="19" height="19"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.9"/><g stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg>
+              </button>
+              <img src="assets/lena/lena-portrait.jpg" class="dash-avatar" alt="">
+            </div>
+          </div>
+
+          <div class="dash-grid">
+            <div class="card status-card">
+              <div class="status-left">
+                <div class="status-avatar"><img src="assets/lena/lena-portrait.jpg" alt=""><span class="status-dot"></span></div>
+                <div>
+                  <small class="muted">Lena Status</small>
+                  <div class="status-line"><span class="dot-ready"></span><b>Ready</b></div>
+                  <small class="muted">Answering on phone &amp; WhatsApp</small>
+                </div>
+              </div>
+              <div class="status-channels">
+                <span class="ch on"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Phone</span><span class="ch on"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg>WhatsApp</span>
+              </div>
+            </div>
+
+            <div class="stats-wrap">
+              <div class="section-title">Today's activity</div>
+              <div class="stats">
+                <div class="card stat"><span class="stat-ico blue"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><b data-count="12">12</b><small>Calls answered</small><span class="trend">▲ 3 vs yesterday</span></div>
+                <div class="card stat"><span class="stat-ico violet"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg></span><b data-count="5">5</b><small>Appointments booked</small><span class="trend">▲ 2 vs yesterday</span></div>
+                <div class="card stat"><span class="stat-ico cyan"><svg class="ic" aria-hidden="true"><use href="#i-user-check"/></svg></span><b data-count="8">8</b><small>Leads captured</small><span class="trend">▲ 4 vs yesterday</span></div>
+              </div>
+            </div>
+
+            <div class="card list-card calls-card">
+              <div class="card-head"><b>Today's calls</b><a href="#" data-toast="Call history coming soon">View all</a></div>
+              <ul class="rows" id="callRows"></ul>
+            </div>
+
+            <div class="card list-card appts-card">
+              <div class="card-head"><b>Upcoming appointments</b><a href="#" data-toast="Calendar coming soon">Calendar</a></div>
+              <ul class="rows" id="apptRows"></ul>
+            </div>
+
+            <div class="card week-card">
+              <div class="card-head"><b>Calls this week</b><span class="muted tiny">82 total · 100% answered</span></div>
+              <div class="week-chart" id="weekChart"></div>
+            </div>
+
+            <div class="card actions-card">
+              <div class="card-head"><b>Quick actions</b></div>
+              <div class="qa-list">
+                <button class="qa" data-toast="Number copied (simulated)"><span class="qa-ico"><svg class="ic" aria-hidden="true"><use href="#i-smartphone"/></svg></span><span><b>Share Lena's number</b><small>+32 3 808 12 34</small></span><i>›</i></button>
+                <button class="qa" data-toast="WhatsApp is connected"><span class="qa-ico"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg></span><span><b>WhatsApp Business</b><small>Connected</small></span><i class="ok"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></i></button>
+                <button class="qa" data-go="3"><span class="qa-ico"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span><b>Teach Lena something new</b><small>Update her knowledge</small></span><i>›</i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+</div>
+
+<nav class="bottom-nav" aria-label="Main">
+        <span class="bn-bubble" aria-hidden="true"></span>
+        <a class="bn-item active" href="#" aria-label="Dashboard"><svg class="ic ic-line" aria-hidden="true"><use href="#i-home"/></svg><svg class="ic ic-fill" aria-hidden="true"><use href="#i-home-fill"/></svg><small>Dashboard</small></a>
+        <a class="bn-item" href="#" aria-label="Leads" data-toast="Leads view coming soon"><svg class="ic ic-line" aria-hidden="true"><use href="#i-users"/></svg><svg class="ic ic-fill" aria-hidden="true"><use href="#i-users-fill"/></svg><small>Leads</small></a>
+        <a class="bn-item bn-lena" href="#" aria-label="Lena" data-toast="Lena settings coming soon"><img src="assets/lena/lena-portrait.jpg" alt=""><small>Lena</small></a>
+        <a class="bn-item" href="#" aria-label="Calendar" data-toast="Calendar coming soon"><svg class="ic ic-line" aria-hidden="true"><use href="#i-calendar"/></svg><svg class="ic ic-fill" aria-hidden="true"><use href="#i-calendar-fill"/></svg><small>Calendar</small></a>
+        <a class="bn-item" href="#" aria-label="Settings" data-toast="Settings coming soon"><svg class="ic ic-line" aria-hidden="true"><use href="#i-settings"/></svg><svg class="ic ic-fill" aria-hidden="true"><use href="#i-settings-fill"/></svg><small>Settings</small></a>
+      </nav>
+
+<!-- ============ CALL UI ============ -->
+<!-- ============ WAITLIST (glass modal) ============ -->
+<div class="wl-overlay" id="waitlist" aria-hidden="true">
+  <div class="wl-backdrop" data-wl-close></div>
+  <div class="wl-card" role="dialog" aria-modal="true" aria-labelledby="wlTitle">
+    <button type="button" class="icon-btn wl-close" data-wl-close aria-label="Close">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+    </button>
+    <div class="wl-form-view">
+      <div class="wl-head">
+        <img src="assets/lena/lena-portrait.jpg" alt="" class="wl-avatar">
+        <div>
+          <span class="eyebrow wl-eyebrow"><span class="dot-green"></span>Waitlist</span>
+          <h2 id="wlTitle">Join the waitlist</h2>
+        </div>
+      </div>
+      <p class="wl-sub">Lena isn't publicly available yet. Leave your details and we'll get in touch as soon as there's a place for your business.</p>
+      <form class="wl-form" id="waitlistForm" action="https://lena-api-production-daf6.up.railway.app/waitlist" method="POST" novalidate>
+        <input type="hidden" name="_next" id="form-next" value="https://timelessautomations.be/bedankt/">
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="_honey" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="wl-row">
+          <div class="wl-field"><label for="company">Company name <span class="req">*</span></label><input class="input" type="text" id="company" name="Bedrijf" autocomplete="organization" required></div>
+          <div class="wl-field"><label for="contact-name">Contact person <span class="req">*</span></label><input class="input" type="text" id="contact-name" name="Contactpersoon" autocomplete="name" required></div>
+        </div>
+        <div class="wl-row">
+          <div class="wl-field"><label for="email">Email <span class="req">*</span></label><input class="input" type="email" id="email" name="email" autocomplete="email" required></div>
+          <div class="wl-field"><label for="phone">Phone <span class="req">*</span></label><input class="input" type="tel" id="phone" name="Telefoon" autocomplete="tel" required></div>
+        </div>
+        <div class="wl-row">
+          <div class="wl-field"><label for="sector">Sector <span class="req">*</span></label>
+            <select class="input" id="sector" name="Sector" required>
+              <option value="" disabled selected>Choose your sector</option>
+              <option value="garage">Garage</option>
+              <option value="autodealer">Car Dealership</option>
+              <option value="vastgoedkantoor">Real Estate</option>
+              <option value="andere">Other</option>
+            </select>
+          </div>
+          <div class="wl-field"><label for="calls">Approx. calls per day <span class="req">*</span></label>
+            <select class="input" id="calls" name="Oproepen per dag" required>
+              <option value="" disabled selected>Choose a range</option>
+              <option value="&lt;10">Fewer than 10</option>
+              <option value="10-30">10–30</option>
+              <option value="30-60">30–60</option>
+              <option value="60+">60 or more</option>
+            </select>
+          </div>
+        </div>
+        <div class="wl-field"><label for="message">Message (optional)</label><textarea class="input" id="message" name="Bericht" rows="3"></textarea></div>
+        <label class="wl-consent" for="gdpr"><input type="checkbox" id="gdpr" name="GDPR" value="Akkoord" required><span>I agree that Timeless Automations may use my details to contact me about Timeless X. <span class="req">*</span></span></label>
+        <p class="wl-error" id="wlError" role="alert" hidden>Please fill in all required fields.</p>
+        <button type="submit" class="btn btn-primary btn-lg wl-submit" id="wlSubmit">Join the waitlist<svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        <p class="wl-privacy">We only use your details for this and never share them with third parties.</p>
+      </form>
+    </div>
+    <div class="wl-success-view" aria-live="polite">
+      <div class="wl-success-ic"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
+      <h2>You're on the list — we'll be in touch</h2>
+      <p>Thank you! We'll contact you personally as soon as Lena is ready for your business.</p>
+      <button type="button" class="btn btn-secondary btn-lg" data-wl-close>Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="call-overlay" id="callOverlay" aria-hidden="true">
+  <div class="call-sheet">
+    <div class="call-top">
+      <small class="call-sub" id="callSub">Timeless X · Test call</small>
+      <h3>Lena</h3>
+      <div class="call-timer" id="callTimer">00:00</div>
+    </div>
+    <div class="call-avatar" id="callAvatar">
+      <span class="cr c1"></span><span class="cr c2"></span>
+      <img src="assets/lena/lena-portrait.jpg" alt="Lena">
+    </div>
+    <div class="voice-wave" id="voiceWave" aria-hidden="true"></div>
+    <div class="speaking-label" id="speakingLabel">Connecting…</div>
+    <div class="transcript" id="transcript"></div>
+    <div class="call-controls">
+      <button class="cc" data-toast="Muted (simulated)"><span><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg></span><small>Mute</small></button>
+      <button class="cc end" id="endCall" aria-label="End call"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M3.6 14.6c4.7-4.2 12.1-4.2 16.8 0 .6.6.6 1.5 0 2l-1.7 1.6c-.5.5-1.3.5-1.8.1l-2-1.6c-.4-.3-.6-.8-.5-1.3l.2-1.4a10.6 10.6 0 0 0-5.2 0l.2 1.4c.1.5-.1 1-.5 1.3l-2 1.6c-.5.4-1.3.4-1.8-.1l-1.7-1.6c-.6-.5-.6-1.4 0-2z" fill="#fff"/></svg></button>
+      <button class="cc" data-toast="Speaker on (simulated)"><span><svg class="ic" aria-hidden="true"><use href="#i-volume"/></svg></span><small>Speaker</small></button>
+    </div>
+  </div>
+  <div class="call-summary" id="callSummary">
+    <div class="sum-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
+    <h3>Great call!</h3>
+    <p class="muted" id="sumText">Lena handled it perfectly.</p>
+    <div class="sum-rows">
+      <div><small>Duration</small><b id="sumDur">0:42</b></div>
+      <div><small>Outcome</small><b id="sumOutcome">Appointment booked</b></div>
+      <div><small>Lead</small><b>Captured</b></div>
+    </div>
+    <button class="btn btn-primary btn-block" id="goLive">Go live with Lena <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+    <button class="btn btn-ghost btn-block" id="tryAgain">Call again</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="assets/lena/i18n.js"></script>
+<script src="assets/lena/app.js"></script>
 </body>
 </html>
